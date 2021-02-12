@@ -23,9 +23,35 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize" />
 
+      <LinearLayout
+        android:id="@+id/search_container"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/search_text"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" />
+
+        <Button
+          android:layout_marginLeft="20dp"
+          android:id="@+id/search_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="10dp"
+          android:text="@string/label_button_search" />
+
+      </LinearLayout>
+
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
+      android:id="@+id/stdout_container"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       app:layout_behavior="@string/appbar_scrolling_view_behavior">

@@ -50,6 +50,13 @@
 
   <!-- ===== StandardOutputActivity ===== -->
 
+  <string name="activity_read_output_menu_toggle_search">Toggle Search Bar</string>
+
+  <string name="label_button_search">SEARCH</string>
+
+  <string name="color_search_results">#FF5733</string>
+
   <string name="error_stdout_not_found">Error: File Containing stdout Not Found</string>
   <string name="error_stdout_not_readable">Error: File Containing stdout Not Readable</string>
+  <string name="notification_no_search_results">No results for search query</string>
 </resources>

@@ -11,3 +11,7 @@ https://fonts.gstatic.com/s/i/materialiconsround/drag_handle/v11/black-android.z
 https://material.io/resources/icons/?icon=add_circle_outline&style=baseline
 https://fonts.gstatic.com/s/i/materialiconsround/add_circle_outline/v10/white-android.zip
   add_circle_outline, rounded, white, 24dp
+
+https://material.io/resources/icons/?icon=search&style=baseline
+https://fonts.gstatic.com/s/i/materialicons/search/v11/white-android.zip
+  search, filled, white, 24dp
