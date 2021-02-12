@@ -1,0 +1,32 @@
+apply from: '../../constants.gradle'
+apply plugin: 'com.android.library'
+
+android {
+  compileSdkVersion project.ext.compileSdkVersion
+  buildToolsVersion project.ext.buildToolsVersion
+
+  compileOptions {
+    sourceCompatibility project.ext.javaVersion
+    targetCompatibility project.ext.javaVersion
+  }
+
+  defaultConfig {
+    minSdkVersion project.ext.minSdkVersion
+    targetSdkVersion project.ext.targetSdkVersion
+  }
+
+  lintOptions {
+    disable 'MissingTranslation'
+    abortOnError true
+  }
+}
+
+dependencies {
+  compileOnly         'androidx.annotation:annotation:'          + project.ext.libSupportAnnotation      // ( 22 KB) https://mvnrepository.com/artifact/androidx.annotation/annotation?repo=google
+  annotationProcessor 'androidx.annotation:annotation:'          + project.ext.libSupportAnnotation
+
+  implementation      'androidx.appcompat:appcompat:'            + project.ext.libSupportAppCompat       // (1.0 MB) https://mvnrepository.com/artifact/androidx.appcompat/appcompat?repo=google
+  implementation      'androidx.fragment:fragment:'              + project.ext.libSupportFragment        // (152 KB) https://mvnrepository.com/artifact/androidx.fragment/fragment?repo=google
+  implementation      'androidx.recyclerview:recyclerview:'      + project.ext.libSupportRecyclerView    // (344 KB) https://mvnrepository.com/artifact/androidx.recyclerview/recyclerview?repo=google
+  implementation      'com.google.android.material:material:'    + project.ext.libSupportMaterial        // (566 KB) https://mvnrepository.com/artifact/com.google.android.material/material?repo=google
+}

@@ -1,0 +1,56 @@
+apply from: '../constants.gradle'
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion project.ext.compileSdkVersion
+  buildToolsVersion project.ext.buildToolsVersion
+
+  compileOptions {
+    sourceCompatibility project.ext.javaVersion
+    targetCompatibility project.ext.javaVersion
+  }
+
+  defaultConfig {
+    minSdkVersion project.ext.minSdkVersion
+    targetSdkVersion project.ext.targetSdkVersion
+
+    applicationId "com.github.warren_bank.nodejs_frontend"
+    versionName project.ext.releaseVersion
+    versionCode project.ext.releaseVersionCode
+  }
+
+  lintOptions {
+    disable 'MissingTranslation'
+    abortOnError true
+  }
+
+  buildTypes {
+    release {
+      shrinkResources true
+      minifyEnabled true
+      proguardFiles = [
+        "proguard-rules.txt",
+        getDefaultProguardFile('proguard-android.txt')
+      ]
+    }
+    debug {
+      jniDebuggable = true
+    }
+  }
+}
+
+dependencies {
+  implementation project(':MaterialFilePicker')
+
+  compileOnly         'androidx.annotation:annotation:'           + project.ext.libSupportAnnotation           // ( 22 KB) https://mvnrepository.com/artifact/androidx.annotation/annotation?repo=google
+  annotationProcessor 'androidx.annotation:annotation:'           + project.ext.libSupportAnnotation
+
+  implementation 'androidx.appcompat:appcompat:'                  + project.ext.libSupportAppCompat            // (1.0 MB) https://mvnrepository.com/artifact/androidx.appcompat/appcompat?repo=google
+  implementation 'androidx.coordinatorlayout:coordinatorlayout:'  + project.ext.libSupportCoordinatorLayout    // ( 44 KB) https://mvnrepository.com/artifact/androidx.coordinatorlayout/coordinatorlayout?repo=google
+  implementation 'androidx.fragment:fragment:'                    + project.ext.libSupportFragment             // (221 KB) https://mvnrepository.com/artifact/androidx.fragment/fragment?repo=google
+  implementation 'androidx.recyclerview:recyclerview:'            + project.ext.libSupportRecyclerView         // (349 KB) https://mvnrepository.com/artifact/androidx.recyclerview/recyclerview?repo=google
+  implementation 'androidx.viewpager:viewpager:'                  + project.ext.libSupportViewPager            // ( 52 KB) https://mvnrepository.com/artifact/androidx.viewpager/viewpager?repo=google
+  implementation 'com.google.android.material:material:'          + project.ext.libSupportMaterial             // (566 KB) https://mvnrepository.com/artifact/com.google.android.material/material?repo=google
+
+  implementation 'com.google.code.gson:gson:'                     + project.ext.libGson                        // (235 KB) https://mvnrepository.com/artifact/com.google.code.gson/gson
+}

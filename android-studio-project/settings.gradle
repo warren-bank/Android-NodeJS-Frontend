@@ -1,0 +1,4 @@
+include ':NodeJS-Frontend'
+include ':MaterialFilePicker'
+
+project(':MaterialFilePicker').projectDir = new File(rootDir, 'libs/MaterialFilePicker-library')

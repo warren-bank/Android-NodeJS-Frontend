@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+
+<resources>
+  <!-- ===== Application ===== -->
+
+  <string name="app_name">&nodejs; Frontend</string>
+
+  <!-- ===== MainActivity ===== -->
+
+  <string name="activity_main_menu_add">Add &nodejs; App</string>
+
+  <string-array name="activity_main_tab_titles">
+    <item>exec in same process</item>
+    <item>fork to separate process</item>
+  </string-array>
+
+  <!-- ===== AbstractTabFragment ===== -->
+
+  <string name="app_settings_label_title">Title</string>
+  <string name="app_settings_label_env_vars">Environment Variables</string>
+  <string name="app_settings_notes_env_vars">  One per line.\n  Format: name=value</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI options</string>
+  <string name="app_settings_label_js_filepath">Path to JS File</string>
+  <string name="app_settings_label_js_options">JS File CLI options</string>
+
+  <string name="app_context_menuitem_label_edit_settings">Edit Settings</string>
+  <string name="app_context_menuitem_label_run">Run</string>
+  <string name="app_context_menuitem_label_start">Start</string>
+  <string name="app_context_menuitem_label_stop">Stop</string>
+  <string name="app_context_menuitem_label_read_stdout">Read stdout</string>
+  <string name="app_context_menuitem_label_delete">Delete</string>
+
+  <string name="label_button_browse">BROWSE</string>
+  <string name="label_button_cancel">CANCEL</string>
+  <string name="label_button_save">SAVE</string>
+  <string name="label_button_update">UPDATE</string>
+
+  <string name="error_using_max_apps">Error: Cannot Exceed the Maximum Number of &nodejs; Daemons</string>
+  <string name="error_missing_required_value">Error: Missing Required Value</string>
+
+  <!-- ===== ExecTabFragment ===== -->
+
+  <!-- ===== ForkTabFragment ===== -->
+
+  <string translatable="false" name="service_package_prefix">com.github.warren_bank.nodejs_frontend.services.NodeService_</string>
+
+  <!-- ===== StandardOutputActivity ===== -->
+
+  <string name="error_stdout_not_found">Error: File Containing stdout Not Found</string>
+  <string name="error_stdout_not_readable">Error: File Containing stdout Not Readable</string>
+</resources>

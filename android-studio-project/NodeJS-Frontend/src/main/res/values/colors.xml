@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- ===== Common Definitions ===== -->
+
+  <color name="nodeJS">#539E43</color>
+  <color name="white">#FFFFFF</color>
+  <color name="gray_light">#EEEEEE</color>
+  <color name="gray_medium">#858585</color>
+
+  <!-- ===== Application ===== -->
+
+  <color name="colorPrimary">@android:color/holo_green_light</color>
+  <color name="colorPrimaryDark">@android:color/holo_green_dark</color>
+  <color name="colorAccent">@color/nodeJS</color>
+
+  <!-- ===== MainActivity ===== -->
+
+  <color name="tabIndicator">@color/colorAccent</color>
+
+  <!-- ===== AbstractTabFragment ===== -->
+
+  <color name="fragmentListItemDivider">@color/gray_medium</color>
+  <color name="fragmentListItemOnRowClear">@color/white</color>
+  <color name="fragmentListItemOnRowSelected">@color/gray_light</color>
+
+  <color name="DialogLabelBackground">@color/colorPrimary</color>
+  <color name="DialogLabelText">@color/white</color>
+</resources>

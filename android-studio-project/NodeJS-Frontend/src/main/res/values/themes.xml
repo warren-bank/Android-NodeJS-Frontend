@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+  <!-- ===== Toolbar ===== -->
+
+  <style name="AppTheme.Toolbar" parent="ThemeOverlay.AppCompat.Dark">
+    <item name="android:background">@color/colorPrimary</item>
+    <item name="android:textColorPrimary">@color/white</item>
+  </style>
+
+  <style name="AppTheme.MTP">
+    <item name="mfp_toolbar_theme">@style/AppTheme.Toolbar</item>
+    <item name="mfp_toolbar_style">@style/AppStyle.Toolbar</item>
+  </style>
+</resources>

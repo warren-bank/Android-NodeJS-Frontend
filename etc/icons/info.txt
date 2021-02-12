@@ -1,0 +1,13 @@
+https://github.com/nodejs/nodejs.org/tree/master/static/images/logos
+https://github.com/nodejs/nodejs.org/blob/master/static/images/logos/js-green.svg
+
+https://seeklogo.com/vector-logo/273749/node-js
+https://seeklogo.com/files/N/nodejs-vector-logo-5A813456C7-seeklogo.com.zip
+
+https://material.io/resources/icons/?icon=drag_handle&style=baselinea
+https://fonts.gstatic.com/s/i/materialiconsround/drag_handle/v11/black-android.zip
+  drag_handle, rounded, black, 24dp
+
+https://material.io/resources/icons/?icon=add_circle_outline&style=baseline
+https://fonts.gstatic.com/s/i/materialiconsround/add_circle_outline/v10/white-android.zip
+  add_circle_outline, rounded, white, 24dp

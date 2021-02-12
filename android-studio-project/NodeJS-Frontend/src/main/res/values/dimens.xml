@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="tabIndicatorHeight">5dp</dimen>
+  <dimen name="tabPadding">8dp</dimen>
+
+  <dimen name="dialogPaddingHorizontal">10dp</dimen>
+  <dimen name="dialogPaddingVertical">10dp</dimen>
+
+  <dimen name="fragmentListItemTextSize">18sp</dimen>
+  <dimen name="fragmentListItemPadding">8dp</dimen>
+
+  <dimen name="fragmentListItemDividerHeight">1dp</dimen>
+  <dimen name="fragmentListItemDividerMargin">16dp</dimen>
+</resources>

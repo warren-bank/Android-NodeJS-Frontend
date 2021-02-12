@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="AppStyle" />
+
+  <!-- ===== Toolbar ===== -->
+
+  <style name="AppStyle.Toolbar" parent="Widget.AppCompat.Toolbar">
+    <item name="contentInsetStart">0dp</item>
+    <item name="contentInsetLeft">0dp</item>
+    <item name="contentInsetRight">0dp</item>
+    <item name="contentInsetEnd">0dp</item>
+    <item name="contentInsetEndWithActions">0dp</item>
+    <item name="colorControlNormal">@color/white</item>
+    <item name="layout_scrollFlags">scroll|enterAlways</item>
+    <item name="popupTheme">@style/AppTheme.PopupOverlay</item>
+  </style>
+
+  <!-- ===== MainActivity ===== -->
+
+  <style name="AppStyle.TabLayout" parent="Widget.Design.TabLayout">
+    <item name="tabIndicatorColor">@color/tabIndicator</item>
+    <item name="tabIndicatorHeight">@dimen/tabIndicatorHeight</item>
+    <item name="tabPaddingStart">@dimen/tabPadding</item>
+    <item name="tabPaddingEnd">@dimen/tabPadding</item>
+  </style>
+
+  <!-- ===== AbstractTabFragment ===== -->
+
+  <style name="AppStyle.DialogLabel" parent="@android:style/TextAppearance">
+    <item name="android:textSize">16sp</item>
+    <item name="android:background">@color/DialogLabelBackground</item>
+    <item name="android:textColor">@color/DialogLabelText</item>
+    <item name="android:layout_marginLeft">2dp</item>
+    <item name="android:layout_marginRight">2dp</item>
+    <item name="android:padding">4dp</item>
+  </style>
+
+  <style name="AppStyle.DialogLabel.Small">
+    <item name="android:textSize">12sp</item>
+  </style>
+</resources>
