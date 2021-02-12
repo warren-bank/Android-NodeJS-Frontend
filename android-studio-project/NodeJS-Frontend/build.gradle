@@ -17,6 +17,18 @@ android {
     applicationId "com.github.warren_bank.nodejs_frontend"
     versionName project.ext.releaseVersion
     versionCode project.ext.releaseVersionCode
+
+    externalNativeBuild {
+      cmake {
+        cppFlags ""
+        arguments "-DANDROID_STL=c++_shared"
+      }
+    }
+
+    ndk {
+      abiFilters "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
+      abiFilters.clear()
+    }
   }
 
   lintOptions {
@@ -35,6 +47,27 @@ android {
     }
     debug {
       jniDebuggable = true
+    }
+  }
+
+  externalNativeBuild {
+    cmake {
+      path "CMakeLists.txt"
+    }
+  }
+
+  sourceSets {
+    main {
+      jniLibs.srcDirs 'libnode/bin/'
+    }
+  }
+
+  splits {
+    abi {
+      enable true
+      reset()
+      include "arm64-v8a", "armeabi-v7a", "x86", "x86_64"
+      universalApk false
     }
   }
 }
