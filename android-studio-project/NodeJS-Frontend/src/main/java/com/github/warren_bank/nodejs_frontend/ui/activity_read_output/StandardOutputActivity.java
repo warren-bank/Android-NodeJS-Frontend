@@ -1,6 +1,7 @@
 package com.github.warren_bank.nodejs_frontend.ui.activity_read_output;
 
 import com.github.warren_bank.nodejs_frontend.R;
+import com.github.warren_bank.nodejs_frontend.helpers.UI;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -158,6 +159,9 @@ public class StandardOutputActivity extends AppCompatActivity {
     search_button.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
+        // hide soft keyboard
+        UI.hideKeyboard(StandardOutputActivity.this);
+
         String filter = search_textField.getText().toString();
         String stdout = stdout_textView.getText().toString();
 
