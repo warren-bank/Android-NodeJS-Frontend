@@ -1,6 +1,10 @@
 #include <jni.h>
 #include <string>
 #include <cstdlib>
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 #include "node.h"
 
 // =====
@@ -14,21 +18,40 @@
 extern "C" jint JNICALL
 Java_com_github_warren_1bank_nodejs_1frontend_helpers_NodeJsAppRunner_setenv(
         JNIEnv *env,
-        jobject /* this */,
-        jstring name,
-        jstring value,
+        jobject thiz,
+        jstring jName,
+        jstring jValue,
         jint overwrite) {
-    const char* name_ = env->GetStringUTFChars(name, 0);
-    const char* value_ = env->GetStringUTFChars(value, 0);
+    const char* name  = env->GetStringUTFChars(jName,  0);
+    const char* value = env->GetStringUTFChars(jValue, 0);
 
-    return jint(setenv(name_, value_, overwrite));
+    int err = setenv(name, value, overwrite);
+
+    env->ReleaseStringUTFChars(jName,  name);
+    env->ReleaseStringUTFChars(jValue, value);
+    return jint(err);
+}
+
+// redirect stdout to a file
+extern "C" void JNICALL
+Java_com_github_warren_1bank_nodejs_1frontend_helpers_NodeJsAppRunner_saveStandardOutputToFile(
+        JNIEnv *env,
+        jobject thiz,
+        jstring jFilepath) {
+
+    const char* filepath = env->GetStringUTFChars(jFilepath, 0);
+    int fd = open(filepath, O_CREAT|O_WRONLY|O_TRUNC);
+    dup2(fd, 1); // stdout
+    dup2(fd, 2); // stderr
+    close(fd);
+    env->ReleaseStringUTFChars(jFilepath, filepath);
 }
 
 // node.js libUV requires all arguments to be on contiguous memory
 extern "C" jint JNICALL
 Java_com_github_warren_1bank_nodejs_1frontend_helpers_NodeJsAppRunner_startNodeWithArguments(
         JNIEnv *env,
-        jobject /* this */,
+        jobject thiz,
         jobjectArray arguments) {
 
     //argc

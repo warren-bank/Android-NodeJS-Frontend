@@ -64,6 +64,8 @@ public class StandardOutputActivity extends AppCompatActivity {
 
   @Override
   public void onStart() {
+    super.onStart();
+
     if (file.exists()) {
       try {
         input = new BufferedReader(new FileReader(file));
@@ -82,6 +84,7 @@ public class StandardOutputActivity extends AppCompatActivity {
 
   @Override
   public void onResume() {
+    super.onResume();
     if (!isInitialized) return;
 
     isRunning = true;
@@ -90,6 +93,7 @@ public class StandardOutputActivity extends AppCompatActivity {
 
   @Override
   public void onPause() {
+    super.onPause();
     if (!isInitialized) return;
 
     isRunning = false;
@@ -97,6 +101,7 @@ public class StandardOutputActivity extends AppCompatActivity {
 
   @Override
   public void onStop() {
+    super.onStop();
     if (!isInitialized) return;
 
     try {

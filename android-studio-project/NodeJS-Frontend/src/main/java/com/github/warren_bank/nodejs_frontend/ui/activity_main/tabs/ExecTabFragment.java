@@ -24,6 +24,7 @@ public class ExecTabFragment extends AbstractTabFragment {
   }
 
   protected void runApplication(NodeJsApp listItem) {
+    NodeJsAppRunner.saveStandardOutputToFile(getContext(), listItem.getId());
     NodeJsAppRunner.exec(listItem);
   }
 }

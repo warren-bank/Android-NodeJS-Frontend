@@ -15,8 +15,9 @@ public final class NodeJsAppRunner {
     System.loadLibrary("node");
   }
 
-  private static native Integer startNodeWithArguments(String[] arguments);
+  private static native void    saveStandardOutputToFile(String filepath);
   private static native Integer setenv(String name, String value, Integer overwrite);
+  private static native Integer startNodeWithArguments(String[] arguments);
 
   public static void exec(NodeJsApp listItem) {
     String[][] env_vars     = listItem.getEnvironmentVariables();
@@ -64,12 +65,26 @@ public final class NodeJsAppRunner {
     if (dir == null)
       dir = context.getFilesDir();
 
-    File file = (dir == null)
-      ? null
-      : new File(dir, "stdout_" + id + ".txt");
+    if (!dir.exists())
+      dir.mkdir();
 
-    return ((file == null) || (mustExist && !file.exists()))
+    File file = new File(dir, "stdout_" + id + ".txt");
+
+    return (mustExist && !file.exists())
       ? null
       : file;
+  }
+
+  public static void saveStandardOutputToFile(File file) {
+    if (file == null)
+      return;
+
+    String filepath = file.getAbsolutePath();
+    saveStandardOutputToFile(filepath);
+  }
+
+  public static void saveStandardOutputToFile(Context context, String id) {
+    File file = getStandardOutputFile(context, id, false);
+    saveStandardOutputToFile(file);
   }
 }
