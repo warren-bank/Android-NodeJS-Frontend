@@ -38,7 +38,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 
-public abstract class AbstractTabFragment extends Fragment implements ItemMoveCallback.OnDragListener {
+public abstract class AbstractTabFragment extends Fragment implements ItemMoveCallback.OnDragListener, RecyclerViewAdapter.ColorPalette {
 
   private static final Pattern JS_FILE_PATTERN          = Pattern.compile(".*\\.js$", Pattern.CASE_INSENSITIVE);
   private static final int     FILE_PICKER_REQUEST_CODE = 1;
@@ -143,7 +143,7 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
                     ? NodeJsApp.filterActive(nodeJsApps)
                     : nodeJsApps;
     listView    = (RecyclerView) view.findViewById(R.id.app_list);
-    listAdapter = new RecyclerViewAdapter(listItems, getContext(), this, this);
+    listAdapter = new RecyclerViewAdapter(listItems, this, this, this);
 
     ItemTouchHelper.Callback callback = new ItemMoveCallback(listAdapter);
     listItemTouchHelper = new ItemTouchHelper(callback);
@@ -185,6 +185,40 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
       NodeJsApp.movePosition(nodeJsApps, fromPosition, toPosition);
 
     handleDataSetChange(null);
+  }
+
+  // ---------------------------------------------------------------------------------------------
+  // Row Colors:
+  // ---------------------------------------------------------------------------------------------
+
+  @Override
+  public int getColorOnRowSelected(NodeJsApp listItem) {
+    return getResources().getColor(R.color.fragmentListItemOnRowSelected);
+  }
+
+  @Override
+  public int getColorOnRowClear(NodeJsApp listItem) {
+    return getResources().getColor(R.color.fragmentListItemOnRowClear);
+  }
+
+  protected void updateRowBackgroundColor(NodeJsApp listItem, int color) {
+    int position = listItems.indexOf(listItem);
+    if (position < 0) return;
+
+    RecyclerViewHolder holder = (RecyclerViewHolder) listView.findViewHolderForAdapterPosition(position);
+    if (holder == null) return;
+
+    listAdapter.updateRowBackgroundColor(holder, color);
+  }
+
+  protected void updateRowBackgroundColorSelected(NodeJsApp listItem) {
+    int color = getColorOnRowSelected(listItem);
+    updateRowBackgroundColor(listItem, color);
+  }
+
+  protected void updateRowBackgroundColorClear(NodeJsApp listItem) {
+    int color = getColorOnRowClear(listItem);
+    updateRowBackgroundColor(listItem, color);
   }
 
   // ---------------------------------------------------------------------------------------------

@@ -47,6 +47,7 @@
   <!-- ===== ForkTabFragment ===== -->
 
   <string translatable="false" name="service_package_prefix">com.github.warren_bank.nodejs_frontend.services.NodeService_</string>
+  <string translatable="false" name="process_filter_prefix" >com.github.warren_bank.nodejs_frontend:process_</string>
 
   <!-- ===== StandardOutputActivity ===== -->
 

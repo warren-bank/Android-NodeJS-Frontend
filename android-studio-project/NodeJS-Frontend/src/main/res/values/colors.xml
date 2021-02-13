@@ -6,6 +6,7 @@
   <color name="white">#FFFFFF</color>
   <color name="gray_light">#EEEEEE</color>
   <color name="gray_medium">#858585</color>
+  <color name="green_light">#CCFFD5</color>
 
   <!-- ===== Application ===== -->
 
@@ -20,6 +21,7 @@
   <!-- ===== AbstractTabFragment ===== -->
 
   <color name="fragmentListItemDivider">@color/gray_medium</color>
+  <color name="fragmentListItemOnDaemonRunning">@color/green_light</color>
   <color name="fragmentListItemOnRowClear">@color/white</color>
   <color name="fragmentListItemOnRowSelected">@color/gray_light</color>
 

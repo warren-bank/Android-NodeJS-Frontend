@@ -14,16 +14,22 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder> implements ItemMoveCallback.OnRowEventListener {
+
+  public interface ColorPalette {
+    int getColorOnRowSelected(NodeJsApp listItem);
+    int getColorOnRowClear(NodeJsApp listItem);
+  }
+
   private ArrayList<NodeJsApp>             listItems;
-  private Context                          context;
   private View.OnCreateContextMenuListener onCreateContextMenuListener;
   private ItemMoveCallback.OnDragListener  onDragListener;
+  private ColorPalette                     colorPalette;
 
-  public RecyclerViewAdapter(ArrayList<NodeJsApp> listItems, Context context, View.OnCreateContextMenuListener onCreateContextMenuListener, ItemMoveCallback.OnDragListener onDragListener) {
+  public RecyclerViewAdapter(ArrayList<NodeJsApp> listItems, View.OnCreateContextMenuListener onCreateContextMenuListener, ItemMoveCallback.OnDragListener onDragListener, ColorPalette colorPalette) {
     this.listItems                   = listItems;
-    this.context                     = context;
     this.onCreateContextMenuListener = onCreateContextMenuListener;
     this.onDragListener              = onDragListener;
+    this.colorPalette                = colorPalette;
   }
 
   @Override
@@ -62,6 +68,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
     NodeJsApp listItem = listItems.get(position);
     String title = listItem.toString();
     holder.bind(title);
+
+    if (colorPalette != null) {
+      int color = colorPalette.getColorOnRowClear(listItem);
+      updateRowBackgroundColor(holder, color);
+    }
   }
 
   @Override
@@ -92,17 +103,33 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
 
   @Override
   public void onRowSelected(RecyclerViewHolder holder) {
-    if (context != null) {
-      int color = context.getResources().getColor(R.color.fragmentListItemOnRowSelected);
-      holder.rowView.setBackgroundColor(color);
+    if (colorPalette != null) {
+      NodeJsApp listItem = getListItemFromHolder(holder);
+      int color = colorPalette.getColorOnRowSelected(listItem);
+      updateRowBackgroundColor(holder, color);
     }
   }
 
   @Override
   public void onRowClear(RecyclerViewHolder holder) {
-    if (context != null) {
-      int color = context.getResources().getColor(R.color.fragmentListItemOnRowClear);
-      holder.rowView.setBackgroundColor(color);
+    if (colorPalette != null) {
+      NodeJsApp listItem = getListItemFromHolder(holder);
+      int color = colorPalette.getColorOnRowClear(listItem);
+      updateRowBackgroundColor(holder, color);
     }
+  }
+
+  private NodeJsApp getListItemFromHolder(RecyclerViewHolder holder) {
+    int position = holder.getAdapterPosition();
+    NodeJsApp listItem = listItems.get(position);
+    return listItem;
+  }
+
+  // ---------------------------------------------------------------------------------------------
+  // Row Colors:
+  // ---------------------------------------------------------------------------------------------
+
+  public void updateRowBackgroundColor(RecyclerViewHolder holder, int color) {
+    holder.rowView.setBackgroundColor(color);
   }
 }
