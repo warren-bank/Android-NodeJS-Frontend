@@ -41,5 +41,108 @@
       android:configChanges="colorMode|density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
       tools:replace="android:theme" />
 
+    <!-- number of distinct-process services must be equal to: R.integer.max_nodejs_daemons -->
+
+    <service
+      android:name=".services.NodeService_01"
+      android:process=":process_01"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_02"
+      android:process=":process_02"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_03"
+      android:process=":process_03"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_04"
+      android:process=":process_04"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_05"
+      android:process=":process_05"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_06"
+      android:process=":process_06"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_07"
+      android:process=":process_07"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_08"
+      android:process=":process_08"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_09"
+      android:process=":process_09"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_10"
+      android:process=":process_10"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_11"
+      android:process=":process_11"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_12"
+      android:process=":process_12"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_13"
+      android:process=":process_13"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_14"
+      android:process=":process_14"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_15"
+      android:process=":process_15"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_16"
+      android:process=":process_16"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_17"
+      android:process=":process_17"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_18"
+      android:process=":process_18"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_19"
+      android:process=":process_19"
+      android:enabled="true"
+      android:exported="true" />
+    <service
+      android:name=".services.NodeService_20"
+      android:process=":process_20"
+      android:enabled="true"
+      android:exported="true" />
+
   </application>
 </manifest>

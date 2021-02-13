@@ -118,6 +118,21 @@ public final class NodeJsApp {
     return filtered;
   }
 
+  public static NodeJsApp findById(ArrayList<NodeJsApp> arrayList, String id) {
+    if ((id == null) || id.isEmpty())
+      return null;
+
+    NodeJsApp app;
+    for (int i=0; i < arrayList.size(); i++) {
+      app = arrayList.get(i);
+      if (app.isActive && id.equals(app.getId())) {
+        return app;
+      }
+    }
+
+    return null;
+  }
+
   public static void movePosition(ArrayList<NodeJsApp> arrayList, int fromPosition, int toPosition) {
     if (fromPosition == toPosition)
       return;

@@ -59,4 +59,9 @@
   <string name="error_stdout_not_found">Error: File Containing stdout Not Found</string>
   <string name="error_stdout_not_readable">Error: File Containing stdout Not Readable</string>
   <string name="notification_no_search_results">No results for search query</string>
+
+  <!-- ===== AbstractNodeService ===== -->
+
+  <string name="notification_service_content_line1">&nodejs; daemon:</string>
+  <string name="notification_service_content_line3">Click to stop service.</string>
 </resources>
