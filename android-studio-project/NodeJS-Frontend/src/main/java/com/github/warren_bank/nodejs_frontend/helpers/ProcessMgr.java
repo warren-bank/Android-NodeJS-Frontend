@@ -8,7 +8,7 @@ import android.content.Context;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class ProcessManager {
+public final class ProcessMgr {
 
   public static ArrayList<String> getRunningServiceIds(Context context) {
     ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);

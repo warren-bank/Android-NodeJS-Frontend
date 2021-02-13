@@ -4,6 +4,8 @@ import com.github.warren_bank.nodejs_frontend.R;
 import com.github.warren_bank.nodejs_frontend.data_model.NodeJsApp;
 import com.github.warren_bank.nodejs_frontend.data_model.Preferences;
 import com.github.warren_bank.nodejs_frontend.helpers.NodeJsAppRunner;
+import com.github.warren_bank.nodejs_frontend.helpers.WakeLockMgr;
+import com.github.warren_bank.nodejs_frontend.helpers.WifiLockMgr;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -33,6 +35,9 @@ public abstract class AbstractNodeService extends Service {
   }
 
   private void killProcess() {
+    WakeLockMgr.release();
+    WifiLockMgr.release();
+
     stopSelf();
     Process.killProcess(Process.myPid());
   }
@@ -55,6 +60,9 @@ public abstract class AbstractNodeService extends Service {
 
     nodejs_app_name = app.toString();
     showNotification();
+
+    WakeLockMgr.acquire(AbstractNodeService.this);
+    WifiLockMgr.acquire(AbstractNodeService.this);
 
     new Thread() {
       public void run() {

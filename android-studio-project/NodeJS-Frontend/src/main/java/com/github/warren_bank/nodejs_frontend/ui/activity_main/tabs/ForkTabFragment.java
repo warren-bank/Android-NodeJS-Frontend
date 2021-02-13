@@ -2,7 +2,7 @@ package com.github.warren_bank.nodejs_frontend.ui.activity_main.tabs;
 
 import com.github.warren_bank.nodejs_frontend.R;
 import com.github.warren_bank.nodejs_frontend.data_model.NodeJsApp;
-import com.github.warren_bank.nodejs_frontend.helpers.ProcessManager;
+import com.github.warren_bank.nodejs_frontend.helpers.ProcessMgr;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -38,7 +38,7 @@ public class ForkTabFragment extends AbstractTabFragment {
   private ArrayList<String> runningServiceIds;
 
   private void getRunningServiceIds() {
-    runningServiceIds = ProcessManager.getRunningServiceIds(getContext());
+    runningServiceIds = ProcessMgr.getRunningServiceIds(getContext());
   }
 
   private void addRunningServiceId(String id) {
