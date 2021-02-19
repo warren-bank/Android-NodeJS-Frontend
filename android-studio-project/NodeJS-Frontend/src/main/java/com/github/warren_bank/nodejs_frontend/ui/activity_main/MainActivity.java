@@ -1,10 +1,13 @@
 package com.github.warren_bank.nodejs_frontend.ui.activity_main;
 
 import com.github.warren_bank.nodejs_frontend.R;
+import com.github.warren_bank.nodejs_frontend.helpers.RuntimePermissionsMgr;
+import com.github.warren_bank.nodejs_frontend.helpers.UI;
 import com.github.warren_bank.nodejs_frontend.ui.activity_main.tabs.AbstractTabFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
@@ -15,9 +18,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements RuntimePermissionsMgr.OnRuntimePermissionsListener {
   private TabLayout tabLayout;
   private ViewPager viewPager;
   private ViewPagerAdapter viewPagerAdapter;
@@ -41,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
     viewPagerAdapter = new ViewPagerAdapter(this, getSupportFragmentManager());
     viewPager.setAdapter(viewPagerAdapter);
     tabLayout.setupWithViewPager(viewPager);
+
+    checkRuntimePermissions();
   }
 
   private AbstractTabFragment getCurrentTabFragment() {
@@ -93,5 +99,68 @@ public class MainActivity extends AppCompatActivity {
       done = tabFragment.onOptionsItemSelected(menuItem);
     }
     return done || super.onOptionsItemSelected(menuItem);
+  }
+
+  // ---------------------------------------------------------------------------------------------
+  // Runtime Permissions:
+  // ---------------------------------------------------------------------------------------------
+
+  private void checkRuntimePermissions() {
+    if (RuntimePermissionsMgr.isEnabled(/* activity= */ MainActivity.this))
+      onPermissionsGranted();
+  }
+
+  // ---------------------------------------------------------------------------------------------
+  // dangerous:
+  // ---------------------------------------------------------------------------------------------
+  // READ_EXTERNAL_STORAGE
+  //   * required by frontend to browse the filesystem to pick JS files
+  //   * required by frontend to import data backups
+  //   * required by node.js  to read JS files
+  // WRITE_EXTERNAL_STORAGE
+  //   * required by frontend to export data backups
+  //   * required by node.js  to write to the filesystem
+  // ---------------------------------------------------------------------------------------------
+  // normal:
+  // ---------------------------------------------------------------------------------------------
+  // FOREGROUND_SERVICE
+  //   * required by frontend to run node.js daemons
+  // WAKE_LOCK
+  //   * required by frontend to prevent resources from going into low power state while node.js daemons are running
+  // INTERNET
+  //   * required by node.js  to do networking; as either a client or server
+  // ---------------------------------------------------------------------------------------------
+  @Override
+  public String[] getMandatoryPermissions() {
+    return RuntimePermissionsMgr.getAllDangerousRequestedPermissions(/* context= */ MainActivity.this);
+  }
+
+  @Override
+  public void onRequestCancelled() {
+    // show the prompt again
+    checkRuntimePermissions();
+  }
+
+  @Override
+  public void onPermissionsGranted() {
+    // OK
+  }
+
+  @Override
+  public void onPermissionsDenied(String[] permissions) {
+    // show a notification
+    String divider = "\n  ";
+    String message = getString(R.string.warning_runtime_permissions_denied) + ":" + divider + TextUtils.join(divider, permissions);
+    // remove common permission namespace for brevity
+    message = message.replace("android.permission.", "");
+    UI.getSnackbar(tabLayout, message, /* maxLines= */ 6, Snackbar.LENGTH_LONG).show();
+
+    // show the prompt again
+    checkRuntimePermissions();
+  }
+
+  @Override
+  public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+    RuntimePermissionsMgr.onRequestPermissionsResult(/* activity= */ MainActivity.this, /* listener= */ MainActivity.this, requestCode, permissions, grantResults);
   }
 }

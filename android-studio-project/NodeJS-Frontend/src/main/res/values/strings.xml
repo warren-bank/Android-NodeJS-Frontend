@@ -18,6 +18,8 @@
     <item>fork to separate process</item>
   </string-array>
 
+  <string name="warning_runtime_permissions_denied">The following mandatory permissions are currently denied</string>
+
   <!-- ===== AbstractTabFragment ===== -->
 
   <string name="app_settings_label_title">Title</string>
