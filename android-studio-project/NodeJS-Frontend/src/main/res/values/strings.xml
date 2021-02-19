@@ -18,7 +18,7 @@
     <item>fork to separate process</item>
   </string-array>
 
-  <string name="warning_runtime_permissions_denied">The following mandatory permissions are currently denied</string>
+  <string name="warning_runtime_permissions_denied">Please allow mandatory permissions</string>
 
   <!-- ===== AbstractTabFragment ===== -->
 

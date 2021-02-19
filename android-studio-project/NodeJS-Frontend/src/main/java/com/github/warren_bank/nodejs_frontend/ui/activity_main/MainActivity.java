@@ -148,15 +148,26 @@ public class MainActivity extends AppCompatActivity implements RuntimePermission
 
   @Override
   public void onPermissionsDenied(String[] permissions) {
-    // show a notification
-    String divider = "\n  ";
-    String message = getString(R.string.warning_runtime_permissions_denied) + ":" + divider + TextUtils.join(divider, permissions);
-    // remove common permission namespace for brevity
-    message = message.replace("android.permission.", "");
-    UI.getSnackbar(tabLayout, message, /* maxLines= */ 6, Snackbar.LENGTH_LONG).show();
+    // show a snackbar
+    showPermissionsDeniedNotification(permissions);
 
     // show the prompt again
     checkRuntimePermissions();
+  }
+
+  @Override
+  public void onPermissionsDeniedWithoutPrompt(String[] permissions) {
+    // caveat emptor
+  }
+
+  private void showPermissionsDeniedNotification(String[] permissions) {
+    String divider = "\n• ";
+
+    String message;
+    message = getString(R.string.warning_runtime_permissions_denied) + ":\n" + divider + TextUtils.join(divider, permissions);
+    message = message.replace("android.permission.", "");
+
+    UI.getSnackbar(tabLayout, message, /* maxLines= */ 6, Snackbar.LENGTH_LONG).show();
   }
 
   @Override

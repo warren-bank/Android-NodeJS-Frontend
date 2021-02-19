@@ -8,6 +8,7 @@ import android.content.pm.PermissionInfo;
 import android.os.Build;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 
 public class RuntimePermissionsMgr {
 
@@ -16,9 +17,12 @@ public class RuntimePermissionsMgr {
     void onRequestCancelled();
     void onPermissionsGranted();
     void onPermissionsDenied(String[] permissions);
+    void onPermissionsDeniedWithoutPrompt(String[] permissions);
   }
 
   private static final int REQUEST_CODE_PERMISSIONS = 1;
+
+  private static long TIMESTAMP_PREVIOUS_DENIAL = 0;
 
   private static ArrayList<String> getMandatoryPermissions(OnRuntimePermissionsListener listener) {
     String[] permissions = listener.getMandatoryPermissions();
@@ -74,9 +78,21 @@ public class RuntimePermissionsMgr {
         listener.onPermissionsGranted();
       }
       else {
-        listener.onPermissionsDenied(
-          deniedPermissions.toArray(new String[deniedPermissions.size()])
-        );
+        long prev_timestamp = TIMESTAMP_PREVIOUS_DENIAL;
+        TIMESTAMP_PREVIOUS_DENIAL = (new Date()).getTime();
+
+        // use 250 ms threshold to distinguish whether the denial is automatic;
+        // as the result of the user having chosen to "Deny" and "Never ask again"
+        if ((TIMESTAMP_PREVIOUS_DENIAL - prev_timestamp) < 250) {
+          listener.onPermissionsDeniedWithoutPrompt(
+            deniedPermissions.toArray(new String[deniedPermissions.size()])
+          );
+        }
+        else {
+          listener.onPermissionsDenied(
+            deniedPermissions.toArray(new String[deniedPermissions.size()])
+          );
+        }
       }
     }
   }
