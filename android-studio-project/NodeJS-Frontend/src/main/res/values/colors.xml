@@ -2,25 +2,32 @@
 <resources>
   <!-- ===== Common Definitions ===== -->
 
-  <color name="nodeJS">#539E43</color>
+  <!-- Node.js branding -->
+  <!--   https://brandcolors.net/b/node-js -->
+  <color name="nodeJsAccent">#539E43</color>
+  <color name="nodeJsPrimaryDark">#44883E</color>
+  <color name="nodeJsPrimary">#6CC24A</color>
+  <!-- similar -->
+  <color name="green_light">#E8FFE8</color>
+
+  <!-- grayscale -->
   <color name="white">#FFFFFF</color>
-  <color name="gray_light_1">#F6F6F6</color>
-  <color name="gray_light_2">#EEEEEE</color>
+  <color name="gray_light">#F6F6F6</color>
   <color name="gray_medium">#858585</color>
   <color name="gray_dark">#333333</color>
-  <color name="green_light">#CCFFD5</color>
   <color name="black">#000000</color>
 
+  <!-- alpha channel -->
   <color name="white_translucent">#C0FFFFFF</color>
 
   <!-- ===== Application ===== -->
 
-  <color name="colorAccent">@color/nodeJS</color>
-  <color name="colorPrimaryDark">@android:color/holo_green_dark</color>
-  <color name="colorPrimary">@android:color/holo_green_light</color>
+  <color name="colorAccent">@color/nodeJsAccent</color>
+  <color name="colorPrimaryDark">@color/nodeJsPrimaryDark</color>
+  <color name="colorPrimary">@color/nodeJsPrimary</color>
   <color name="colorOnPrimary">@color/white</color>
   <color name="colorOnPrimary_translucent">@color/white_translucent</color>
-  <color name="colorSecondary">@color/gray_light_1</color>
+  <color name="colorSecondary">@color/gray_light</color>
   <color name="colorOnSecondary">@color/gray_dark</color>
 
   <!-- ===== MainActivity ===== -->
@@ -32,8 +39,8 @@
   <color name="fragmentListItemDivider">@color/gray_medium</color>
   <color name="fragmentListItemOnDaemonRunning">@color/green_light</color>
   <color name="fragmentListItemOnRowClear">@color/white</color>
-  <color name="fragmentListItemOnRowSelected">@color/gray_light_1</color>
+  <color name="fragmentListItemOnRowSelected">@color/gray_light</color>
 
   <color name="DialogLabelBackground">@color/colorPrimary</color>
-  <color name="DialogLabelText">@color/white</color>
+  <color name="DialogLabelText">@color/colorOnPrimary</color>
 </resources>
