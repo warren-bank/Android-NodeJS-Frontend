@@ -9,8 +9,7 @@ import com.github.warren_bank.nodejs_frontend.ui.activity_main.tabs.app_list.Rec
 import com.github.warren_bank.nodejs_frontend.ui.activity_main.tabs.app_list.RecyclerViewHolder;
 import com.github.warren_bank.nodejs_frontend.ui.activity_read_output.StandardOutputActivity;
 
-import com.nbsp.materialfilepicker.MaterialFilePicker;
-import com.nbsp.materialfilepicker.ui.FilePickerActivity;
+import lib.folderpicker.support.FolderPicker;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -36,12 +35,10 @@ import com.google.android.material.snackbar.Snackbar;
 import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.regex.Pattern;
 
 public abstract class AbstractTabFragment extends Fragment implements ItemMoveCallback.OnDragListener, RecyclerViewAdapter.ColorPalette {
 
-  private static final Pattern JS_FILE_PATTERN          = Pattern.compile(".*\\.js$", Pattern.CASE_INSENSITIVE);
-  private static final int     FILE_PICKER_REQUEST_CODE = 1;
+  private static final int REQUEST_CODE_FILE_PICKER_JS = 1;
 
   private boolean isDaemon;
   private Dialog  dialog;
@@ -154,19 +151,20 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
   }
 
   @Override
-  public void onActivityResult(int requestCode, int resultCode, Intent data) {
-    if (requestCode == FILE_PICKER_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
-      String path = data.getStringExtra(FilePickerActivity.RESULT_FILE_PATH);
-      if (
-           (path == null)
-        || (dialog == null)
-        || !dialog.isShowing()
-      ){
-        return;
-      }
+  public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+    String path;
 
-      final TextView inputJsFilepath = (TextView) dialog.findViewById(R.id.input_js_filepath);
-      inputJsFilepath.setText(path);
+    switch(requestCode) {
+      case REQUEST_CODE_FILE_PICKER_JS:
+        if (resultCode == Activity.RESULT_OK && intent.hasExtra(FolderPicker.EXTRA_DATA)) {
+          path = intent.getExtras().getString(FolderPicker.EXTRA_DATA);
+
+          if ((path != null) && (dialog != null) && (dialog.isShowing())) {
+            final TextView inputJsFilepath = (TextView) dialog.findViewById(R.id.input_js_filepath);
+            inputJsFilepath.setText(path);
+          }
+        }
+        break;
     }
   }
 
@@ -406,7 +404,7 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
     buttonBrowse.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        String currentPath = "/storage";
+        String currentPath = null;
         if (!isAdd && (values[3] != null)) {
           File file = new File(values[3]);
 
@@ -415,14 +413,17 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
           }
         }
 
-        new MaterialFilePicker()
+        FolderPicker
+          .withBuilder()
           .withActivity(getActivity())
-          .withRequestCode(FILE_PICKER_REQUEST_CODE)
-          .withRootPath("/")
+          .withRequestCode(REQUEST_CODE_FILE_PICKER_JS)
+          .withFilePicker(true)
+          .withFileFilter("^.*\\.(?:js)$")
+          .withTitle(getResources().getString(R.string.app_folderpicker_js_filepath_title))
+          .withDescription(getResources().getString(R.string.app_folderpicker_js_filepath_description))
+          .withHomeButton(true)
           .withPath(currentPath)
-          .withHiddenFiles(true)
-          .withFilter(JS_FILE_PATTERN)
-          .withFilterDirectories(false)
+          .withTheme(R.style.AppTheme_FolderPicker)
           .start();
       }
     });

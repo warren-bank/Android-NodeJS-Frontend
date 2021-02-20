@@ -73,7 +73,8 @@ android {
 }
 
 dependencies {
-  implementation project(':MaterialFilePicker')
+  implementation project(':folderpicker-library')
+  implementation project(':folderpicker-support-library')
 
   compileOnly         'androidx.annotation:annotation:'           + project.ext.libSupportAnnotation           // ( 22 KB) https://mvnrepository.com/artifact/androidx.annotation/annotation?repo=google
   annotationProcessor 'androidx.annotation:annotation:'           + project.ext.libSupportAnnotation

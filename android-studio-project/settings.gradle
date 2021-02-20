@@ -1,4 +1,7 @@
 include ':NodeJS-Frontend'
-include ':MaterialFilePicker'
 
-project(':MaterialFilePicker').projectDir = new File(rootDir, 'libs/MaterialFilePicker-library')
+include ':folderpicker-library'
+include ':folderpicker-support-library'
+
+project(':folderpicker-library').projectDir         = new File(rootDir, 'libs/folderpicker-library')
+project(':folderpicker-support-library').projectDir = new File(rootDir, 'libs/folderpicker-support-library')

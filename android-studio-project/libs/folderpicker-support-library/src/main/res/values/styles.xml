@@ -1,0 +1,21 @@
+<resources>
+  <style name="FolderPickerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- assign default values to attributes required by layout -->
+    <item name="colorPrimary">@color/folderPicker_colorPrimary</item>
+    <item name="colorOnPrimary">@color/folderPicker_colorOnPrimary</item>
+    <item name="colorSecondary">@color/folderPicker_colorSecondary</item>
+    <item name="colorOnSecondary">@color/folderPicker_colorOnSecondary</item>
+  </style>
+
+  <style name="FolderPickerTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />
+  <style name="FolderPickerTheme.PopupOverlay"  parent="ThemeOverlay.AppCompat.Light" />
+
+  <style name="FolderPickerTheme.Activity">
+    <item name="themeAppbar">@style/FolderPickerTheme.AppBarOverlay</item>
+    <item name="colorTitlesBackground">?colorPrimary</item>
+    <item name="colorTitlesText">?colorOnPrimary</item>
+    <item name="colorButtonsBackground">?colorSecondary</item>
+    <item name="colorFilepathBackground">?colorSecondary</item>
+    <item name="colorFilepathText">?colorOnSecondary</item>
+  </style>
+</resources>

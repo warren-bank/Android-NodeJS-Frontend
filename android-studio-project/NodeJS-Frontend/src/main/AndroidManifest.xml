@@ -38,12 +38,6 @@
       android:launchMode="standard">
     </activity>
 
-    <activity
-      android:name="com.nbsp.materialfilepicker.ui.FilePickerActivity"
-      android:theme="@style/AppTheme.MTP"
-      android:configChanges="colorMode|density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
-      tools:replace="android:theme" />
-
     <!-- number of distinct-process services must be equal to: R.integer.max_nodejs_daemons -->
 
     <service

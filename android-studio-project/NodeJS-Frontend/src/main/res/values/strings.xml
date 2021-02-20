@@ -41,6 +41,9 @@
   <string name="label_button_save">SAVE</string>
   <string name="label_button_update">UPDATE</string>
 
+  <string name="app_folderpicker_js_filepath_title">Select JS File</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; app\'s main entry point</string>
+
   <string name="error_using_max_apps">Error: Cannot Exceed the Maximum Number of &nodejs; Daemons</string>
   <string name="error_missing_required_value">Error: Missing Required Value</string>
 

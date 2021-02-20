@@ -1,4 +1,0 @@
-<resources>
-    <attr name="mfp_toolbar_theme" format="reference"/>
-    <attr name="mfp_toolbar_style" format="reference"/>
-</resources>

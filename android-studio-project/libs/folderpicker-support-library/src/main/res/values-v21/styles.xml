@@ -1,0 +1,8 @@
+<resources>
+  <style name="FolderPickerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- API 21+ -->
+    <item name="colorPrimaryDark">@color/folderPicker_colorPrimaryDark</item>
+    <item name="android:statusBarColor">?colorPrimaryDark</item>
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+  </style>
+</resources>

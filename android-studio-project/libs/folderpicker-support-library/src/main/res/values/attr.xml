@@ -1,0 +1,8 @@
+<resources>
+  <attr name="themeAppbar"             format="reference"/>
+  <attr name="colorTitlesBackground"   format="reference"/>
+  <attr name="colorTitlesText"         format="reference"/>
+  <attr name="colorButtonsBackground"  format="reference"/>
+  <attr name="colorFilepathBackground" format="reference"/>
+  <attr name="colorFilepathText"       format="reference"/>
+</resources>

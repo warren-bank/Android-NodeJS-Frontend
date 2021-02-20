@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="folderPicker_colorPrimary">@android:color/holo_blue_light</color>
+  <color name="folderPicker_colorOnPrimary">@android:color/white</color>
+  <color name="folderPicker_colorSecondary">#F6F6F6</color>
+  <color name="folderPicker_colorOnSecondary">#333333</color>
+</resources>

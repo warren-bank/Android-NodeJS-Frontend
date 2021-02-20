@@ -1,0 +1,34 @@
+apply from: '../../constants.gradle'
+apply plugin: 'com.android.library'
+
+android {
+  compileSdkVersion project.ext.compileSdkVersion
+  buildToolsVersion project.ext.buildToolsVersion
+
+  compileOptions {
+    sourceCompatibility project.ext.javaVersion
+    targetCompatibility project.ext.javaVersion
+  }
+
+  defaultConfig {
+    minSdkVersion 16
+    targetSdkVersion project.ext.targetSdkVersion
+  }
+
+  lintOptions {
+    disable 'MissingTranslation'
+    abortOnError true
+  }
+}
+
+dependencies {
+  implementation project(':folderpicker-library')
+
+  compileOnly         'androidx.annotation:annotation:'           + project.ext.libSupportAnnotation           // ( 22 KB) https://mvnrepository.com/artifact/androidx.annotation/annotation?repo=google
+  annotationProcessor 'androidx.annotation:annotation:'           + project.ext.libSupportAnnotation
+
+  implementation 'androidx.appcompat:appcompat:'                  + project.ext.libSupportAppCompat            // (1.0 MB) https://mvnrepository.com/artifact/androidx.appcompat/appcompat?repo=google
+  implementation 'androidx.coordinatorlayout:coordinatorlayout:'  + project.ext.libSupportCoordinatorLayout    // ( 44 KB) https://mvnrepository.com/artifact/androidx.coordinatorlayout/coordinatorlayout?repo=google
+  implementation 'androidx.recyclerview:recyclerview:'            + project.ext.libSupportRecyclerView         // (349 KB) https://mvnrepository.com/artifact/androidx.recyclerview/recyclerview?repo=google
+  implementation 'com.google.android.material:material:'          + project.ext.libSupportMaterial             // (566 KB) https://mvnrepository.com/artifact/com.google.android.material/material?repo=google
+}

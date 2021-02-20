@@ -18,6 +18,10 @@
   <!-- ===== MainActivity ===== -->
 
   <style name="AppStyle.TabLayout" parent="Widget.Design.TabLayout">
+    <item name="tabMode">scrollable</item>
+    <item name="tabBackground">@color/colorPrimary</item>
+    <item name="tabTextColor">@color/colorOnPrimary_translucent</item>
+    <item name="tabSelectedTextColor">@color/colorOnPrimary</item>
     <item name="tabIndicatorColor">@color/tabIndicator</item>
     <item name="tabIndicatorHeight">@dimen/tabIndicatorHeight</item>
     <item name="tabPaddingStart">@dimen/tabPadding</item>
