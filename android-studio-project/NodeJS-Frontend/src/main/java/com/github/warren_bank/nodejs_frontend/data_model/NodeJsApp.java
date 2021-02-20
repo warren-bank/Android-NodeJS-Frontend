@@ -28,6 +28,11 @@ public final class NodeJsApp {
     update(false, null, null, null, null, null);
   }
 
+  // shallow copy
+  public void add(NodeJsApp template) {
+    update(true, template.title, template.env_vars, template.node_options, template.js_filepath, template.js_options);
+  }
+
   public void add(String title, String[][] env_vars, String[] node_options, String js_filepath, String[] js_options) {
     update(true, title, env_vars, node_options, js_filepath, js_options);
   }
@@ -64,6 +69,10 @@ public final class NodeJsApp {
     result[4] = CliOptionsParser.toString(js_options);
 
     return result;
+  }
+
+  public boolean isActive() {
+    return isActive;
   }
 
   public boolean isDaemon() {

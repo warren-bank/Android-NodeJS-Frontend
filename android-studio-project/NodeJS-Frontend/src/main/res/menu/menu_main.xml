@@ -8,4 +8,12 @@
     android:title="@string/activity_main_menu_add"
     android:icon="@drawable/add_circle_outline"
     app:showAsAction="ifRoom" />
+  <item
+    android:id="@+id/menu_export"
+    android:title="@string/activity_main_menu_export"
+    app:showAsAction="never" />
+  <item
+    android:id="@+id/menu_import"
+    android:title="@string/activity_main_menu_import"
+    app:showAsAction="never" />
 </menu>

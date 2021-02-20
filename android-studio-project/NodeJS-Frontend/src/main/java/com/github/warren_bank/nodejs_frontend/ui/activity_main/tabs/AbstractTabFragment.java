@@ -4,6 +4,7 @@ import com.github.warren_bank.nodejs_frontend.R;
 import com.github.warren_bank.nodejs_frontend.data_model.NodeJsApp;
 import com.github.warren_bank.nodejs_frontend.data_model.Preferences;
 import com.github.warren_bank.nodejs_frontend.helpers.NodeJsAppRunner;
+import com.github.warren_bank.nodejs_frontend.ui.activity_main.Constants;
 import com.github.warren_bank.nodejs_frontend.ui.activity_main.tabs.app_list.ItemMoveCallback;
 import com.github.warren_bank.nodejs_frontend.ui.activity_main.tabs.app_list.RecyclerViewAdapter;
 import com.github.warren_bank.nodejs_frontend.ui.activity_main.tabs.app_list.RecyclerViewHolder;
@@ -37,8 +38,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public abstract class AbstractTabFragment extends Fragment implements ItemMoveCallback.OnDragListener, RecyclerViewAdapter.ColorPalette {
-
-  private static final int REQUEST_CODE_FILE_PICKER_JS = 1;
 
   private boolean isDaemon;
   private Dialog  dialog;
@@ -155,7 +154,7 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
     String path;
 
     switch(requestCode) {
-      case REQUEST_CODE_FILE_PICKER_JS:
+      case Constants.REQUEST_CODE_FILE_PICKER_JS:
         if (resultCode == Activity.RESULT_OK && intent.hasExtra(FolderPicker.EXTRA_DATA)) {
           path = intent.getExtras().getString(FolderPicker.EXTRA_DATA);
 
@@ -416,7 +415,7 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
         FolderPicker
           .withBuilder()
           .withActivity(getActivity())
-          .withRequestCode(REQUEST_CODE_FILE_PICKER_JS)
+          .withRequestCode(Constants.REQUEST_CODE_FILE_PICKER_JS)
           .withFilePicker(true)
           .withFileFilter("^.*\\.(?:js)$")
           .withTitle(getResources().getString(R.string.app_folderpicker_js_filepath_title))

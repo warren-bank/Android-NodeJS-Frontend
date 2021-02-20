@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity implements RuntimePermission
   public void onActivityResult(int requestCode, int resultCode, Intent data) {
     super.onActivityResult(requestCode, resultCode, data);
 
+    BackupRestoreMgr.onActivityResult(/* activity= */ MainActivity.this, requestCode, resultCode, data);
+
     AbstractTabFragment tabFragment = getCurrentTabFragment();
     if (tabFragment != null) {
       tabFragment.onActivityResult(requestCode, resultCode, data);
@@ -84,20 +86,32 @@ public class MainActivity extends AppCompatActivity implements RuntimePermission
   @Override
   public boolean onContextItemSelected(MenuItem menuItem) {
     boolean done = false;
-    AbstractTabFragment tabFragment = getCurrentTabFragment();
-    if (tabFragment != null) {
-      done = tabFragment.onContextItemSelected(menuItem);
+
+    if (!done) {
+      AbstractTabFragment tabFragment = getCurrentTabFragment();
+      if (tabFragment != null) {
+        done = tabFragment.onContextItemSelected(menuItem);
+      }
     }
+
     return done || super.onContextItemSelected(menuItem);
   }
 
   @Override
   public boolean onOptionsItemSelected(MenuItem menuItem) {
     boolean done = false;
-    AbstractTabFragment tabFragment = getCurrentTabFragment();
-    if (tabFragment != null) {
-      done = tabFragment.onOptionsItemSelected(menuItem);
+
+    if (!done) {
+      done = BackupRestoreMgr.onOptionsItemSelected(/* activity= */ MainActivity.this, menuItem.getItemId());
     }
+
+    if (!done) {
+      AbstractTabFragment tabFragment = getCurrentTabFragment();
+      if (tabFragment != null) {
+        done = tabFragment.onOptionsItemSelected(menuItem);
+      }
+    }
+
     return done || super.onOptionsItemSelected(menuItem);
   }
 
