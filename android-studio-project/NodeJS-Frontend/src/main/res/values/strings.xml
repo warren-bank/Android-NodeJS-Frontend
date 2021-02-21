@@ -62,6 +62,8 @@
 
   <!-- ===== ExecTabFragment ===== -->
 
+  <string name="app_exec_complete">Finished execution of app: \"%s\"</string>
+
   <!-- ===== ForkTabFragment ===== -->
 
   <string translatable="false" name="service_package_prefix">com.github.warren_bank.nodejs_frontend.services.NodeService_</string>

@@ -1,6 +1,7 @@
 package com.github.warren_bank.nodejs_frontend.ui.activity_main;
 
 import com.github.warren_bank.nodejs_frontend.R;
+import com.github.warren_bank.nodejs_frontend.helpers.NodeJsAppRunner;
 import com.github.warren_bank.nodejs_frontend.helpers.RuntimePermissionsMgr;
 import com.github.warren_bank.nodejs_frontend.helpers.UI;
 import com.github.warren_bank.nodejs_frontend.ui.activity_main.tabs.AbstractTabFragment;
@@ -174,6 +175,9 @@ public class MainActivity extends AppCompatActivity implements RuntimePermission
   @Override
   public void onPermissionsGranted() {
     // OK
+
+    // initialize standard output file shared by all apps that exec in this same process
+    NodeJsAppRunner.saveStandardOutputToFile(/* context= */ MainActivity.this, /* id= */ null);
   }
 
   @Override
