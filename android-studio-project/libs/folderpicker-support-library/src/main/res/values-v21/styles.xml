@@ -1,5 +1,11 @@
 <resources>
   <style name="FolderPickerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- assign default values to attributes required by layout -->
+    <item name="colorPrimary">@color/folderPicker_colorPrimary</item>
+    <item name="colorOnPrimary">@color/folderPicker_colorOnPrimary</item>
+    <item name="colorSecondary">@color/folderPicker_colorSecondary</item>
+    <item name="colorOnSecondary">@color/folderPicker_colorOnSecondary</item>
+
     <!-- API 21+ -->
     <item name="colorPrimaryDark">@color/folderPicker_colorPrimaryDark</item>
     <item name="android:statusBarColor">?colorPrimaryDark</item>
