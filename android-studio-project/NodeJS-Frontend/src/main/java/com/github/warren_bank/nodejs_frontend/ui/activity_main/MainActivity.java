@@ -7,6 +7,7 @@ import com.github.warren_bank.nodejs_frontend.ui.activity_main.tabs.AbstractTabF
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Process;
 import android.text.TextUtils;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
@@ -99,16 +100,24 @@ public class MainActivity extends AppCompatActivity implements RuntimePermission
 
   @Override
   public boolean onOptionsItemSelected(MenuItem menuItem) {
+    final int menuItemId = menuItem.getItemId();
+
+    // Exit
+    if (menuItemId == R.id.menu_exit) {
+      finish();
+      Process.killProcess(Process.myPid());
+    }
+
     boolean done = false;
 
     // Export Data, Import Data
     if (!done) {
-      done = BackupRestoreMgr.onOptionsItemSelected(/* activity= */ MainActivity.this, menuItem.getItemId());
+      done = BackupRestoreMgr.onOptionsItemSelected(/* activity= */ MainActivity.this, menuItemId);
     }
 
     // Delete Data
     if (!done) {
-      done = DeleteMgr.onOptionsItemSelected(/* activity= */ MainActivity.this, menuItem.getItemId());
+      done = DeleteMgr.onOptionsItemSelected(/* activity= */ MainActivity.this, menuItemId);
     }
 
     // Add Node.js App

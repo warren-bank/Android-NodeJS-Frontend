@@ -20,4 +20,8 @@
     android:id="@+id/menu_delete"
     android:title="@string/activity_main_menu_delete"
     app:showAsAction="never" />
+  <item
+    android:id="@+id/menu_exit"
+    android:title="@string/activity_main_menu_exit"
+    app:showAsAction="never" />
 </menu>
