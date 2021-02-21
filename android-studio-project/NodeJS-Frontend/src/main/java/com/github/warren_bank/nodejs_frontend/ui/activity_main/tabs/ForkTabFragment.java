@@ -117,7 +117,7 @@ public class ForkTabFragment extends AbstractTabFragment {
   private Class getServiceClass(NodeJsApp listItem) {
     try {
       String id        = listItem.getId();
-      String className = getResources().getString(R.string.service_package_prefix) + id;
+      String className = getResources().getString(R.string.fork_service_package_prefix) + id;
 
       return Class.forName(className);
     }

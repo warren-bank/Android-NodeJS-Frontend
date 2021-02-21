@@ -18,7 +18,7 @@ const get_padded_id = (id) => {
 const get_service_file_text = (id) => {
   const padded_id = get_padded_id(id)
 
-  return `package com.github.warren_bank.nodejs_frontend.services;
+  return `package com.github.warren_bank.nodejs_frontend.services.fork;
 
 public class NodeService_${ padded_id } extends AbstractNodeService {
 
@@ -30,7 +30,7 @@ public class NodeService_${ padded_id } extends AbstractNodeService {
 `
 }
 
-const relative_file_path = '../../../android-studio-project/NodeJS-Frontend/src/main/java/com/github/warren_bank/nodejs_frontend/services'
+const relative_file_path = '../../../android-studio-project/NodeJS-Frontend/src/main/java/com/github/warren_bank/nodejs_frontend/services/fork'
 const absolute_file_path = path.resolve(relative_file_path)
 
 const get_service_file_path = (id) => {
