@@ -31,7 +31,8 @@ public final class BackupRestoreMgr {
       .withRequestCode(Constants.REQUEST_CODE_FILE_PICKER_JSON_EXPORT)
       .withTitle(activity.getString(R.string.app_folderpicker_json_export_filepath_title))
       .withDescription(activity.getString(R.string.app_folderpicker_json_export_filepath_description))
-      .withNewFilePrompt(activity.getString(R.string.app_folderpicker_json_export_filepath_prompt_newfile))
+      .withNewFilePrompt(activity.getString(R.string.app_folderpicker_json_export_filepath_newfile_prompt))
+      .withNewFileName(activity.getString(R.string.app_folderpicker_json_export_filepath_newfile_name) + ".json")
       .withFileFilter("^.*\\.(?:json|txt)$")
       .withTheme(R.style.AppTheme_FolderPicker)
       .start();

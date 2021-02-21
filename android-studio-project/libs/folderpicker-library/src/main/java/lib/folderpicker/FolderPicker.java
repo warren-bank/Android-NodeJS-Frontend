@@ -32,6 +32,7 @@ public class FolderPicker extends Activity {
     protected static final String EXTRA_HOME_BUTTON       = "homeButton";
     protected static final String EXTRA_EMPTY_FOLDER      = "emptyFolder";
     protected static final String EXTRA_NEW_FILE_PROMPT   = "newFilePrompt";
+    protected static final String EXTRA_NEW_FILE_NAME     = "newFileName";
     protected static final String EXTRA_PICK_FILE         = "pickFile";
     protected static final String EXTRA_PICK_FILE_PATTERN = "pickFilePattern";
 
@@ -49,6 +50,7 @@ public class FolderPicker extends Activity {
     protected String     mHomeLocation;
     protected boolean    mEmptyFolder;
     protected String     mNewFilePrompt;
+    protected String     mNewFileName;
     protected boolean    mPickFile;
     protected Pattern    mFilePattern;
     protected FileFilter mFileFilter;
@@ -83,6 +85,7 @@ public class FolderPicker extends Activity {
         process_intent_EXTRA_HOME_BUTTON();
         process_intent_EXTRA_EMPTY_FOLDER();
         process_intent_EXTRA_NEW_FILE_PROMPT();
+        process_intent_EXTRA_NEW_FILE_NAME();
         process_intent_EXTRA_PICK_FILE();
         process_intent_EXTRA_PICK_FILE_PATTERN();
 
@@ -225,6 +228,23 @@ public class FolderPicker extends Activity {
 
     protected void handle_intent_EXTRA_NEW_FILE_PROMPT(String prompt) {
         mNewFilePrompt = prompt;
+    }
+
+    private void process_intent_EXTRA_NEW_FILE_NAME() {
+        try {
+            if (mReceivedIntent.hasExtra(EXTRA_NEW_FILE_NAME)) {
+                String name = mReceivedIntent.getStringExtra(EXTRA_NEW_FILE_NAME);
+                if (name != null) {
+                    handle_intent_EXTRA_NEW_FILE_NAME(name);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    protected void handle_intent_EXTRA_NEW_FILE_NAME(String name) {
+        mNewFileName = name;
     }
 
     private void process_intent_EXTRA_PICK_FILE() {
@@ -481,6 +501,9 @@ public class FolderPicker extends Activity {
         );
 
         final EditText et = (EditText) view.findViewById(R.id.edit_text);
+
+        if (!isFolder && (mNewFileName != null))
+            et.setText(mNewFileName, TextView.BufferType.EDITABLE);
 
         final AlertDialog dialog = builder.create();
         dialog.setButton(DialogInterface.BUTTON_POSITIVE, getString(R.string.create),

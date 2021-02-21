@@ -17,7 +17,8 @@
 
   <string name="app_folderpicker_json_export_filepath_title">@string/activity_main_menu_export</string>
   <string name="app_folderpicker_json_export_filepath_description">Select directory to save file</string>
-  <string name="app_folderpicker_json_export_filepath_prompt_newfile">Select new file name for JSON data</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Select new file name for JSON data</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">export</string>
 
   <string name="app_folderpicker_json_import_filepath_title">@string/activity_main_menu_import</string>
   <string name="app_folderpicker_json_import_filepath_description">Select file containing previously exported JSON data</string>
