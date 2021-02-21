@@ -12,7 +12,7 @@
     <item name="contentInsetEndWithActions">0dp</item>
     <item name="colorControlNormal">@color/white</item>
     <item name="layout_scrollFlags">scroll|enterAlways</item>
-    <item name="popupTheme">@style/AppTheme.PopupOverlay</item>
+    <item name="popupTheme">@style/AppTheme.Toolbar.PopupOverlay</item>
   </style>
 
   <!-- ===== MainActivity ===== -->

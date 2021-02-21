@@ -11,14 +11,22 @@
 
   <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
   <!-- ===== Toolbar ===== -->
 
   <style name="AppTheme.Toolbar" parent="ThemeOverlay.AppCompat.Dark">
     <item name="android:background">@color/colorPrimary</item>
-    <item name="android:textColorPrimary">@color/colorOnPrimary</item>
+    <item name="android:textColor">@color/colorOnPrimary</item>
   </style>
+
+  <!-- ===== Toolbar Overflow Menu ===== -->
+
+  <style name="AppTheme.Toolbar.PopupOverlay">
+    <item name="android:textSize">14sp</item>
+    <item name="android:background">@color/popupBackground</item>
+    <item name="android:textColor">@color/popupText</item>
+  </style>
+
+  <!-- ===== Folder/File Picker ===== -->
 
   <style name="AppTheme.FolderPicker" parent="FolderPickerTheme.Activity">
     <item name="colorAccent">@color/colorAccent</item>

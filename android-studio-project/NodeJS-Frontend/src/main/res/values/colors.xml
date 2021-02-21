@@ -12,7 +12,8 @@
 
   <!-- grayscale -->
   <color name="white">#FFFFFF</color>
-  <color name="gray_light">#F6F6F6</color>
+  <color name="gray_lighter">#F6F6F6</color>
+  <color name="gray_light">#EEEEEE</color>
   <color name="gray_medium">#858585</color>
   <color name="gray_dark">#333333</color>
   <color name="black">#000000</color>
@@ -27,8 +28,13 @@
   <color name="colorPrimary">@color/nodeJsPrimary</color>
   <color name="colorOnPrimary">@color/white</color>
   <color name="colorOnPrimary_translucent">@color/white_translucent</color>
-  <color name="colorSecondary">@color/gray_light</color>
+  <color name="colorSecondary">@color/gray_lighter</color>
   <color name="colorOnSecondary">@color/gray_dark</color>
+
+  <!-- ===== Toolbar Overflow Menu ===== -->
+
+  <color name="popupBackground">@color/gray_light</color>
+  <color name="popupText">@color/colorPrimaryDark</color>
 
   <!-- ===== MainActivity ===== -->
 
@@ -39,8 +45,8 @@
   <color name="fragmentListItemDivider">@color/gray_medium</color>
   <color name="fragmentListItemOnDaemonRunning">@color/green_light</color>
   <color name="fragmentListItemOnRowClear">@color/white</color>
-  <color name="fragmentListItemOnRowSelected">@color/gray_light</color>
+  <color name="fragmentListItemOnRowSelected">@color/gray_lighter</color>
 
-  <color name="DialogLabelBackground">@color/colorPrimary</color>
-  <color name="DialogLabelText">@color/colorOnPrimary</color>
+  <color name="DialogLabelBackground">@color/gray_light</color>
+  <color name="DialogLabelText">@color/colorPrimaryDark</color>
 </resources>
