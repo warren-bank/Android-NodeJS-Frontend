@@ -101,10 +101,17 @@ public class MainActivity extends AppCompatActivity implements RuntimePermission
   public boolean onOptionsItemSelected(MenuItem menuItem) {
     boolean done = false;
 
+    // Export Data, Import Data
     if (!done) {
       done = BackupRestoreMgr.onOptionsItemSelected(/* activity= */ MainActivity.this, menuItem.getItemId());
     }
 
+    // Delete Data
+    if (!done) {
+      done = DeleteMgr.onOptionsItemSelected(/* activity= */ MainActivity.this, menuItem.getItemId());
+    }
+
+    // Add Node.js App
     if (!done) {
       AbstractTabFragment tabFragment = getCurrentTabFragment();
       if (tabFragment != null) {

@@ -14,6 +14,7 @@
   <string name="activity_main_menu_add">Add &nodejs; App</string>
   <string name="activity_main_menu_export">Export Data</string>
   <string name="activity_main_menu_import">Import Data</string>
+  <string name="activity_main_menu_delete">Delete Data</string>
 
   <string name="app_folderpicker_json_export_filepath_title">@string/activity_main_menu_export</string>
   <string name="app_folderpicker_json_export_filepath_description">Select directory to save file</string>
@@ -29,6 +30,7 @@
   </string-array>
 
   <string name="warning_runtime_permissions_denied">Please allow mandatory permissions</string>
+  <string name="warning_delete">Delete all app settings?</string>
 
   <!-- ===== AbstractTabFragment ===== -->
 

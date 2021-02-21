@@ -56,4 +56,9 @@ public final class Preferences {
     prefs_editor.putString(PREF_KEY, JSON);
     prefs_editor.commit();
   }
+
+  public static void resetNodeJsApps(Context context) {
+    initializeNodeJsApps(context, true);
+    initializeNodeJsApps(context, false);
+  }
 }

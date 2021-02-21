@@ -16,4 +16,8 @@
     android:id="@+id/menu_import"
     android:title="@string/activity_main_menu_import"
     app:showAsAction="never" />
+  <item
+    android:id="@+id/menu_delete"
+    android:title="@string/activity_main_menu_delete"
+    app:showAsAction="never" />
 </menu>
