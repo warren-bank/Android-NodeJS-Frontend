@@ -19,21 +19,12 @@ public final class NodeJsAppRunner {
   private static native Integer setenv(String name, String value, Integer overwrite);
   private static native Integer startNodeWithArguments(String[] arguments);
 
-  public static void exec(NodeJsApp listItem) {
-    String[][] env_vars     = listItem.getEnvironmentVariables();
-    String[]   node_options = listItem.getNodeOptions();
-    String     js_filepath  = listItem.getJsApplicationFilepath();
-    String[]   js_options   = listItem.getJsApplicationOptions();
+  public static String[] getNodeArguments(NodeJsApp app) {
+    String[]   node_options = app.getNodeOptions();
+    String     js_filepath  = app.getJsApplicationFilepath();
+    String[]   js_options   = app.getJsApplicationOptions();
 
     ArrayList<String> arguments = new ArrayList<String>();
-
-    if (env_vars != null) {
-      for (int i = 0; i < env_vars.length; i++) {
-        if (env_vars[i].length == 2) {
-          setenv(env_vars[i][0], env_vars[i][1], 1);
-        }
-      }
-    }
 
     arguments.add("node");
 
@@ -49,11 +40,29 @@ public final class NodeJsAppRunner {
       }
     }
 
-    if (arguments.size() > 1) {
-      startNodeWithArguments(
-        arguments.toArray(new String[ arguments.size() ])
-      );
+    return (arguments.size() > 1)
+      ? arguments.toArray(new String[ arguments.size() ])
+      : null;
+  }
+
+  public static void exec(NodeJsApp app) {
+    String[]   arguments = getNodeArguments(app);
+    String[][] env_vars  = app.getEnvironmentVariables();
+
+    exec(arguments, env_vars);
+  }
+
+  public static void exec(String[] arguments, String[][] env_vars) {
+    if (env_vars != null) {
+      for (int i = 0; i < env_vars.length; i++) {
+        if (env_vars[i].length == 2) {
+          setenv(env_vars[i][0], env_vars[i][1], 1);
+        }
+      }
     }
+
+    if (arguments != null)
+      startNodeWithArguments(arguments);
   }
 
   public static File getStandardOutputFile(Context context, String id, boolean mustExist) {

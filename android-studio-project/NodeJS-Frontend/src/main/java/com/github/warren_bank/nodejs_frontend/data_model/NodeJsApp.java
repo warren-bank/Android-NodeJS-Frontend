@@ -101,16 +101,28 @@ public final class NodeJsApp {
 
   // helpers
 
-  public static ArrayList<NodeJsApp> fromJson(String json) {
-    ArrayList<NodeJsApp> arrayList;
+  public static String serialize(NodeJsApp app) {
+    String json = new Gson().toJson(app);
+    return json;
+  }
+
+  public static NodeJsApp deserialize(String json) {
+    NodeJsApp app;
     Gson gson = new Gson();
-    arrayList = gson.fromJson(json, new TypeToken<ArrayList<NodeJsApp>>(){}.getType());
-    return arrayList;
+    app = gson.fromJson(json, new TypeToken<NodeJsApp>(){}.getType());
+    return app;
   }
 
   public static String toJson(ArrayList<NodeJsApp> arrayList) {
     String json = new Gson().toJson(arrayList);
     return json;
+  }
+
+  public static ArrayList<NodeJsApp> fromJson(String json) {
+    ArrayList<NodeJsApp> arrayList;
+    Gson gson = new Gson();
+    arrayList = gson.fromJson(json, new TypeToken<ArrayList<NodeJsApp>>(){}.getType());
+    return arrayList;
   }
 
   public static ArrayList<NodeJsApp> filterActive(ArrayList<NodeJsApp> arrayList) {

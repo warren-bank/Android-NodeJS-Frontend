@@ -66,11 +66,18 @@ public abstract class AbstractNodeService extends Service {
 
     new Thread() {
       public void run() {
-        NodeJsAppRunner.saveStandardOutputToFile(AbstractNodeService.this, app.getId());
-        NodeJsAppRunner.exec(app);
-
-        // kill the service after Node.js exits
-        killProcess();
+        try {
+          NodeJsAppRunner.saveStandardOutputToFile(AbstractNodeService.this, app.getId());
+          NodeJsAppRunner.exec(app);
+        }
+        catch(Exception e) {
+          System.out.print("Exception caught: ");
+          System.out.println(e.getMessage());
+        }
+        finally {
+          // kill the service after Node.js exits
+          killProcess();
+        }
       }
     }.start();
   }

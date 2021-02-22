@@ -64,6 +64,8 @@
 
   <string name="app_exec_complete">Finished execution of app: \"%s\"</string>
 
+  <string name="notification_process_busy">Cannot start \"%s\" until execution finishes for running app: \"%s\"</string>
+
   <!-- ===== ForkTabFragment ===== -->
 
   <string translatable="false" name="fork_service_package_prefix">com.github.warren_bank.nodejs_frontend.services.fork.NodeService_</string>

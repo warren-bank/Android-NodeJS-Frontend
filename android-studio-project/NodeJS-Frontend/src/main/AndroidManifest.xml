@@ -38,6 +38,14 @@
       android:launchMode="standard">
     </activity>
 
+    <!-- one distinct-process service is used to execute non-daemon apps -->
+
+    <service
+      android:name=".services.exec.RemoteService"
+      android:process=":exec_process"
+      android:enabled="true"
+      android:exported="false" />
+
     <!-- number of distinct-process services must be equal to: R.integer.max_nodejs_daemons -->
 
     <service
