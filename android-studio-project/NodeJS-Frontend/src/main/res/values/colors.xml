@@ -34,7 +34,8 @@
   <!-- ===== Toolbar Overflow Menu ===== -->
 
   <color name="popupBackground">@color/gray_light</color>
-  <color name="popupText">@color/colorPrimaryDark</color>
+  <color name="popupText_disabled">@color/gray_medium</color>
+  <color name="popupText_enabled">@color/colorPrimaryDark</color>
 
   <!-- ===== MainActivity ===== -->
 

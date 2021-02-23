@@ -127,6 +127,7 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
 
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    setHasOptionsMenu(true);
     return inflater.inflate(R.layout.fragment_list, container, false);
   }
 
@@ -257,7 +258,7 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
           menu.setHeaderTitle( listItem.toString() );
           menu.add(R.id.app_title, position, 1, R.string.app_context_menuitem_label_edit_settings);
           menu.add(R.id.app_title, position, 2, R.string.app_context_menuitem_label_run);
-          menu.add(R.id.app_title, position, 3, R.string.app_context_menuitem_label_read_stdout);
+        //menu.add(R.id.app_title, position, 3, R.string.app_context_menuitem_label_read_stdout);
           menu.add(R.id.app_title, position, 4, R.string.app_context_menuitem_label_delete);
         }
       }
@@ -338,8 +339,15 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
   // Common Methods:
   // ---------------------------------------------------------------------------------------------
 
-  private void readStandardOutput(NodeJsApp listItem) {
-    File file = NodeJsAppRunner.getStandardOutputFile(getContext(), listItem.getId(), true);
+  protected void readStandardOutput(NodeJsApp listItem) {
+    String title = listItem.toString();
+    String id    = listItem.getId();
+
+    readStandardOutput(title, id);
+  }
+
+  protected void readStandardOutput(String title, String id) {
+    File file = NodeJsAppRunner.getStandardOutputFile(getContext(), id, true);
 
     if (file == null) {
       Snackbar.make(getView(), R.string.error_stdout_not_found, Snackbar.LENGTH_SHORT).show();
@@ -347,7 +355,7 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
     }
 
     Intent intent = new Intent(getContext(), StandardOutputActivity.class);
-    intent.putExtra("title", listItem.toString());
+    intent.putExtra("title", title);
     intent.putExtra("file",  (Serializable) file);
     startActivity(intent);
   }

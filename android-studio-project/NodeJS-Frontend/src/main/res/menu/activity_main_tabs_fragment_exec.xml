@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+  <item
+    android:id="@+id/menu_read_stdout"
+    android:title="@string/activity_main_tabs_fragment_exec_menu_read_stdout"
+    android:orderInCategory="21"
+    app:showAsAction="never" />
+  <item
+    android:id="@+id/menu_kill_app"
+    android:title="@string/activity_main_tabs_fragment_exec_menu_kill_app"
+    android:orderInCategory="22"
+    android:enabled="false"
+    app:showAsAction="never" />
+</menu>

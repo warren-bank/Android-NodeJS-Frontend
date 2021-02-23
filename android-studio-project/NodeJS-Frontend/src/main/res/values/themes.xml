@@ -23,8 +23,9 @@
 
   <style name="AppTheme.Toolbar.PopupOverlay">
     <item name="android:textSize">14sp</item>
+    <item name="android:textStyle">bold</item>
     <item name="android:background">@color/popupBackground</item>
-    <item name="android:textColor">@color/popupText</item>
+    <item name="android:textColor">@color/popup_text</item>
   </style>
 
   <!-- ===== Folder/File Picker ===== -->

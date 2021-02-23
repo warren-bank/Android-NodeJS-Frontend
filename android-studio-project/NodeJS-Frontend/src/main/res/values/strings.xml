@@ -62,6 +62,10 @@
 
   <!-- ===== ExecTabFragment ===== -->
 
+  <string name="activity_main_tabs_fragment_exec_menu_read_stdout">@string/app_context_menuitem_label_read_stdout</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Kill exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Kill: %s</string>
+
   <string name="app_exec_complete">Finished execution of app: \"%s\"</string>
 
   <string name="notification_process_busy">Cannot start \"%s\" until execution finishes for running app: \"%s\"</string>

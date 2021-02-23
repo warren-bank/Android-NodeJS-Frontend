@@ -6,22 +6,27 @@
   <item
     android:id="@+id/menu_add"
     android:title="@string/activity_main_menu_add"
+    android:orderInCategory="51"
     android:icon="@drawable/add_circle_outline"
     app:showAsAction="ifRoom" />
   <item
     android:id="@+id/menu_export"
     android:title="@string/activity_main_menu_export"
+    android:orderInCategory="52"
     app:showAsAction="never" />
   <item
     android:id="@+id/menu_import"
     android:title="@string/activity_main_menu_import"
+    android:orderInCategory="53"
     app:showAsAction="never" />
   <item
     android:id="@+id/menu_delete"
     android:title="@string/activity_main_menu_delete"
+    android:orderInCategory="54"
     app:showAsAction="never" />
   <item
     android:id="@+id/menu_exit"
     android:title="@string/activity_main_menu_exit"
+    android:orderInCategory="99"
     app:showAsAction="never" />
 </menu>

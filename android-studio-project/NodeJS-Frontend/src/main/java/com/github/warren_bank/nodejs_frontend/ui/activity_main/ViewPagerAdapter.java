@@ -24,6 +24,8 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     switch(position) {
       case 0:
         fragment = new ExecTabFragment();
+        fragment.setHasOptionsMenu(true);
+        fragment.setUserVisibleHint(true);
         break;
       case 1:
         fragment = new ForkTabFragment();

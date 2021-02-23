@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity implements RuntimePermission
   private ViewPager viewPager;
   private ViewPagerAdapter viewPagerAdapter;
 
+  // ---------------------------------------------------------------------------------------------
+  // Lifecycle Events for Activity:
+  // ---------------------------------------------------------------------------------------------
+
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -47,20 +51,29 @@ public class MainActivity extends AppCompatActivity implements RuntimePermission
     viewPager.setAdapter(viewPagerAdapter);
     tabLayout.setupWithViewPager(viewPager);
 
+    initFragmentOptionsMenus();
+
     checkRuntimePermissions();
   }
 
-  private AbstractTabFragment getCurrentTabFragment() {
-    Fragment fragment = getSupportFragmentManager().findFragmentByTag("android:switcher:" + R.id.viewPager + ":" + viewPager.getCurrentItem());
+  // ---------------------------------------------------------------------------------------------
+  // Helpers for Fragments:
+  // ---------------------------------------------------------------------------------------------
+
+  private AbstractTabFragment getTabFragmentByPosition(int position) {
+    Fragment fragment = getSupportFragmentManager().findFragmentByTag("android:switcher:" + R.id.viewPager + ":" + position);
     AbstractTabFragment tabFragment = (fragment == null) ? null : (AbstractTabFragment) fragment;
     return tabFragment;
   }
 
-  @Override
-  public boolean onCreateOptionsMenu(Menu menu) {
-    getMenuInflater().inflate(R.menu.menu_main, menu);
-    return true;
+  private AbstractTabFragment getCurrentTabFragment() {
+    int position = viewPager.getCurrentItem();
+    return getTabFragmentByPosition(position);
   }
+
+  // ---------------------------------------------------------------------------------------------
+  // Lifecycle Events delegated to Fragments:
+  // ---------------------------------------------------------------------------------------------
 
   @Override
   public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -98,6 +111,16 @@ public class MainActivity extends AppCompatActivity implements RuntimePermission
     return done || super.onContextItemSelected(menuItem);
   }
 
+  // ---------------------------------------------------------------------------------------------
+  // Menu:
+  // ---------------------------------------------------------------------------------------------
+
+  @Override
+  public boolean onCreateOptionsMenu(Menu menu) {
+    getMenuInflater().inflate(R.menu.activity_main, menu);
+    return true;
+  }
+
   @Override
   public boolean onOptionsItemSelected(MenuItem menuItem) {
     final int menuItemId = menuItem.getItemId();
@@ -129,6 +152,39 @@ public class MainActivity extends AppCompatActivity implements RuntimePermission
     }
 
     return done || super.onOptionsItemSelected(menuItem);
+  }
+
+  // ---------------------------------------------------------------------------------------------
+  // Menu from visible Fragment:
+  // ---------------------------------------------------------------------------------------------
+
+  private void initFragmentOptionsMenus() {
+    viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener(){
+      @Override
+      public void onPageScrollStateChanged(int state) {}
+
+      @Override
+      public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}
+
+      @Override
+      public void onPageSelected(int position) {
+        invalidateFragmentOptionsMenus(position);
+      }
+    });
+  }
+
+  protected void invalidateFragmentOptionsMenus(int visibleFragmentPosition) {
+    for (int i=0; i < viewPagerAdapter.getCount(); i++){
+      AbstractTabFragment fragment = getTabFragmentByPosition(i);
+      boolean isVisible = (i == visibleFragmentPosition);
+
+      if (fragment != null) {
+        fragment.setHasOptionsMenu(isVisible);
+        fragment.setUserVisibleHint(isVisible);
+      }
+    }
+
+    invalidateOptionsMenu();
   }
 
   // ---------------------------------------------------------------------------------------------

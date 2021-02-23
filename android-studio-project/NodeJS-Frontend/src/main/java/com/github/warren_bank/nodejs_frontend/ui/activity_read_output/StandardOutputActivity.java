@@ -138,7 +138,7 @@ public class StandardOutputActivity extends AppCompatActivity {
 
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
-    getMenuInflater().inflate(R.menu.menu_read_output, menu);
+    getMenuInflater().inflate(R.menu.activity_read_output, menu);
     return true;
   }
 
