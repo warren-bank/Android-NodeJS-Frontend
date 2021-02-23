@@ -15,6 +15,10 @@ public final class BackupRestore {
       ArrayList<NodeJsApp> exec_apps_list = Preferences.getNodeJsApps(context, false);
       ArrayList<NodeJsApp> fork_apps_list = Preferences.getNodeJsApps(context, true);
 
+      // exclude inactive apps
+      exec_apps_list = NodeJsApp.filterActive(exec_apps_list);
+      fork_apps_list = NodeJsApp.filterActive(fork_apps_list);
+
       ArrayList<NodeJsApp> combined_list = new ArrayList<NodeJsApp>();
       combined_list.addAll(exec_apps_list);
       combined_list.addAll(fork_apps_list);
