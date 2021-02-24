@@ -39,18 +39,22 @@ public class ExecTabFragment extends AbstractTabFragment {
         mActivity.runOnUiThread(new Runnable() {
           @Override
           public void run() {
-            // kill the background service, clear state, update UI
-            unbindRemoteService(true);
-
-            // show a snackbar after execution of app completes
-            showExecutionCompleteNotification(appTitle);
+            handleNodeComplete(appTitle);
           }
         });
       }
     }
   };
 
-  protected void showExecutionCompleteNotification(String appTitle) {
+  protected void handleNodeComplete(String appTitle) {
+    // kill the background service, clear state, update UI
+    unbindRemoteService(true);
+
+    // show a snackbar after execution of app completes
+    showExecutionCompleteNotification(appTitle);
+  }
+
+  private void showExecutionCompleteNotification(String appTitle) {
     String message = mActivity.getString(R.string.app_exec_complete, appTitle);
     showSnackbar(message);
   }
@@ -91,7 +95,9 @@ public class ExecTabFragment extends AbstractTabFragment {
       mService = null;
       mIsBound = false;
 
-      updateMenuItem_kill_app();
+      if (mPendingNodeJsApp != null) {
+        handleNodeComplete(mPreviousNodeJsAppTitle);
+      }
     }
 
   };
@@ -121,7 +127,7 @@ public class ExecTabFragment extends AbstractTabFragment {
     context.bindService(intent, mConnection, (Context.BIND_AUTO_CREATE | Context.BIND_NOT_FOREGROUND));
   }
 
-  protected void unbindRemoteService(boolean updateUI) {
+  private void unbindRemoteService(boolean updateUI) {
     if (mPendingNodeJsApp == null) return;
 
     NodeJsApp app = updateUI ? mPendingNodeJsApp : null;
