@@ -16,6 +16,7 @@ public final class NodeJsAppRunner {
   }
 
   private static native void    saveStandardOutputToFile(String filepath);
+  private static native void    chdir(String dirpath);
   private static native Integer setenv(String name, String value, Integer overwrite);
   private static native Integer startNodeWithArguments(String[] arguments);
 
@@ -46,13 +47,18 @@ public final class NodeJsAppRunner {
   }
 
   public static void exec(NodeJsApp app) {
-    String[]   arguments = getNodeArguments(app);
-    String[][] env_vars  = app.getEnvironmentVariables();
+    String[]   arguments   = getNodeArguments(app);
+    String[][] env_vars    = app.getEnvironmentVariables();
+    String     cwd_dirpath = app.getCurrentWorkingDirectory();
 
-    exec(arguments, env_vars);
+    exec(arguments, env_vars, cwd_dirpath);
   }
 
-  public static void exec(String[] arguments, String[][] env_vars) {
+  public static void exec(String[] arguments, String[][] env_vars, String cwd_dirpath) {
+    if (cwd_dirpath != null) {
+      chdir(cwd_dirpath);
+    }
+
     if (env_vars != null) {
       for (int i = 0; i < env_vars.length; i++) {
         if (env_vars[i].length == 2) {

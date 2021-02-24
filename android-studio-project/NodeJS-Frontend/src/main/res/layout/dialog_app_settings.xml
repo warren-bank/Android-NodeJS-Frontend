@@ -28,6 +28,35 @@
     <TextView
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:text="@string/app_settings_label_cwd_dirpath"
+      style="@style/AppStyle.DialogLabel" />
+
+    <EditText
+      android:id="@+id/input_cwd_dirpath"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="textMultiLine"
+      android:enabled="false" />
+
+    <LinearLayout
+      android:orientation="horizontal"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <Button
+        android:id="@+id/button_browse_cwd_dirpath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/label_button_browse" />
+
+    </LinearLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
       android:text="@string/app_settings_label_env_vars"
       style="@style/AppStyle.DialogLabel" />
 
@@ -76,7 +105,7 @@
       android:layout_height="wrap_content">
 
       <Button
-        android:id="@+id/button_browse"
+        android:id="@+id/button_browse_js_filepath"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"

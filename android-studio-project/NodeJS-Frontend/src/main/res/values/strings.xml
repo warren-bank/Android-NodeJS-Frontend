@@ -35,6 +35,7 @@
 
   <!-- ===== AbstractTabFragment ===== -->
 
+  <string name="app_settings_label_cwd_dirpath">Path to Working Directory</string>
   <string name="app_settings_label_title">Title</string>
   <string name="app_settings_label_env_vars">Environment Variables</string>
   <string name="app_settings_notes_env_vars">  One per line.\n  Format: name=value</string>
@@ -53,6 +54,9 @@
   <string name="label_button_cancel">CANCEL</string>
   <string name="label_button_save">SAVE</string>
   <string name="label_button_update">UPDATE</string>
+
+  <string name="app_folderpicker_cwd_dirpath_title">Select CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; app\'s current working directory</string>
 
   <string name="app_folderpicker_js_filepath_title">Select JS File</string>
   <string name="app_folderpicker_js_filepath_description">&nodejs; app\'s main entry point</string>

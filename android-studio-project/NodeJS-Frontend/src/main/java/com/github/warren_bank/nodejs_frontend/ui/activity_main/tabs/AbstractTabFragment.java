@@ -155,6 +155,17 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
     String path;
 
     switch(requestCode) {
+      case Constants.REQUEST_CODE_FOLDER_PICKER_CWD:
+        if (resultCode == Activity.RESULT_OK && intent.hasExtra(FolderPicker.EXTRA_DATA)) {
+          path = intent.getExtras().getString(FolderPicker.EXTRA_DATA);
+
+          if ((path != null) && (dialog != null) && (dialog.isShowing())) {
+            final TextView inputCwdDirpath = (TextView) dialog.findViewById(R.id.input_cwd_dirpath);
+            inputCwdDirpath.setText(path);
+          }
+        }
+        break;
+
       case Constants.REQUEST_CODE_FILE_PICKER_JS:
         if (resultCode == Activity.RESULT_OK && intent.hasExtra(FolderPicker.EXTRA_DATA)) {
           path = intent.getExtras().getString(FolderPicker.EXTRA_DATA);
@@ -364,6 +375,22 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
   // Add/Edit Dialog:
   // ---------------------------------------------------------------------------------------------
 
+  protected String getDirectoryPathFromFile(String value) {
+    if (value == null) return null;
+
+    File file = new File(value);
+    if (!file.exists()) return null;
+
+    try {
+      return file.isDirectory()
+        ? file.getCanonicalPath()
+        : file.getParent();
+    }
+    catch(Exception e) {
+      return null;
+    }
+  }
+
   private void showEditDialog(int position) {
     final boolean isAdd = (position < 0);
 
@@ -389,35 +416,56 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
     dialog = new Dialog(getContext(), R.style.AppTheme);
     dialog.setContentView(R.layout.dialog_app_settings);
 
+    final EditText inputCwdDirpath  = (EditText) dialog.findViewById(R.id.input_cwd_dirpath);
     final EditText inputTitle       = (EditText) dialog.findViewById(R.id.input_title);
     final EditText inputEnvVars     = (EditText) dialog.findViewById(R.id.input_env_vars);
     final EditText inputNodeOptions = (EditText) dialog.findViewById(R.id.input_node_options);
     final EditText inputJsFilepath  = (EditText) dialog.findViewById(R.id.input_js_filepath);
     final EditText inputJsOptions   = (EditText) dialog.findViewById(R.id.input_js_options);
-    final Button buttonBrowse       = (Button) dialog.findViewById(R.id.button_browse);
+    final Button buttonBrowseCwd    = (Button) dialog.findViewById(R.id.button_browse_cwd_dirpath);
+    final Button buttonBrowseJs     = (Button) dialog.findViewById(R.id.button_browse_js_filepath);
     final Button buttonCancel       = (Button) dialog.findViewById(R.id.button_cancel);
     final Button buttonSave         = (Button) dialog.findViewById(R.id.button_save);
 
     if (!isAdd) {
       if (values[0] != null) inputTitle.setText(values[0]);
-      if (values[1] != null) inputEnvVars.setText(values[1]);
-      if (values[2] != null) inputNodeOptions.setText(values[2]);
-      if (values[3] != null) inputJsFilepath.setText(values[3]);
-      if (values[4] != null) inputJsOptions.setText(values[4]);
+      if (values[1] != null) inputCwdDirpath.setText(values[1]);
+      if (values[2] != null) inputEnvVars.setText(values[2]);
+      if (values[3] != null) inputNodeOptions.setText(values[3]);
+      if (values[4] != null) inputJsFilepath.setText(values[4]);
+      if (values[5] != null) inputJsOptions.setText(values[5]);
 
       buttonSave.setText(R.string.label_button_update);
     }
 
-    buttonBrowse.setOnClickListener(new View.OnClickListener() {
+    buttonBrowseCwd.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
         String currentPath = null;
-        if (!isAdd && (values[3] != null)) {
-          File file = new File(values[3]);
+        if (!isAdd) {
+          if (currentPath == null) currentPath = getDirectoryPathFromFile(values[1]); // default  to cwd_dirpath (if defined)
+          if (currentPath == null) currentPath = getDirectoryPathFromFile(values[4]); // fallback to js_filepath (if defined)
+        }
 
-          if (file.exists() && (file.getParent() != null)) {
-            currentPath = file.getParent();
-          }
+        FolderPicker
+          .withBuilder()
+          .withActivity(getActivity())
+          .withRequestCode(Constants.REQUEST_CODE_FOLDER_PICKER_CWD)
+          .withTitle(getResources().getString(R.string.app_folderpicker_cwd_dirpath_title))
+          .withDescription(getResources().getString(R.string.app_folderpicker_cwd_dirpath_description))
+          .withPath(currentPath)
+          .withTheme(R.style.AppTheme_FolderPicker)
+          .start();
+      }
+    });
+
+    buttonBrowseJs.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        String currentPath = null;
+        if (!isAdd) {
+          if (currentPath == null) currentPath = getDirectoryPathFromFile(values[4]); // default  to js_filepath (if defined)
+          if (currentPath == null) currentPath = getDirectoryPathFromFile(values[1]); // fallback to cwd_dirpath (if defined)
         }
 
         FolderPicker
@@ -447,6 +495,7 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
       @Override
       public void onClick(View v) {
         final String title             = inputTitle.getText().toString().trim();
+        final String cwd_dirpath       = inputCwdDirpath.getText().toString().trim();
         final String env_vars_text     = inputEnvVars.getText().toString().trim();
         final String node_options_text = inputNodeOptions.getText().toString().trim();
         final String js_filepath       = inputJsFilepath.getText().toString().trim();
@@ -464,10 +513,11 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
         if (
              !isAdd
           && (values[0] == title)
-          && (values[1] == env_vars_text)
-          && (values[2] == node_options_text)
-          && (values[3] == js_filepath)
-          && (values[4] == js_options_text)
+          && (values[1] == cwd_dirpath)
+          && (values[2] == env_vars_text)
+          && (values[3] == node_options_text)
+          && (values[4] == js_filepath)
+          && (values[5] == js_options_text)
         ){
           // no change
           dialog.dismiss();
@@ -475,7 +525,7 @@ public abstract class AbstractTabFragment extends Fragment implements ItemMoveCa
           return;
         }
 
-        listItem.add(title, env_vars_text, node_options_text, js_filepath, js_options_text);
+        listItem.add(title, cwd_dirpath, env_vars_text, node_options_text, js_filepath, js_options_text);
 
         if (isAdd)
           addListItem(listItem);

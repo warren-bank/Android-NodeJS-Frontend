@@ -14,6 +14,7 @@ public final class NodeJsApp {
   private boolean isActive;
 
   private String     title;
+  private String     cwd_dirpath;
   private String[][] env_vars;
   private String[]   node_options;
   private String     js_filepath;
@@ -25,29 +26,30 @@ public final class NodeJsApp {
   }
 
   public void remove() {
-    update(false, null, null, null, null, null);
+    update(false, null, null, null, null, null, null);
   }
 
   // shallow copy
   public void add(NodeJsApp template) {
-    update(true, template.title, template.env_vars, template.node_options, template.js_filepath, template.js_options);
+    update(true, template.title, template.cwd_dirpath, template.env_vars, template.node_options, template.js_filepath, template.js_options);
   }
 
-  public void add(String title, String[][] env_vars, String[] node_options, String js_filepath, String[] js_options) {
-    update(true, title, env_vars, node_options, js_filepath, js_options);
+  public void add(String title, String cwd_dirpath, String[][] env_vars, String[] node_options, String js_filepath, String[] js_options) {
+    update(true, title, cwd_dirpath, env_vars, node_options, js_filepath, js_options);
   }
 
-  public void add(String title, String env_vars_text, String node_options_text, String js_filepath, String js_options_text) {
+  public void add(String title, String cwd_dirpath, String env_vars_text, String node_options_text, String js_filepath, String js_options_text) {
     String[][] env_vars     = EnvVarsParser.getEnvArray(env_vars_text);
     String[]   node_options = CliOptionsParser.getCmdArray(node_options_text);
     String[]   js_options   = CliOptionsParser.getCmdArray(js_options_text);
 
-    update(true, title, env_vars, node_options, js_filepath, js_options);
+    update(true, title, cwd_dirpath, env_vars, node_options, js_filepath, js_options);
   }
 
-  private void update(boolean isActive, String title, String[][] env_vars, String[] node_options, String js_filepath, String[] js_options) {
+  private void update(boolean isActive, String title, String cwd_dirpath, String[][] env_vars, String[] node_options, String js_filepath, String[] js_options) {
     this.isActive     = isActive;
     this.title        = title;
+    this.cwd_dirpath  = cwd_dirpath;
     this.env_vars     = env_vars;
     this.node_options = node_options;
     this.js_filepath  = js_filepath;
@@ -60,13 +62,14 @@ public final class NodeJsApp {
   }
 
   public String[] getStringArray() {
-    String[] result = new String[5];
+    String[] result = new String[6];
 
     result[0] = title;
-    result[1] = EnvVarsParser.toString(env_vars);
-    result[2] = CliOptionsParser.toString(node_options);
-    result[3] = js_filepath;
-    result[4] = CliOptionsParser.toString(js_options);
+    result[1] = cwd_dirpath;
+    result[2] = EnvVarsParser.toString(env_vars);
+    result[3] = CliOptionsParser.toString(node_options);
+    result[4] = js_filepath;
+    result[5] = CliOptionsParser.toString(js_options);
 
     return result;
   }
@@ -81,6 +84,10 @@ public final class NodeJsApp {
 
   public String getId() {
     return id;
+  }
+
+  public String getCurrentWorkingDirectory() {
+    return cwd_dirpath;
   }
 
   public String[][] getEnvironmentVariables() {

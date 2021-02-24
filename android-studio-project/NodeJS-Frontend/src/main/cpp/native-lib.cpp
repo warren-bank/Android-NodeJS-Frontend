@@ -14,6 +14,18 @@
 //     [Java 8 JNI spec] Chapter 2: Design Overview - Resolving Native Method Names
 // =====
 
+// change the current working directory
+extern "C" void JNICALL
+Java_com_github_warren_1bank_nodejs_1frontend_helpers_NodeJsAppRunner_chdir(
+        JNIEnv *env,
+        jobject thiz,
+        jstring jDirpath) {
+
+    const char* dirpath = env->GetStringUTFChars(jDirpath, 0);
+    chdir(dirpath);
+    env->ReleaseStringUTFChars(jDirpath, dirpath);
+}
+
 // setenv polyfill for API < 21
 extern "C" jint JNICALL
 Java_com_github_warren_1bank_nodejs_1frontend_helpers_NodeJsAppRunner_setenv(
