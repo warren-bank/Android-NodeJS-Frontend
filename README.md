@@ -4,14 +4,7 @@ Android app to run Javascript files from the filesystem in Node.js
 
 #### Screenshots:
 
-![01-exec-list](./etc/screenshots/01-exec-list.png)
-![02-exec-context-menu](./etc/screenshots/02-exec-context-menu.png)
-![03-exec-settings-1](./etc/screenshots/03-exec-settings-1.png)
-![04-exec-settings-2](./etc/screenshots/04-exec-settings-2.png)
-![05-fork-list](./etc/screenshots/05-fork-list.png)
-![06-fork-context-menu](./etc/screenshots/06-fork-context-menu.png)
-![07-fork-settings-1](./etc/screenshots/07-fork-settings-1.png)
-![08-js-file-picker](./etc/screenshots/08-js-file-picker.png)
+![screenshots animation](./etc/screenshots/2-animated/portrait-480x1250-5s-per-frame.gif)
 
 #### Credits:
 
@@ -44,6 +37,11 @@ Android app to run Javascript files from the filesystem in Node.js
 * not used by frontend; reserved for use by Javascript files
   * `android.permission.INTERNET`
   * `android.permission.WRITE_EXTERNAL_STORAGE`
+
+#### Recipes:
+
+* the [recipes branch](https://github.com/warren-bank/Android-NodeJS-Frontend/tree/recipes) contains a set of bash scripts that can be used to easily install and configure a curated selection of Node.js applications
+  * the apps illustrated in the [screenshots animation](#screenshots) are included
 
 #### Legal:
 
