@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
 import android.text.Html;
+import android.text.Spanned;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -29,6 +30,8 @@ public class StandardOutputActivity extends AppCompatActivity {
   private boolean        isInitialized;
   private boolean        isRunning;
   private boolean        isHighlighted;
+  private String         filter;
+  private String         highlight;
 
   private File           stdout_file;
   private TextView       stdout_textView;
@@ -71,7 +74,12 @@ public class StandardOutputActivity extends AppCompatActivity {
 
         try {
           while (isRunning && ((currentLine = input.readLine()) != null)) {
-            stdout_textView.append(currentLine.replace("\r", "") + "\n");
+            currentLine = currentLine.replace("\r", "") + "\n";
+
+            if (isHighlighted)
+              stdout_textView.append(applyHighlight(currentLine));
+            else
+              stdout_textView.append(currentLine);
           }
         }
         catch(Exception e){}
@@ -170,9 +178,8 @@ public class StandardOutputActivity extends AppCompatActivity {
         }
 
         if (!isHighlighted) {
-          String highlight = getHighlight(filter);
-          stdout = stdout.replace(filter, highlight).replace("\n", "<br>");
-          stdout_textView.setText(Html.fromHtml(stdout));
+          setHighlight(filter);
+          stdout_textView.setText(applyHighlight(stdout));
           stdout = stdout_textView.getText().toString();
 
           isHighlighted   = true;
@@ -208,6 +215,7 @@ public class StandardOutputActivity extends AppCompatActivity {
           stdout_textView.setText(stdout);
 
           isHighlighted = false;
+          setHighlight(null);
         }
       }
 
@@ -228,8 +236,20 @@ public class StandardOutputActivity extends AppCompatActivity {
   }
 
   private String getHighlight(String text) {
-    String highlight = getHighlightPre() + text + getHighlightPost();
-    return highlight;
+    return getHighlightPre() + text + getHighlightPost();
+  }
+
+  private void setHighlight(String text) {
+    filter = text;
+
+    highlight = (text != null)
+      ? getHighlight(text)
+      : null;
+  }
+
+  private Spanned applyHighlight(String text) {
+    text = text.replace(filter, highlight).replace("\n", "<br>");
+    return Html.fromHtml(text);
   }
 
   private void toggleSearchBar() {
