@@ -72,7 +72,7 @@ public class StandardOutputActivity extends AppCompatActivity {
 
         try {
           while (isRunning && ((currentLine = input.readLine()) != null)) {
-            stdout_textView.append(currentLine + "\n");
+            stdout_textView.append(currentLine.replace("\r", "") + "\n");
           }
         }
         catch(Exception e){}
@@ -172,8 +172,9 @@ public class StandardOutputActivity extends AppCompatActivity {
 
         if (!isHighlighted) {
           String highlight = getHighlight(filter);
-          stdout = stdout.replace(filter, highlight);
+          stdout = stdout.replace(filter, highlight).replace("\n", "<br>");
           stdout_textView.setText(Html.fromHtml(stdout));
+          stdout = stdout_textView.getText().toString();
 
           isHighlighted   = true;
           search_position = 0;
