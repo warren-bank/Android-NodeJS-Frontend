@@ -19,7 +19,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import com.google.android.material.snackbar.Snackbar;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -166,7 +165,7 @@ public class StandardOutputActivity extends AppCompatActivity {
         String stdout = stdout_textView.getText().toString();
 
         if (filter.isEmpty() || !stdout.contains(filter)) {
-          Snackbar.make(stdout_container, R.string.notification_no_search_results, Snackbar.LENGTH_SHORT).show();
+          UI.getSnackbar(stdout_container, getString(R.string.notification_no_search_results), 6).show();
           return;
         }
 
@@ -187,6 +186,11 @@ public class StandardOutputActivity extends AppCompatActivity {
 
           int next_match_line = stdout_textView.getLayout().getLineForOffset(next_match_index);
           stdout_container.scrollTo(0, stdout_textView.getLayout().getLineTop(next_match_line));
+        }
+        else {
+          search_position = 0;
+
+          UI.getSnackbar(stdout_container, getString(R.string.notification_end_search_results), 6).show();
         }
       }
     });

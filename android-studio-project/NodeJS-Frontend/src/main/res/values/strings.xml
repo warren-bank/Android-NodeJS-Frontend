@@ -90,6 +90,7 @@
   <string name="error_stdout_not_found">Error: File Containing stdout Not Found</string>
   <string name="error_stdout_not_readable">Error: File Containing stdout Not Readable</string>
   <string name="notification_no_search_results">No results for search query</string>
+  <string name="notification_end_search_results">End of results.\n\nSearch will continue from the beginning.</string>
 
   <!-- ===== AbstractNodeService ===== -->
 
