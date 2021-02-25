@@ -180,7 +180,6 @@ public class StandardOutputActivity extends AppCompatActivity {
         if (!isHighlighted) {
           setHighlight(filter);
           stdout_textView.setText(applyHighlight(stdout));
-          stdout = stdout_textView.getText().toString();
 
           isHighlighted   = true;
           search_position = 0;
@@ -209,10 +208,9 @@ public class StandardOutputActivity extends AppCompatActivity {
       @Override
       public void onTextChanged(CharSequence s, int start, int before, int count) {
         if (isHighlighted) {
-          String stdout = stdout_textView.getText().toString();
-          stdout = stdout.replace(getHighlightPre(),  "");
-          stdout = stdout.replace(getHighlightPost(), "");
-          stdout_textView.setText(stdout);
+          stdout_textView.setText(
+            stdout_textView.getText().toString()
+          );
 
           isHighlighted = false;
           setHighlight(null);
