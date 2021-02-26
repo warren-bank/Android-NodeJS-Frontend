@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Frontend</string>
+  <string name="activity_main_menu_add">Dodaj &nodejs; Aplikacja</string>
+  <string name="activity_main_menu_export">Eksportuj dane</string>
+  <string name="activity_main_menu_import">Importuj dane</string>
+  <string name="activity_main_menu_delete">Usuń dane</string>
+  <string name="activity_main_menu_exit">Wyjdź</string>
+  <string name="app_folderpicker_json_export_filepath_description">Wybierz katalog do zapisania pliku</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Wybierz nową nazwę pliku dla JSON dane</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">eksport</string>
+  <string name="app_folderpicker_json_import_filepath_description">Wybierz plik zawierający wcześniej wyeksportowane dane JSON dane</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec w tym samym procesie</item>
+    <item>fork do oddzielnego procesu</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Zezwól na obowiązkowe uprawnienia</string>
+  <string name="warning_delete">Usuń wszystkie ustawienia aplikacji?</string>
+  <string name="app_settings_label_cwd_dirpath">Ścieżka do katalogu roboczego</string>
+  <string name="app_settings_label_title">Tytuł</string>
+  <string name="app_settings_label_env_vars">Zmienne środowiskowe</string>
+  <string name="app_settings_notes_env_vars">Jeden na wiersz.\nFormat: nazwa=wartość</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI opcje</string>
+  <string name="app_settings_label_js_filepath">Ścieżka do pliku JS</string>
+  <string name="app_settings_label_js_options">Plik JS CLI opcje</string>
+  <string name="app_context_menuitem_label_edit_settings">Edytuj ustawienia</string>
+  <string name="app_context_menuitem_label_run">Uruchom</string>
+  <string name="app_context_menuitem_label_start">Początek</string>
+  <string name="app_context_menuitem_label_stop">Zatrzymaj</string>
+  <string name="app_context_menuitem_label_read_stdout">Odczyt stdout</string>
+  <string name="app_context_menuitem_label_delete">Usuń</string>
+  <string name="label_button_browse">PRZEGLĄDAJ</string>
+  <string name="label_button_cancel">ANULUJ</string>
+  <string name="label_button_save">ZAPISZ</string>
+  <string name="label_button_update">AKTUALIZUJ</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Wybierz CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; Bieżący katalog roboczy aplikacji</string>
+  <string name="app_folderpicker_js_filepath_title">Wybierz plik JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; Główny punkt wejścia aplikacji</string>
+  <string name="error_using_max_apps">Błąd: nie można przekroczyć maksymalnej liczby &nodejs; Demony</string>
+  <string name="error_missing_required_value">Błąd: Brak wymaganej wartości</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Zabij exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Zabij: %s</string>
+  <string name="app_exec_complete">Zakończone execUprawa aplikacji: \"%s\"</string>
+  <string name="notification_process_busy">Nie można uruchomić \"%s\" aż do execZakończenie działania dla uruchomionej aplikacji: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Przełącz pasek wyszukiwania</string>
+  <string name="label_button_search">SZUKAJ</string>
+  <string name="error_stdout_not_found">Błąd: Plik zawierający stdout Nie znaleziono</string>
+  <string name="error_stdout_not_readable">Błąd: Plik zawierający stdout Nie można odczytać</string>
+  <string name="notification_no_search_results">Brak wyników dla zapytania do wyszukania</string>
+  <string name="notification_end_search_results">Koniec wyników.\n\nWyszukiwanie będzie kontynuowane od początku.</string>
+  <string name="notification_service_content_line1">&nodejs; demon:</string>
+  <string name="notification_service_content_line3">Kliknij, aby zatrzymać usługę.</string>
+</resources>

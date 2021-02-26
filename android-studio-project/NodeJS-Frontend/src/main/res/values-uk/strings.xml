@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Інтерфейс</string>
+  <string name="activity_main_menu_add">Додати &nodejs; Програма</string>
+  <string name="activity_main_menu_export">Експортувати дані</string>
+  <string name="activity_main_menu_import">Імпортувати дані</string>
+  <string name="activity_main_menu_delete">Вилучити дані</string>
+  <string name="activity_main_menu_exit">Вийти</string>
+  <string name="app_folderpicker_json_export_filepath_description">Виберіть каталог для збереження файла</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Виберіть нову назву файла JSON дані</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">export</string>
+  <string name="app_folderpicker_json_import_filepath_description">Виберіть файл, що містить раніше експортовані JSON дані</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec у цьому ж процесі</item>
+    <item>fork до окремого процесу</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Будь ласка, дозволь на</string>
+  <string name="warning_delete">Вилучити всі параметри програми?</string>
+  <string name="app_settings_label_cwd_dirpath">Шлях до робочого каталогу</string>
+  <string name="app_settings_label_title">Заголовок</string>
+  <string name="app_settings_label_env_vars">Змінні середовища</string>
+  <string name="app_settings_notes_env_vars">Один рядок.\nФормат: назва = значення</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI options</string>
+  <string name="app_settings_label_js_filepath">Шлях до файла JS</string>
+  <string name="app_settings_label_js_options">Файл JS CLI options</string>
+  <string name="app_context_menuitem_label_edit_settings">Редагувати параметри</string>
+  <string name="app_context_menuitem_label_run">Запустити</string>
+  <string name="app_context_menuitem_label_start">Почати</string>
+  <string name="app_context_menuitem_label_stop">Зупинка</string>
+  <string name="app_context_menuitem_label_read_stdout">Прочитано stdout</string>
+  <string name="app_context_menuitem_label_delete">Вилучити</string>
+  <string name="label_button_browse">НАВІГАЦІЯ</string>
+  <string name="label_button_cancel">СКАСУВАТИ</string>
+  <string name="label_button_save">ЗБЕРЕГТИ</string>
+  <string name="label_button_update">UPDATE</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Вибір CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; Поточний робочий каталог програми</string>
+  <string name="app_folderpicker_js_filepath_title">Виберіть файл JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; Головна точка входу у app</string>
+  <string name="error_using_max_apps">Помилка: не вдалося виробити максимальне число &nodejs; Демони</string>
+  <string name="error_missing_required_value">Помилка: Не задано значення, що</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Kill exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Kill: %s</string>
+  <string name="app_exec_complete">Завершено execрозбавлення додатка: \"%s\"</string>
+  <string name="notification_process_busy">Неможливо запустити \"%s\" до execзавершення розбавку для запуску програми: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Перемкнути панель пошуку</string>
+  <string name="label_button_search">ПОШУК</string>
+  <string name="error_stdout_not_found">Помилка: Файл для створення файла stdout Не знайдено</string>
+  <string name="error_stdout_not_readable">Помилка: Файл для створення файла stdout Не придатні для читання</string>
+  <string name="notification_no_search_results">Немає результатів для пошукового запиту</string>
+  <string name="notification_end_search_results">Кінець результатів.\n\nПошук триватиме з початку.</string>
+  <string name="notification_service_content_line1">&nodejs; фонова служба:</string>
+  <string name="notification_service_content_line3">Клацніть, щоб зупинити службу.</string>
+</resources>

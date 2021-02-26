@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; フロントエンド</string>
+  <string name="activity_main_menu_add">追加 &nodejs; アプリ</string>
+  <string name="activity_main_menu_export">データのエクスポート</string>
+  <string name="activity_main_menu_import">データのインポート</string>
+  <string name="activity_main_menu_delete">データの削除</string>
+  <string name="activity_main_menu_exit">出口</string>
+  <string name="app_folderpicker_json_export_filepath_description">ファイルを保存するディレクトリーの選択</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">新規ファイル名の選択 : JSON データ</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">輸出</string>
+  <string name="app_folderpicker_json_import_filepath_description">前にエクスポートしたファイルを選択 JSON データ</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec 同じプロセスで</item>
+    <item>fork プロセスを分離する</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">必須許可を許可してください</string>
+  <string name="warning_delete">すべてのアプリケーション設定の削除?</string>
+  <string name="app_settings_label_cwd_dirpath">作業ディレクトリーへのパス</string>
+  <string name="app_settings_label_title">書名</string>
+  <string name="app_settings_label_env_vars">環境変数</string>
+  <string name="app_settings_notes_env_vars">行当たり 1 つ.\nフォーマット: 名前 = 値</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI オプション</string>
+  <string name="app_settings_label_js_filepath">JS ファイルへのパス</string>
+  <string name="app_settings_label_js_options">JS ファイル CLI オプション</string>
+  <string name="app_context_menuitem_label_edit_settings">設定の編集</string>
+  <string name="app_context_menuitem_label_run">ラン</string>
+  <string name="app_context_menuitem_label_start">スタート</string>
+  <string name="app_context_menuitem_label_stop">停止</string>
+  <string name="app_context_menuitem_label_read_stdout">リード ( ) stdout</string>
+  <string name="app_context_menuitem_label_delete">削除</string>
+  <string name="label_button_browse">参照</string>
+  <string name="label_button_cancel">キャンセル</string>
+  <string name="label_button_save">セーブ</string>
+  <string name="label_button_update">アップデート</string>
+  <string name="app_folderpicker_cwd_dirpath_title">選択 CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; アプリケーションの現行作業ディレクトリー</string>
+  <string name="app_folderpicker_js_filepath_title">JS ファイルの選択</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; アプリのメイン・エントリー・ポイント</string>
+  <string name="error_using_max_apps">エラー: 最大数を超過できません &nodejs; デイモンス</string>
+  <string name="error_missing_required_value">エラー: 欠落している値</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">殺せ exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">殺せ: %s</string>
+  <string name="app_exec_complete">終了しました execアプリの変更: \"%s\"</string>
+  <string name="notification_process_busy">開始できない \"%s\" 期限まで execアプリケーションの実行が終了する: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">検索バーの切り替え</string>
+  <string name="label_button_search">サーチ</string>
+  <string name="error_stdout_not_found">エラー: ファイルの保存 stdout 未検出</string>
+  <string name="error_stdout_not_readable">エラー: ファイルの保存 stdout 読み取り不可</string>
+  <string name="notification_no_search_results">検索照会結果がありません</string>
+  <string name="notification_end_search_results">結果の終わり.\n\n検索は最初から続行します.</string>
+  <string name="notification_service_content_line1">&nodejs; デーモン:</string>
+  <string name="notification_service_content_line3">クリックしてサービスを停止.</string>
+</resources>

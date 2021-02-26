@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; अग्रता</string>
+  <string name="activity_main_menu_add">जोड़ें &nodejs; एप्लिकेशन</string>
+  <string name="activity_main_menu_export">डाटा निर्यात करें</string>
+  <string name="activity_main_menu_import">डाटा आयात करें</string>
+  <string name="activity_main_menu_delete">डाटा मिटाएँ</string>
+  <string name="activity_main_menu_exit">बाहर निकलें</string>
+  <string name="app_folderpicker_json_export_filepath_description">फ़ाइल को सहेजने के लिए निर्देशिका चुनें</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">के लिए नया फ़ाइल नाम चुनें JSON डेटा</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">निर्यात</string>
+  <string name="app_folderpicker_json_import_filepath_description">पहले से निर्यात किया गया फ़ाइल चुनें JSON डेटा</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec इसी प्रक्रिया में</item>
+    <item>fork अलग प्रक्रिया में</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">कृपया अनिवार्य अनुमतियाँ स्वीकारें</string>
+  <string name="warning_delete">सभी एप्लिकेशन सेटिंग को मिटाएँ?</string>
+  <string name="app_settings_label_cwd_dirpath">कार्यशील डिरेक्ट्री के लिए पथ</string>
+  <string name="app_settings_label_title">शीर्षक</string>
+  <string name="app_settings_label_env_vars">एनवायरनमेंट वेरिएबल</string>
+  <string name="app_settings_notes_env_vars">एक प्रति पंक्ति.\nप्रारूप: नाम=मूल्य</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI विकल्प</string>
+  <string name="app_settings_label_js_filepath">जेएस फ़ाइल का पथ</string>
+  <string name="app_settings_label_js_options">JS फ़ाइल CLI विकल्प</string>
+  <string name="app_context_menuitem_label_edit_settings">विन्यास संपादित करें</string>
+  <string name="app_context_menuitem_label_run">चलाएँ</string>
+  <string name="app_context_menuitem_label_start">प्रारंभ</string>
+  <string name="app_context_menuitem_label_stop">रोकें</string>
+  <string name="app_context_menuitem_label_read_stdout">पढ़ें stdout</string>
+  <string name="app_context_menuitem_label_delete">मिटाएँ</string>
+  <string name="label_button_browse">ब्राउज़ करें</string>
+  <string name="label_button_cancel">रद्द करें</string>
+  <string name="label_button_save">सहेजें</string>
+  <string name="label_button_update">अद्यतन</string>
+  <string name="app_folderpicker_cwd_dirpath_title">चुनें CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; एप्लिकेशन की वर्तमान कार्यशील निर्देशिका</string>
+  <string name="app_folderpicker_js_filepath_title">जेएस फ़ाइल चुनें</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; एप्लिकेशन का मुख्य प्रवेश बिंदु</string>
+  <string name="error_using_max_apps">त्रुटि: अधिकतम संख्या से अधिक नहीं कर सकते &nodejs; डेमन्स</string>
+  <string name="error_missing_required_value">त्रुटिः आवश्यक मान गुम है</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">वध करना exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">वध करना: %s</string>
+  <string name="app_exec_complete">पूर्ण execएप्लिकेशन का होना: \"%s\"</string>
+  <string name="notification_process_busy">प्रारंभ नहीं किया \"%s\" जब तक execचलने वाले एप्लिकेशन के लिए: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">खोज पट्टी टॉगल करें</string>
+  <string name="label_button_search">खोज</string>
+  <string name="error_stdout_not_found">त्रुटि: फ़ाइल कॉन्टैक्ट stdout नहीं मिला</string>
+  <string name="error_stdout_not_readable">त्रुटि: फ़ाइल कॉन्टैक्ट stdout पढ़ने योग्य नहीं</string>
+  <string name="notification_no_search_results">खोज क्वेरी के लिए कोई परिणाम नहीं</string>
+  <string name="notification_end_search_results">परिणामों का अंत.\n\nखोज शुरू से जारी रहेगा.</string>
+  <string name="notification_service_content_line1">&nodejs; डेमॉन:</string>
+  <string name="notification_service_content_line3">सेवा रोकने के लिए क्लिक करें.</string>
+</resources>

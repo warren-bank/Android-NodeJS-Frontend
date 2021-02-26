@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; সম্মুখপ্রান্ত</string>
+  <string name="activity_main_menu_add">যোগ করো &nodejs; অ্যাপ</string>
+  <string name="activity_main_menu_export">তথ্য রপ্তানি করো</string>
+  <string name="activity_main_menu_import">ডাটা ইম্পোর্ট করুন</string>
+  <string name="activity_main_menu_delete">ডাটা মুছে ফেলুন</string>
+  <string name="activity_main_menu_exit">এক্সিট</string>
+  <string name="app_folderpicker_json_export_filepath_description">ফাইল সংরক্ষণ করার জন্য ডিরেক্টরি নির্বাচন করুন</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">নতুন ফাইলের নাম নির্বাচন করুন JSON ডাটা</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">রপ্তানি</string>
+  <string name="app_folderpicker_json_import_filepath_description">পূর্বে রপ্তানি করা ফাইল নির্বাচন করুন JSON ডাটা</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec একই প্রক্রিয়ায়</item>
+    <item>fork পৃথক প্রক্রিয়া</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">অনুগ্রহ করে বাধ্যতামূলক অনুমতি প্রদান করুন</string>
+  <string name="warning_delete">সকল অ্যাপ সেটিংস মুছে ফেলুন?</string>
+  <string name="app_settings_label_cwd_dirpath">ওয়ার্কিং ডিরেক্টরির পাথ</string>
+  <string name="app_settings_label_title">শিরোনাম</string>
+  <string name="app_settings_label_env_vars">পরিবেশ ভেরিয়েবল</string>
+  <string name="app_settings_notes_env_vars">একটি লাইন.\nবিন্যাস: name=value</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI অপশন</string>
+  <string name="app_settings_label_js_filepath">JS ফাইলের পাথ</string>
+  <string name="app_settings_label_js_options">JS ফাইল CLI অপশন</string>
+  <string name="app_context_menuitem_label_edit_settings">সেটিংস সম্পাদনা</string>
+  <string name="app_context_menuitem_label_run">চালাও</string>
+  <string name="app_context_menuitem_label_start">আরম্ভ</string>
+  <string name="app_context_menuitem_label_stop">থামাও</string>
+  <string name="app_context_menuitem_label_read_stdout">পড়ুন stdout</string>
+  <string name="app_context_menuitem_label_delete">মুছে ফেলো</string>
+  <string name="label_button_browse">ব্রাউজ</string>
+  <string name="label_button_cancel">বাতিল করো</string>
+  <string name="label_button_save">সংরক্ষণ করো</string>
+  <string name="label_button_update">আপডেট</string>
+  <string name="app_folderpicker_cwd_dirpath_title">নির্বাচন করুন CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; অ্যাপের বর্তমান কাজের ডিরেক্টরি</string>
+  <string name="app_folderpicker_js_filepath_title">JS ফাইল নির্বাচন করুন</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; অ্যাপের মূল এন্ট্রি পয়েন্ট</string>
+  <string name="error_using_max_apps">ত্রুটি: সর্বোচ্চ সংখ্যা যায়নি &nodejs; Daemons</string>
+  <string name="error_missing_required_value">সমস্যা: অনুপস্থিত আবশ্যক মান</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Kill exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Kill: %s</string>
+  <string name="app_exec_complete">শেষ করা হয়েছে execঅ্যাপ্লিকেশন: \"%s\"</string>
+  <string name="notification_process_busy">আরম্ভ করা যাচ্ছে না \"%s\" আগ পর্যন্ত execচলমান অ্যাপ্লিকেশন-এর জন্য ফাংশন শেষ: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">অনুসন্ধান বার টগল করুন</string>
+  <string name="label_button_search">অনুসন্ধান</string>
+  <string name="error_stdout_not_found">ত্রুটি: ফাইল Containing stdout পাওয়া যায়না</string>
+  <string name="error_stdout_not_readable">ত্রুটি: ফাইল Containing stdout রিডেবল নয়</string>
+  <string name="notification_no_search_results">অনুসন্ধান অনুসন্ধান করার কোন ফলাফল নেই</string>
+  <string name="notification_end_search_results">ফলাফলের সমাপ্তি.\n\nঅনুসন্ধান শুরু থেকে অব্যাহত থাকবে.</string>
+  <string name="notification_service_content_line1">&nodejs; ডেমন:</string>
+  <string name="notification_service_content_line3">সার্ভিস বন্ধ করতে ক্লিক করুন.</string>
+</resources>

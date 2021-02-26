@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Giao diện</string>
+  <string name="activity_main_menu_add">Thêm &nodejs; Ứng dụng</string>
+  <string name="activity_main_menu_export">Dư ̃ liệu</string>
+  <string name="activity_main_menu_import">Nhập dữ liệu</string>
+  <string name="activity_main_menu_delete">Xoá dữ liệu</string>
+  <string name="activity_main_menu_exit">Thoát</string>
+  <string name="app_folderpicker_json_export_filepath_description">Chọn thư mục để lưu tập tin</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Chọn tên tập tin mới cho JSON dư ̃ liệu</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">xuất</string>
+  <string name="app_folderpicker_json_import_filepath_description">Chọn tập tin chứa đã xuất trước đó JSON dư ̃ liệu</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec trong cùng quy trình</item>
+    <item>fork cho quy trình riêng</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Vui lòng cho phép truy cập</string>
+  <string name="warning_delete">Xoá mọi thiết lập ứng dụng?</string>
+  <string name="app_settings_label_cwd_dirpath">Đường dẫn đến thư mục làm</string>
+  <string name="app_settings_label_title">Tiêu đề</string>
+  <string name="app_settings_label_env_vars">Biến môi trường</string>
+  <string name="app_settings_notes_env_vars">Một trên một dòng.\nĐịnh dạng: name=giá trị</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI tùy chọn</string>
+  <string name="app_settings_label_js_filepath">Ðường dẫn cho Tập tin JS</string>
+  <string name="app_settings_label_js_options">Tập tin JS CLI tùy chọn</string>
+  <string name="app_context_menuitem_label_edit_settings">Sửa thiết lập</string>
+  <string name="app_context_menuitem_label_run">Chạy</string>
+  <string name="app_context_menuitem_label_start">Bắt đầu</string>
+  <string name="app_context_menuitem_label_stop">Dừng lại</string>
+  <string name="app_context_menuitem_label_read_stdout">Đọc stdout</string>
+  <string name="app_context_menuitem_label_delete">&amp;amp; Xoá</string>
+  <string name="label_button_browse">DUYỆT</string>
+  <string name="label_button_cancel">HỦY</string>
+  <string name="label_button_save">SAVE</string>
+  <string name="label_button_update">CẬP nhật</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Chọn CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; thư mục làm việc hiện tại</string>
+  <string name="app_folderpicker_js_filepath_title">Chọn tập tin JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; Điểm nhập chính của ứng dụng</string>
+  <string name="error_using_max_apps">Lỗi: Không thể vượt quá sô ́ tối đa của sô ́ &nodejs; Daemons</string>
+  <string name="error_missing_required_value">Lỗi: Thiếu Giá Trị Yêu Cầu</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Giết exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Giết: %s</string>
+  <string name="app_exec_complete">Đã xong execỨng dụng: \"%s\"</string>
+  <string name="notification_process_busy">Không thể chạy \"%s\" cho đến khi execHoàn thành xong các ứng dụng: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Bật/tắt thanh tìm kiếm</string>
+  <string name="label_button_search">SEARCH</string>
+  <string name="error_stdout_not_found">Lỗi: Tập Tin Đạt stdout Không tìm thấy</string>
+  <string name="error_stdout_not_readable">Lỗi: Tập Tin Đạt stdout Không thể đọc được</string>
+  <string name="notification_no_search_results">Không có kết quả tìm kiếm tìm kiếm</string>
+  <string name="notification_end_search_results">Kết thúc kết quả.\n\nTìm kiếm sẽ tiếp tục tư ̀ bắt đầu.</string>
+  <string name="notification_service_content_line1">&nodejs; daemon:</string>
+  <string name="notification_service_content_line3">Nhấp để dừng dịch vụ.</string>
+</resources>

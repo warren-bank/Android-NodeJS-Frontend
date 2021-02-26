@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Frontent</string>
+  <string name="activity_main_menu_add">Żid &nodejs; App</string>
+  <string name="activity_main_menu_export">Data Esportazzjoni</string>
+  <string name="activity_main_menu_import">Data tal-importazzjoni</string>
+  <string name="activity_main_menu_delete">Ħassar Id-dejta</string>
+  <string name="activity_main_menu_exit">Ħruġ</string>
+  <string name="app_folderpicker_json_export_filepath_description">Agħżel direttorju biex tiffranka l-fajl</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Agħżel isem fajl ġdid għall JSON dejta</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">esportazzjoni</string>
+  <string name="app_folderpicker_json_import_filepath_description">Fajl magħżul li fih preċedentement esportat JSON dejta</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec fl-istess proċess</item>
+    <item>fork għal proċess separat</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Jekk jogħġbok jippermettu permessi obbligatorji</string>
+  <string name="warning_delete">Ħassar l-app settings?</string>
+  <string name="app_settings_label_cwd_dirpath">Triq għal Ħidma Direttorju</string>
+  <string name="app_settings_label_title">Titolu</string>
+  <string name="app_settings_label_env_vars">Varjabbli Ambjentali</string>
+  <string name="app_settings_notes_env_vars">Wieħed għal kull linja.\nFormat: name=valur</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI għażliet</string>
+  <string name="app_settings_label_js_filepath">Triq lejn JS File</string>
+  <string name="app_settings_label_js_options">JS File CLI għażliet</string>
+  <string name="app_context_menuitem_label_edit_settings">Editja Settings</string>
+  <string name="app_context_menuitem_label_run">Run</string>
+  <string name="app_context_menuitem_label_start">Bidu</string>
+  <string name="app_context_menuitem_label_stop">Waqfien</string>
+  <string name="app_context_menuitem_label_read_stdout">Aqra stdout</string>
+  <string name="app_context_menuitem_label_delete">Ħassar</string>
+  <string name="label_button_browse">FITTEX</string>
+  <string name="label_button_cancel">CANCEL</string>
+  <string name="label_button_save">SAVE</string>
+  <string name="label_button_update">AĠĠORNAMENT</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Agħżel CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; direttorju ta \' ħidma attwali app</string>
+  <string name="app_folderpicker_js_filepath_title">Agħżel JS File</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; Punt tad-dħul ewlieni tal</string>
+  <string name="error_using_max_apps">Żball: Ma jistax jaqbeż in-Numru Massimu ta \' &nodejs; Daemons</string>
+  <string name="error_missing_required_value">Żball: Valur Meħtieġ Nieqes</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Joqtlu exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Joqtlu: %s</string>
+  <string name="app_exec_complete">Lest execl-applikazzjoni: \"%s\"</string>
+  <string name="notification_process_busy">Ma tistax tibda \"%s\" sa execL-applikazzjoni għall-app: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Toggle Search Bar</string>
+  <string name="label_button_search">FITTEX</string>
+  <string name="error_stdout_not_found">Żball: Fajl Li Fih stdout Ma Nstabx</string>
+  <string name="error_stdout_not_readable">Żball: Fajl Li Fih stdout Mhux Faċli</string>
+  <string name="notification_no_search_results">L-ebda riżultati għal mistoqsija tfittxija</string>
+  <string name="notification_end_search_results">Tmiem tar-riżultati.\n\nFittex se tkompli mill-bidu.</string>
+  <string name="notification_service_content_line1">&nodejs; daemon:</string>
+  <string name="notification_service_content_line3">Ikklikkja biex tieqaf servizz.</string>
+</resources>

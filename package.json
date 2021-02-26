@@ -6,6 +6,6 @@
     "@warren-bank/translate-android-strings": "^1.6.0"
   },
   "scripts": {
-    "translate": "node_modules/.bin/translate-android-strings -i \"en\" -f \"android-studio-project/NodeJS-Frontend/src/main/res/values/strings.xml\" -d \"android-studio-project/NodeJS-Frontend/src/main/res\" -m -b \"Node\\.js\" --nc --nw"
+    "translate": "node_modules/.bin/translate-android-strings -i \"en\" -f \"android-studio-project/NodeJS-Frontend/src/main/res/values/strings.xml\" -d \"android-studio-project/NodeJS-Frontend/src/main/res\" -m -b \"Node\\.js\" -b \"exec\" -b \"fork\" -b \"stdout\" -b \"JSON\" -b \"CLI\" -b \"CWD\" --nc --nw"
   }
 }

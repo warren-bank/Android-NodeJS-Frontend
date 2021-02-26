@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Comhéadan</string>
+  <string name="activity_main_menu_add">Cuir Leis &nodejs; App</string>
+  <string name="activity_main_menu_export">Easpórtáil Sonraí</string>
+  <string name="activity_main_menu_import">Iompórtáil Sonraí</string>
+  <string name="activity_main_menu_delete">Scrios Sonraí</string>
+  <string name="activity_main_menu_exit">Scoir</string>
+  <string name="app_folderpicker_json_export_filepath_description">Roghnaigh eolaire chun an comhad a shábháil</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Roghnaigh ainm nua comhaid le haghaidh JSON sonraí</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">easportáil</string>
+  <string name="app_folderpicker_json_import_filepath_description">Roghnaigh comhad ina n-easpórtáil roimhe JSON sonraí</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec sa phróiseas céanna</item>
+    <item>fork do phróiseas ar leith</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Ceadaíonn sé seo ceadanna sainordaitheach</string>
+  <string name="warning_delete">Scrios gach socruithe app?</string>
+  <string name="app_settings_label_cwd_dirpath">Conair an Chomhadlann Oibre</string>
+  <string name="app_settings_label_title">Teideal</string>
+  <string name="app_settings_label_env_vars">Athróga Timpeallachta</string>
+  <string name="app_settings_notes_env_vars">Gach líne.\nFormáid: name=luach</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI roghanna</string>
+  <string name="app_settings_label_js_filepath">Conair go Comhad JS</string>
+  <string name="app_settings_label_js_options">Comhad JS CLI roghanna</string>
+  <string name="app_context_menuitem_label_edit_settings">Cuir an Socruithe</string>
+  <string name="app_context_menuitem_label_run">Rith</string>
+  <string name="app_context_menuitem_label_start">Tosaigh</string>
+  <string name="app_context_menuitem_label_stop">Stop</string>
+  <string name="app_context_menuitem_label_read_stdout">Á léamh stdout</string>
+  <string name="app_context_menuitem_label_delete">&amp; Scrios</string>
+  <string name="label_button_browse">BROWSE</string>
+  <string name="label_button_cancel">CEALAITHE</string>
+  <string name="label_button_save">SAT</string>
+  <string name="label_button_update">NUASHONRAIGH</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Roghnaigh CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; Comhadlann reatha oibre</string>
+  <string name="app_folderpicker_js_filepath_title">Roghnaigh Comhad JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; Príomhphointe iontrála</string>
+  <string name="error_using_max_apps">Earráid: Ní féidir a bheith in ann an Líon uasta de &nodejs; Deamhan</string>
+  <string name="error_missing_required_value">Earráid: Luach is gá</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">KillName exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">KillName: %s</string>
+  <string name="app_exec_complete">Críochnaithe execugadh app: \"%s\"</string>
+  <string name="notification_process_busy">Ní féidir tosú \"%s\" go dtí execcríochnaíonn sé bailíocht le haghaidh app ag rith: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Scoránaigh an Barra Cuardaigh</string>
+  <string name="label_button_search">CUARDAIGH</string>
+  <string name="error_stdout_not_found">Earráid: Comhrá Comhad stdout Gan Aimsiú</string>
+  <string name="error_stdout_not_readable">Earráid: Comhrá Comhad stdout Gan Léamh</string>
+  <string name="notification_no_search_results">Níl aon toradh le haghaidh iarratas cuardaigh</string>
+  <string name="notification_end_search_results">Deireadh na dtorthaí.\n\nBeidh an cuardach ar aghaidh ó thús.</string>
+  <string name="notification_service_content_line1">&nodejs; Emon:</string>
+  <string name="notification_service_content_line3">Cliceáil chun seirbhís a stopadh.</string>
+</resources>

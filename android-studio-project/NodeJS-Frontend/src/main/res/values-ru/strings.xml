@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Фронталь</string>
+  <string name="activity_main_menu_add">Добавить &nodejs; Приложение</string>
+  <string name="activity_main_menu_export">Экспортировать данные</string>
+  <string name="activity_main_menu_import">Импортировать данные</string>
+  <string name="activity_main_menu_delete">Удалить данные</string>
+  <string name="activity_main_menu_exit">Выход</string>
+  <string name="app_folderpicker_json_export_filepath_description">Выберите каталог для сохранения файла</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Выберите имя нового файла для JSON данные</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">экспорт</string>
+  <string name="app_folderpicker_json_import_filepath_description">Выберите файл, содержащий ранее экспортированный файл JSON данные</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec в том же процессе</item>
+    <item>fork для отдельного процесса</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Разрешите обязательные разрешения</string>
+  <string name="warning_delete">Удалить все параметры приложения?</string>
+  <string name="app_settings_label_cwd_dirpath">Путь к рабочим каталогам</string>
+  <string name="app_settings_label_title">Название</string>
+  <string name="app_settings_label_env_vars">Переменные среды</string>
+  <string name="app_settings_notes_env_vars">По одному в строке.\nФормат: имя=значение</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI опции</string>
+  <string name="app_settings_label_js_filepath">Путь к файлу JS</string>
+  <string name="app_settings_label_js_options">Файл JS CLI опции</string>
+  <string name="app_context_menuitem_label_edit_settings">Изменить параметры</string>
+  <string name="app_context_menuitem_label_run">Выполнить</string>
+  <string name="app_context_menuitem_label_start">Начало</string>
+  <string name="app_context_menuitem_label_stop">Остановить</string>
+  <string name="app_context_menuitem_label_read_stdout">Чтение stdout</string>
+  <string name="app_context_menuitem_label_delete">Удалить</string>
+  <string name="label_button_browse">ОБЗОР</string>
+  <string name="label_button_cancel">ОТМЕНА</string>
+  <string name="label_button_save">СОХРАНИТЬ</string>
+  <string name="label_button_update">UPDATE</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Выбрать CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; текущий рабочий каталог приложения</string>
+  <string name="app_folderpicker_js_filepath_title">Выбрать файл JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; главная точка входа приложения</string>
+  <string name="error_using_max_apps">Ошибка: Не удалось превышено максимальное число &nodejs; Демоны</string>
+  <string name="error_missing_required_value">Ошибка: Отсутствует обязательное значение</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Убить exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Убить: %s</string>
+  <string name="app_exec_complete">Завершено execУле приложения: \"%s\"</string>
+  <string name="notification_process_busy">Не удалось запустить \"%s\" до execution завершает работу приложения: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Переключить панель поиска</string>
+  <string name="label_button_search">ПОИСК</string>
+  <string name="error_stdout_not_found">Ошибка: содержащий файл stdout Не найдено</string>
+  <string name="error_stdout_not_readable">Ошибка: содержащий файл stdout Нечитаемые</string>
+  <string name="notification_no_search_results">Нет результатов для запроса поиска</string>
+  <string name="notification_end_search_results">Конец результатов.\n\nПоиск продолжится с начала.</string>
+  <string name="notification_service_content_line1">&nodejs; демон:</string>
+  <string name="notification_service_content_line3">Щелкните, чтобы остановить службу.</string>
+</resources>

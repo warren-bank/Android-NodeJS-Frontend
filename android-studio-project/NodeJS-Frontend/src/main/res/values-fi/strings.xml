@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Fronde</string>
+  <string name="activity_main_menu_add">Lisää &nodejs; App</string>
+  <string name="activity_main_menu_export">Vie tiedot</string>
+  <string name="activity_main_menu_import">Tuo tiedot</string>
+  <string name="activity_main_menu_delete">Poista tiedot</string>
+  <string name="activity_main_menu_exit">Poistuminen</string>
+  <string name="app_folderpicker_json_export_filepath_description">Valitse kansio -kansio</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Valitse uusi tiedoston nimi JSON Tiedot</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">Vienti</string>
+  <string name="app_folderpicker_json_import_filepath_description">Valitse aiemmin viedyt tiedostot JSON Tiedot</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec Samassa prosessissa</item>
+    <item>fork Erillisen prosessin</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Salli pakolliset käyttöoikeudet</string>
+  <string name="warning_delete">Poista kaikki sovellusasetukset?</string>
+  <string name="app_settings_label_cwd_dirpath">Työhakemiston polku</string>
+  <string name="app_settings_label_title">Osasto</string>
+  <string name="app_settings_label_env_vars">Ympäristömuuttujat</string>
+  <string name="app_settings_notes_env_vars">Yksi per rivi.\nFormat: nimi=arvo</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI Vaihtoehdot</string>
+  <string name="app_settings_label_js_filepath">JS-tiedoston polku</string>
+  <string name="app_settings_label_js_options">JS-tiedosto CLI Vaihtoehdot</string>
+  <string name="app_context_menuitem_label_edit_settings">Muokkaa asetuksia</string>
+  <string name="app_context_menuitem_label_run">Juokse</string>
+  <string name="app_context_menuitem_label_start">Aloita</string>
+  <string name="app_context_menuitem_label_stop">Lopeta</string>
+  <string name="app_context_menuitem_label_read_stdout">Lue stdout</string>
+  <string name="app_context_menuitem_label_delete">Poista</string>
+  <string name="label_button_browse">SELAA</string>
+  <string name="label_button_cancel">PERUUTA</string>
+  <string name="label_button_save">TALLENNA</string>
+  <string name="label_button_update">PÄIVITÄ</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Valitse CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; Sovelluksen nykyinen työhakemisto</string>
+  <string name="app_folderpicker_js_filepath_title">Valitse JS-tiedosto</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; Sovelluksen pääsisäänkäynti</string>
+  <string name="error_using_max_apps">Virhe: Enimmäismäärän ylittyessä on ilmennyt virhe. &nodejs; Daemonit</string>
+  <string name="error_missing_required_value">Virhe: Pakollinen arvo puuttuu</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Tapa exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Tapa: %s</string>
+  <string name="app_exec_complete">Valmis execSovelluksen ratkaisu: \"%s\"</string>
+  <string name="notification_process_busy">Ei voi aloittaa \"%s\" Kunnes execSovelluksen viimeistelyohjelma: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Vaihda hakua</string>
+  <string name="label_button_search">HAE</string>
+  <string name="error_stdout_not_found">Virhe: Tiedostot stdout Ei löytynyt</string>
+  <string name="error_stdout_not_readable">Virhe: Tiedostot stdout Ei palautettavissa</string>
+  <string name="notification_no_search_results">Ei tuloksia hakukyselyssä</string>
+  <string name="notification_end_search_results">Tulosten loppu.\n\nHaku jatkuu alusta alkaen.</string>
+  <string name="notification_service_content_line1">&nodejs; Daemoni:</string>
+  <string name="notification_service_content_line3">Lopeta palvelu napsauttamalla.</string>
+</resources>

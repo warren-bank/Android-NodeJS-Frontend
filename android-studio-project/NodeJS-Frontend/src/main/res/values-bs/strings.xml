@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Naprijed</string>
+  <string name="activity_main_menu_add">Dodaj &nodejs; Aplikacija</string>
+  <string name="activity_main_menu_export">Izvezi podatke</string>
+  <string name="activity_main_menu_import">Uvoz podataka</string>
+  <string name="activity_main_menu_delete">Izbriši podatke</string>
+  <string name="activity_main_menu_exit">Izlaz</string>
+  <string name="app_folderpicker_json_export_filepath_description">Izaberite direktorij za spremanje datoteke</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Izaberite novo ime datoteke za JSON podaci</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">eksport</string>
+  <string name="app_folderpicker_json_import_filepath_description">Izaberite datoteku koja je prethodno eksportirana JSON podaci</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec u istom procesu</item>
+    <item>fork da odvoji proces</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Molim, dozvolite obavezne dozvole</string>
+  <string name="warning_delete">Izbriši sve postavke aplikacije?</string>
+  <string name="app_settings_label_cwd_dirpath">Put do radnog direktorija</string>
+  <string name="app_settings_label_title">Naslov</string>
+  <string name="app_settings_label_env_vars">Varijable okoline</string>
+  <string name="app_settings_notes_env_vars">Jedan po redu..\nFormat: ime=vrijednost</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI opcije</string>
+  <string name="app_settings_label_js_filepath">Put do JS datoteke</string>
+  <string name="app_settings_label_js_options">JS Datoteka CLI opcije</string>
+  <string name="app_context_menuitem_label_edit_settings">Uredi postavke</string>
+  <string name="app_context_menuitem_label_run">Pokreni</string>
+  <string name="app_context_menuitem_label_start">Pokreni</string>
+  <string name="app_context_menuitem_label_stop">Zaustavi</string>
+  <string name="app_context_menuitem_label_read_stdout">Pročitaj stdout</string>
+  <string name="app_context_menuitem_label_delete">Briši</string>
+  <string name="label_button_browse">PREGLEDAJ</string>
+  <string name="label_button_cancel">OPOZIV</string>
+  <string name="label_button_save">SPREMI</string>
+  <string name="label_button_update">UPDATE</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Izaberi CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; trenutni radni direktorij aplikacije</string>
+  <string name="app_folderpicker_js_filepath_title">Odaberi JS datoteku</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; Aplikacija je glavna ulazna tačka aplikacije</string>
+  <string name="error_using_max_apps">Greška: Ne može se premašiti maksimalni broj &nodejs; Demoni</string>
+  <string name="error_missing_required_value">Greška: Nedostaje potrebna vrijednost</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Ubijte exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Ubijte: %s</string>
+  <string name="app_exec_complete">Završeno execUvanje aplikacije: \"%s\"</string>
+  <string name="notification_process_busy">Ne mogu pokrenuti \"%s\" sve do execUtion završava za pokretanje aplikacije: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Prebaci traku za pretraživanje</string>
+  <string name="label_button_search">TRAŽI</string>
+  <string name="error_stdout_not_found">Greška: Zadržavanje Datoteke stdout Nije nađeno</string>
+  <string name="error_stdout_not_readable">Greška: Zadržavanje Datoteke stdout Nije Čitljivo</string>
+  <string name="notification_no_search_results">Nema rezultata za upit pretraživanja</string>
+  <string name="notification_end_search_results">Kraj rezultata.\n\nPotraga će se nastaviti od početka.</string>
+  <string name="notification_service_content_line1">&nodejs; demon:</string>
+  <string name="notification_service_content_line3">Kliknite da biste zaustavili servis.</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; फ्रन्टइन्डComment</string>
+  <string name="activity_main_menu_add">थप्नुहोस् &nodejs; एप</string>
+  <string name="activity_main_menu_export">डेटा निर्यात गर्नुहोस्</string>
+  <string name="activity_main_menu_import">डेटा आयात गर्नुहोस्</string>
+  <string name="activity_main_menu_delete">डेटा मेट्नुहोस्</string>
+  <string name="activity_main_menu_exit">निस्कदा</string>
+  <string name="app_folderpicker_json_export_filepath_description">फाइल बचत गर्न डाइरेक्टरी चयन गर्नुहोस्</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">यसका लागि नयाँ फाइल नाम चयन गर्नुहोस् JSON डेटा</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">निर्यात गर्नुहोस्</string>
+  <string name="app_folderpicker_json_import_filepath_description">पहिले निर्यात भएको फाइल चयन गर्नुहोस् JSON डेटा</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec एउटै प्रक्रियामा</item>
+    <item>fork प्रक्रिया अलग गर्न</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">कृपया अनिवार्य अनुमतिहरू अनुमति दिनुहोस्</string>
+  <string name="warning_delete">सबै एप सेटिङ मेट्नुहोस्?</string>
+  <string name="app_settings_label_cwd_dirpath">कार्य डाइरेक्टरीमा मार्ग</string>
+  <string name="app_settings_label_title">शीर्षक</string>
+  <string name="app_settings_label_env_vars">परिवेश चल</string>
+  <string name="app_settings_notes_env_vars">एक प्रति रेखा.\nढाँचा: name=value</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI विकल्पहरू</string>
+  <string name="app_settings_label_js_filepath">JS फाइलमा मार्ग</string>
+  <string name="app_settings_label_js_options">JS फाइल CLI विकल्पहरू</string>
+  <string name="app_context_menuitem_label_edit_settings">सेटिङ सम्पादन गर्नुहोस्</string>
+  <string name="app_context_menuitem_label_run">चलाउनुहोस्</string>
+  <string name="app_context_menuitem_label_start">सुरु गर्नुहोस्</string>
+  <string name="app_context_menuitem_label_stop">रोक्नुहोस्</string>
+  <string name="app_context_menuitem_label_read_stdout">पढिएको stdout</string>
+  <string name="app_context_menuitem_label_delete">मेट्नुहोस्</string>
+  <string name="label_button_browse">ब्राउज गर्नुहोस्</string>
+  <string name="label_button_cancel">रद्द गर्नुहोस्</string>
+  <string name="label_button_save">बचत गर्नुहोस्</string>
+  <string name="label_button_update">अद्यावधिक गर्नुहोस्</string>
+  <string name="app_folderpicker_cwd_dirpath_title">चयन गर्नुहोस् CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; एपको हालको कार्य डाइरेक्टरी</string>
+  <string name="app_folderpicker_js_filepath_title">JS फाइल चयन गर्नुहोस्</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; एपको मुख्य प्रविष्टि बिन्दु</string>
+  <string name="error_using_max_apps">त्रुटि: अधिकतम सङ्ख्या &nodejs; डेमोन्स</string>
+  <string name="error_missing_required_value">त्रुटि: हराएको आवश्यक मान</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Kill exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Kill: %s</string>
+  <string name="app_exec_complete">समाप्त भयो execएप्लिकेसन: \"%s\"</string>
+  <string name="notification_process_busy">सुरु गर्न सकिँदैन \"%s\" जबसम्म execचलाउनु पर्ने एप्लिकेसन को लागि फाईनल: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">खोजी पट्टी टगल गर्नुहोस्</string>
+  <string name="label_button_search">खोजी गर्नुहोस्</string>
+  <string name="error_stdout_not_found">त्रुटि: फाइल समाहित stdout फेला परेन</string>
+  <string name="error_stdout_not_readable">त्रुटि: फाइल समाहित stdout पुन: योग्य छैन</string>
+  <string name="notification_no_search_results">खोजी क्वेरीका लागि कुनै परिणाम छैन</string>
+  <string name="notification_end_search_results">नतिजाको अन्त्य.\n\nसुरुदेखि नै खोजी जारी राख्नेछ.</string>
+  <string name="notification_service_content_line1">&nodejs; डेइमोन:</string>
+  <string name="notification_service_content_line3">सेवा रोक्न क्लिक गर्नुहोस्.</string>
+</resources>

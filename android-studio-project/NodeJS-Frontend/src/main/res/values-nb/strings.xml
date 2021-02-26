@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Frontser</string>
+  <string name="activity_main_menu_add">Tillegg &nodejs; App</string>
+  <string name="activity_main_menu_export">Eksporter data</string>
+  <string name="activity_main_menu_import">Importer data</string>
+  <string name="activity_main_menu_delete">Slett data</string>
+  <string name="activity_main_menu_exit">Avslutt</string>
+  <string name="app_folderpicker_json_export_filepath_description">Velg katalog for lagring av fil</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Velg nytt filnavn for JSON data</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">eksport</string>
+  <string name="app_folderpicker_json_import_filepath_description">Velg fil som inneholder tidligere eksportert JSON data</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec i samme prosess</item>
+    <item>fork for å skille prosess</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Vennligst tillat obligatoriske tillatelser</string>
+  <string name="warning_delete">Slett alle app-innstillinger?</string>
+  <string name="app_settings_label_cwd_dirpath">Bane til arbeidskatalog</string>
+  <string name="app_settings_label_title">Tittel</string>
+  <string name="app_settings_label_env_vars">Miljøvariabler</string>
+  <string name="app_settings_notes_env_vars">En per linje.\nFormat: name=verdi</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI alternativer</string>
+  <string name="app_settings_label_js_filepath">Bane til JS-fil</string>
+  <string name="app_settings_label_js_options">JS-fil CLI alternativer</string>
+  <string name="app_context_menuitem_label_edit_settings">Rediger innstillinger</string>
+  <string name="app_context_menuitem_label_run">Kjør</string>
+  <string name="app_context_menuitem_label_start">Start</string>
+  <string name="app_context_menuitem_label_stop">Stopp</string>
+  <string name="app_context_menuitem_label_read_stdout">Les stdout</string>
+  <string name="app_context_menuitem_label_delete">Slett</string>
+  <string name="label_button_browse">BLA GJENNOM</string>
+  <string name="label_button_cancel">ANNULLER</string>
+  <string name="label_button_save">LAGRING</string>
+  <string name="label_button_update">OPPDATERING</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Velg CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; appens gjeldende arbeidskatalog</string>
+  <string name="app_folderpicker_js_filepath_title">Velg JS-fil</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; appens hovedinngangspunkt</string>
+  <string name="error_using_max_apps">Feil: Kan ikke overskridelse av maksimalt antall &nodejs; Daemoner</string>
+  <string name="error_missing_required_value">Feil: Mangler nødvendig verdi</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Drep exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Drep: %s</string>
+  <string name="app_exec_complete">Ferdige execution av app: \"%s\"</string>
+  <string name="notification_process_busy">Kan ikke starte \"%s\" til execoppløsning avslutter for kjøring av app: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Aktiver / deaktiver søkefelt</string>
+  <string name="label_button_search">SØK</string>
+  <string name="error_stdout_not_found">Feil: Filen Containing stdout Ikke funnet</string>
+  <string name="error_stdout_not_readable">Feil: Filen Containing stdout Ikke realiserbar</string>
+  <string name="notification_no_search_results">Ingen resultater for søkespørring</string>
+  <string name="notification_end_search_results">Slutt på resultater.\n\nSøkingen vil fortsette fra begynnelsen.</string>
+  <string name="notification_service_content_line1">&nodejs; demon:</string>
+  <string name="notification_service_content_line3">Klikk for å stoppe tjeneste.</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Frontend</string>
+  <string name="activity_main_menu_add">Tambahkan &nodejs; Aplikasi</string>
+  <string name="activity_main_menu_export">Ekspor Data</string>
+  <string name="activity_main_menu_import">Impor Data</string>
+  <string name="activity_main_menu_delete">Hapus Data</string>
+  <string name="activity_main_menu_exit">Keluar</string>
+  <string name="app_folderpicker_json_export_filepath_description">Pilih direktori untuk menyimpan berkas</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Pilih nama berkas baru untuk JSON data</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">ekspor</string>
+  <string name="app_folderpicker_json_import_filepath_description">Pilih berkas yang berisi yang diekspor sebelumnya JSON data</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec dalam proses yang sama</item>
+    <item>fork untuk memisahkan proses</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Harap ijinkan hak yang wajib diisi</string>
+  <string name="warning_delete">Hapus semua pengaturan aplikasi?</string>
+  <string name="app_settings_label_cwd_dirpath">Path ke Direktori Kerja</string>
+  <string name="app_settings_label_title">Judul</string>
+  <string name="app_settings_label_env_vars">Variabel Lingkungan</string>
+  <string name="app_settings_notes_env_vars">Satu per baris.\nFormat: name=nilai</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI pilihan</string>
+  <string name="app_settings_label_js_filepath">Path ke Berkas JS</string>
+  <string name="app_settings_label_js_options">Berkas JS CLI pilihan</string>
+  <string name="app_context_menuitem_label_edit_settings">Edit Pengaturan</string>
+  <string name="app_context_menuitem_label_run">Jalankan</string>
+  <string name="app_context_menuitem_label_start">Mulai</string>
+  <string name="app_context_menuitem_label_stop">Hentikan</string>
+  <string name="app_context_menuitem_label_read_stdout">Baca stdout</string>
+  <string name="app_context_menuitem_label_delete">Hapus</string>
+  <string name="label_button_browse">TELUSURI</string>
+  <string name="label_button_cancel">Batalkan</string>
+  <string name="label_button_save">SAVE</string>
+  <string name="label_button_update">PEMUTAKHIRAN</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Pilih CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; direktori kerja aplikasi saat ini</string>
+  <string name="app_folderpicker_js_filepath_title">Pilih Berkas JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; titik entri utama aplikasi</string>
+  <string name="error_using_max_apps">Kesalahan: Tidak Dapat Melampaui Jumlah Maksimum &nodejs; Daemons</string>
+  <string name="error_missing_required_value">Kesalahan: Kehilangan Nilai yang Diperlukan</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Membunuh exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Membunuh: %s</string>
+  <string name="app_exec_complete">Selesai exec$dari $: \"%s\"</string>
+  <string name="notification_process_busy">Tidak dapat memulai \"%s\" sampai execPenyelesaian masalah untuk menjalankan aplikasi: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Jungkitkan Batang Pencarian</string>
+  <string name="label_button_search">Pencarian</string>
+  <string name="error_stdout_not_found">Galat: Berkas Mengandung stdout Tidak Ditemukan</string>
+  <string name="error_stdout_not_readable">Galat: Berkas Mengandung stdout Tidak Dapat Ditemukan</string>
+  <string name="notification_no_search_results">Tidak ada hasil pencarian untuk pencarian</string>
+  <string name="notification_end_search_results">Akhir dari hasil.\n\nPencarian akan berlanjut dari awal.</string>
+  <string name="notification_service_content_line1">&nodejs; daemon:</string>
+  <string name="notification_service_content_line3">Klik untuk menghentikan layanan.</string>
+</resources>

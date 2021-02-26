@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Blaen</string>
+  <string name="activity_main_menu_add">Ychwanegu &nodejs; Ap</string>
+  <string name="activity_main_menu_export">Data Allforio</string>
+  <string name="activity_main_menu_import">Mewnforio Data</string>
+  <string name="activity_main_menu_delete">Dileu Data</string>
+  <string name="activity_main_menu_exit">Gadael</string>
+  <string name="app_folderpicker_json_export_filepath_description">Dewiswch gyfeiriadur i gadw ffeil</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Dewiswch enw ffeil newydd ar gyfer JSON data</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">allforiad</string>
+  <string name="app_folderpicker_json_import_filepath_description">Dewis ffeil sy\'n cynnwys y allforio\'n flaenorol JSON data</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec yn yr un broses</item>
+    <item>fork i broses ar wahân</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Caniatáu caniatadau gorfodol</string>
+  <string name="warning_delete">Dileu pob gosodiad ap?</string>
+  <string name="app_settings_label_cwd_dirpath">Llwybr i \' r Cyfeiriadur Gwaith</string>
+  <string name="app_settings_label_title">Teitl</string>
+  <string name="app_settings_label_env_vars">Newidynnau</string>
+  <string name="app_settings_notes_env_vars">Un llinell.\nFformat: name=gwerth</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI dewisiadau</string>
+  <string name="app_settings_label_js_filepath">Llwybr i Ffeil JS</string>
+  <string name="app_settings_label_js_options">Ffeil JS CLI dewisiadau</string>
+  <string name="app_context_menuitem_label_edit_settings">Gosodiadau Golygu</string>
+  <string name="app_context_menuitem_label_run">Rhedeg</string>
+  <string name="app_context_menuitem_label_start">Cychwyn</string>
+  <string name="app_context_menuitem_label_stop">Atal</string>
+  <string name="app_context_menuitem_label_read_stdout">Darllen stdout</string>
+  <string name="app_context_menuitem_label_delete">Dileu</string>
+  <string name="label_button_browse">PORI</string>
+  <string name="label_button_cancel">DIDDYMU</string>
+  <string name="label_button_save">CADW</string>
+  <string name="label_button_update">CAU</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Dewis CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; cyfeiriadur gwaith cyfredol ap</string>
+  <string name="app_folderpicker_js_filepath_title">Dewis Ffeil JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; pwynt prif gofnod ap</string>
+  <string name="error_using_max_apps">Gwall: Methu Â Bod Yn Fwy Na\'r Nifer Uchaf &nodejs; Daemonau</string>
+  <string name="error_missing_required_value">Gwall: Mae Gwerth Angenrheidiol Ar Goll</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Lladd exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Lladd: %s</string>
+  <string name="app_exec_complete">Wedi Gorffen execpwch ap: \"%s\"</string>
+  <string name="notification_process_busy">Methu cychwyn \"%s\" tan execgorffeniad i ben ar gyfer rhedeg ap: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Toglo Bar Chwilio</string>
+  <string name="label_button_search">CHWILIO</string>
+  <string name="error_stdout_not_found">Gwall: Cynnwys Ffeil stdout Heb ei ganfod</string>
+  <string name="error_stdout_not_readable">Gwall: Cynnwys Ffeil stdout Heb Ei Ddarllen</string>
+  <string name="notification_no_search_results">Dim canlyniadau ar gyfer ymholiad chwilio</string>
+  <string name="notification_end_search_results">Diwedd y canlyniadau.\n\nBydd y chwiliad yn parhau o\'r dechrau.</string>
+  <string name="notification_service_content_line1">&nodejs; daemon:</string>
+  <string name="notification_service_content_line3">Cliciwch i atal y gwasanaeth.</string>
+</resources>

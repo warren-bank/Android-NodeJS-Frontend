@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Priešakinis</string>
+  <string name="activity_main_menu_add">Pridėti &nodejs; Programėlė</string>
+  <string name="activity_main_menu_export">Eksportuoti duomenis</string>
+  <string name="activity_main_menu_import">Importuoti duomenis</string>
+  <string name="activity_main_menu_delete">Ištrinti duomenis</string>
+  <string name="activity_main_menu_exit">Išvykimas</string>
+  <string name="app_folderpicker_json_export_filepath_description">Pasirinkite aplanką, kuriame bus įrašyti failai</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Pasirinkite naują failo pavadinimą JSON duomenys</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">Eksportas</string>
+  <string name="app_folderpicker_json_import_filepath_description">Pasirinkite failą, kuriame anksčiau buvo eksportuota JSON duomenys</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec tuo pačiu metu</item>
+    <item>fork atskiram procesui</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Prašome leisti taikyti privalomus leidimus</string>
+  <string name="warning_delete">Pašalinti visus programėlių nustatymus?</string>
+  <string name="app_settings_label_cwd_dirpath">Kelias į darbo žinyną</string>
+  <string name="app_settings_label_title">Pavadinimas</string>
+  <string name="app_settings_label_env_vars">Aplinkos kintamieji</string>
+  <string name="app_settings_notes_env_vars">Viena eilutė.\nFormatas: name=vertė</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI pasirinkimo sandoriai</string>
+  <string name="app_settings_label_js_filepath">Kelias į JS failą</string>
+  <string name="app_settings_label_js_options">JS failas CLI pasirinkimo sandoriai</string>
+  <string name="app_context_menuitem_label_edit_settings">Redaguoti nustatymus</string>
+  <string name="app_context_menuitem_label_run">Paleisti</string>
+  <string name="app_context_menuitem_label_start">Pradėti</string>
+  <string name="app_context_menuitem_label_stop">Stabdyti</string>
+  <string name="app_context_menuitem_label_read_stdout">Skaityti stdout</string>
+  <string name="app_context_menuitem_label_delete">Ištrinti</string>
+  <string name="label_button_browse">NARŠYTI</string>
+  <string name="label_button_cancel">CANEL</string>
+  <string name="label_button_save">SAVE</string>
+  <string name="label_button_update">UPDATA</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Pasirinkti CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; Programėlės dabartinis darbo aplankas</string>
+  <string name="app_folderpicker_js_filepath_title">Pasirinkite JS failą</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; app pagrindinis įvažiavimo taškas</string>
+  <string name="error_using_max_apps">Klaida: negali viršyti maksimalaus skaičiaus &nodejs; \"Daemons\"</string>
+  <string name="error_missing_required_value">Klaida: trūksta Reikalinga Vertė</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Nužudyk exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Nužudyk: %s</string>
+  <string name="app_exec_complete">Baigta. execApp.: \"%s\"</string>
+  <string name="notification_process_busy">Nepavyko paleisti \"%s\" iki execišplovimo apdaila, skirta naudoti programai: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Perjungti paieškos juostą</string>
+  <string name="label_button_search">PAIEŠKA</string>
+  <string name="error_stdout_not_found">Klaida: Failas, kuriame yra stdout Nerasta</string>
+  <string name="error_stdout_not_readable">Klaida: Failas, kuriame yra stdout Neįskaitomas</string>
+  <string name="notification_no_search_results">Nėra paieškos užklausos rezultatų</string>
+  <string name="notification_end_search_results">Rezultatų pabaiga.\n\nPaieška tęsis nuo pradžios.</string>
+  <string name="notification_service_content_line1">&nodejs; daemon:</string>
+  <string name="notification_service_content_line3">Spragtelkite norėdami sustabdyti paslaugą.</string>
+</resources>

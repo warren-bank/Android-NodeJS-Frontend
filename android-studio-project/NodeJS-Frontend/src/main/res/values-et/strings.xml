@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Kasutajaliides</string>
+  <string name="activity_main_menu_add">Lisa &nodejs; Rakendus</string>
+  <string name="activity_main_menu_export">Ekspordi Andmed</string>
+  <string name="activity_main_menu_import">Impordi andmed</string>
+  <string name="activity_main_menu_delete">Kustuta andmed</string>
+  <string name="activity_main_menu_exit">Välju</string>
+  <string name="app_folderpicker_json_export_filepath_description">Faili salvestamine faili salvestamiseks</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Vali uus failinimi JSON Andmed</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">Eksport</string>
+  <string name="app_folderpicker_json_import_filepath_description">Vali varem eksporditud fail JSON Andmed</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec samas protsessis</item>
+    <item>fork eraldi töötlemine</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Palun luba kohustuslikke õigusi</string>
+  <string name="warning_delete">Kustuta kõik rakenduse seadistused?</string>
+  <string name="app_settings_label_cwd_dirpath">Töökataloogi asukoht</string>
+  <string name="app_settings_label_title">Pealkiri</string>
+  <string name="app_settings_label_env_vars">Keskkonnamuutujad</string>
+  <string name="app_settings_notes_env_vars">Üks iga rea kohta.\nVorming: nimi= väärtus</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI options</string>
+  <string name="app_settings_label_js_filepath">JS-faili asukoht</string>
+  <string name="app_settings_label_js_options">JS-fail CLI options</string>
+  <string name="app_context_menuitem_label_edit_settings">Muuda seadistusi</string>
+  <string name="app_context_menuitem_label_run">Käivita</string>
+  <string name="app_context_menuitem_label_start">Algus</string>
+  <string name="app_context_menuitem_label_stop">Peata</string>
+  <string name="app_context_menuitem_label_read_stdout">Loetud stdout</string>
+  <string name="app_context_menuitem_label_delete">Kustuta</string>
+  <string name="label_button_browse">SIRVI</string>
+  <string name="label_button_cancel">LOOBU</string>
+  <string name="label_button_save">SAVE</string>
+  <string name="label_button_update">UPDATE</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Vali CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; app aktiivne töökataloog</string>
+  <string name="app_folderpicker_js_filepath_title">Vali JS-fail</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; app põhikirje</string>
+  <string name="error_using_max_apps">Viga: ei saa ületada maksimaalset arvu &nodejs; Deemonid</string>
+  <string name="error_missing_required_value">Viga: Nõutav väärtus puudub</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Tapa exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Tapa: %s</string>
+  <string name="app_exec_complete">Lõpetatud execapp: \"%s\"</string>
+  <string name="notification_process_busy">Käivitamine nurjus \"%s\" kuni execEpp-rakenduste viimistlus: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Otsimisriba lülitamine</string>
+  <string name="label_button_search">OTSING</string>
+  <string name="error_stdout_not_found">Viga: fail, mis sisaldab stdout Ei leitud</string>
+  <string name="error_stdout_not_readable">Viga: fail, mis sisaldab stdout Ei ole loetav</string>
+  <string name="notification_no_search_results">Otsingupäringu tulemusi ei ole</string>
+  <string name="notification_end_search_results">Tulemuste lõpp.\n\nOtsing jätkub algusest.</string>
+  <string name="notification_service_content_line1">&nodejs; daemon:</string>
+  <string name="notification_service_content_line3">Klõpsa teenuse peatamiseks.</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Fronpin</string>
+  <string name="activity_main_menu_add">اضافة &nodejs; تطبيق</string>
+  <string name="activity_main_menu_export">تصدير البيانات</string>
+  <string name="activity_main_menu_import">استقبال بيانات</string>
+  <string name="activity_main_menu_delete">حذف بيانات</string>
+  <string name="activity_main_menu_exit">خروج</string>
+  <string name="app_folderpicker_json_export_filepath_description">حدد دليل لحفظ الملف</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">حدد اسم ملف جديد الى JSON البيانات</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">ارسال</string>
+  <string name="app_folderpicker_json_import_filepath_description">اختيار ملف يحتوي على سبق ارساله JSON البيانات</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec في نفس العملية</item>
+    <item>fork للفصل بين العملية</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">برجاء اتاحة تصاريح اجبارية</string>
+  <string name="warning_delete">حذف كل محددات التطبيق?</string>
+  <string name="app_settings_label_cwd_dirpath">مسار الى دليل العمل</string>
+  <string name="app_settings_label_title">العنوان</string>
+  <string name="app_settings_label_env_vars">متغيرات بيئة التشغيل</string>
+  <string name="app_settings_notes_env_vars">واحد لكل سطر.\nنسق : name=value</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI اختيارات</string>
+  <string name="app_settings_label_js_filepath">المسار الى ملف JS</string>
+  <string name="app_settings_label_js_options">ملف JS CLI اختيارات</string>
+  <string name="app_context_menuitem_label_edit_settings">تحرير المحددات</string>
+  <string name="app_context_menuitem_label_run">اركض</string>
+  <string name="app_context_menuitem_label_start">بدء</string>
+  <string name="app_context_menuitem_label_stop">! توقف</string>
+  <string name="app_context_menuitem_label_read_stdout">قراءة stdout</string>
+  <string name="app_context_menuitem_label_delete">حذف</string>
+  <string name="label_button_browse">تصفح</string>
+  <string name="label_button_cancel">الغاء</string>
+  <string name="label_button_save">حفظ</string>
+  <string name="label_button_update">تعديل</string>
+  <string name="app_folderpicker_cwd_dirpath_title">اختيار CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; دليل العمل الحالي للتطبيق</string>
+  <string name="app_folderpicker_js_filepath_title">حدد ملف JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; نقطة الدخول الرئيسية للتطبيق</string>
+  <string name="error_using_max_apps">خطأ : لا يمكن تعدي الحد الأقصى لعدد &nodejs; Daemons</string>
+  <string name="error_missing_required_value">خطأ : القيمة المطلوبة غير موجودة</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">قتل exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">قتل: %s</string>
+  <string name="app_exec_complete">منتهي execدرجة اغتسال التطبيق: \"%s\"</string>
+  <string name="notification_process_busy">لا يمكن البدء \"%s\" حتى execالانتهاء من تشغيل التطبيق بالنسبة للتطبيق الجاري تشغيله: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">تبديل خط البحث</string>
+  <string name="label_button_search">بحث</string>
+  <string name="error_stdout_not_found">خطأ : يحتوي الملف على stdout غير موجود</string>
+  <string name="error_stdout_not_readable">خطأ : يحتوي الملف على stdout غير قابل للقراءة</string>
+  <string name="notification_no_search_results">لا توجد نتائج لاستعلام البحث</string>
+  <string name="notification_end_search_results">نهاية النتائج.\n\nسيتم الاستمرار في البحث من البداية.</string>
+  <string name="notification_service_content_line1">&nodejs; Daemon:</string>
+  <string name="notification_service_content_line3">اضغط لايقاف الخدمة.</string>
+</resources>

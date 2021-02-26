@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Frontend</string>
+  <string name="activity_main_menu_add">Tilføj &nodejs; App</string>
+  <string name="activity_main_menu_export">Eksportér data</string>
+  <string name="activity_main_menu_import">Importér data</string>
+  <string name="activity_main_menu_delete">Slet data</string>
+  <string name="activity_main_menu_exit">Afslut</string>
+  <string name="app_folderpicker_json_export_filepath_description">Vælg bibliotek for at gemme filen</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Vælg et nyt filnavn til JSON data</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">Eksportér</string>
+  <string name="app_folderpicker_json_import_filepath_description">Vælg fil, der indeholder tidligere udførte JSON data</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec i samme proces</item>
+    <item>fork til separat proces</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Tillad obligatoriske tilladelser</string>
+  <string name="warning_delete">Slet alle app-indstillinger?</string>
+  <string name="app_settings_label_cwd_dirpath">Sti til arbejdsbibliotek</string>
+  <string name="app_settings_label_title">Titel</string>
+  <string name="app_settings_label_env_vars">Miljøvariabler</string>
+  <string name="app_settings_notes_env_vars">En pr. linje.\nFormat: name=værdi</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI indstillinger</string>
+  <string name="app_settings_label_js_filepath">Sti til JS-fil</string>
+  <string name="app_settings_label_js_options">JS-fil CLI indstillinger</string>
+  <string name="app_context_menuitem_label_edit_settings">Redigér indstillinger</string>
+  <string name="app_context_menuitem_label_run">Løb!</string>
+  <string name="app_context_menuitem_label_start">Start</string>
+  <string name="app_context_menuitem_label_stop">Stop!</string>
+  <string name="app_context_menuitem_label_read_stdout">Læst stdout</string>
+  <string name="app_context_menuitem_label_delete">Slet</string>
+  <string name="label_button_browse">GENNEMSE</string>
+  <string name="label_button_cancel">ANNULLÉR</string>
+  <string name="label_button_save">GEM</string>
+  <string name="label_button_update">OPDATERING</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Vælg CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; det aktuelle arbejdsbibliotek for app\'en</string>
+  <string name="app_folderpicker_js_filepath_title">Vælg JS-fil</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; Apps hovedindgangspunkt</string>
+  <string name="error_using_max_apps">Fejl: Kan ikke fortsætte det maksimale antal &nodejs; Daemons</string>
+  <string name="error_missing_required_value">Fejl: Mangler påkrævet værdi</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Dræb! exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Dræb!: %s</string>
+  <string name="app_exec_complete">Afsluttet exec-appen: \"%s\"</string>
+  <string name="notification_process_busy">Kan ikke starte \"%s\" indtil execution-finishes for running-app: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Skift søgelinje</string>
+  <string name="label_button_search">SØG</string>
+  <string name="error_stdout_not_found">Fejl: Filoverholdelse stdout Ikke fundet</string>
+  <string name="error_stdout_not_readable">Fejl: Filoverholdelse stdout Kan ikke læserbart</string>
+  <string name="notification_no_search_results">Ingen resultater for søgeforespørgslen</string>
+  <string name="notification_end_search_results">Slut på resultater.\n\nSøgningen fortsætter fra begyndelsen.</string>
+  <string name="notification_service_content_line1">&nodejs; daemon:</string>
+  <string name="notification_service_content_line3">Klik for at stoppe serviceprogrammet.</string>
+</resources>

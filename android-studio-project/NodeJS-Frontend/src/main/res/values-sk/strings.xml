@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Predná časť</string>
+  <string name="activity_main_menu_add">Pridať &nodejs; Appka</string>
+  <string name="activity_main_menu_export">Exportovať údaje</string>
+  <string name="activity_main_menu_import">Importovať údaje</string>
+  <string name="activity_main_menu_delete">Vymazať údaje</string>
+  <string name="activity_main_menu_exit">Ukončiť</string>
+  <string name="app_folderpicker_json_export_filepath_description">Vyberte adresár na uloženie súboru</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Vybrať nový názov súboru pre JSON údaje</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">exportovať</string>
+  <string name="app_folderpicker_json_import_filepath_description">Vybrať súbor, ktorý obsahuje predtým exportovaný JSON údaje</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec v rovnakom procese</item>
+    <item>fork na samostatný proces</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Povoľte, prosím, povinné oprávnenia</string>
+  <string name="warning_delete">Vymazať všetky nastavenia appky?</string>
+  <string name="app_settings_label_cwd_dirpath">Cesta k pracovnému adresáru</string>
+  <string name="app_settings_label_title">Nadpis</string>
+  <string name="app_settings_label_env_vars">Premenné prostredia</string>
+  <string name="app_settings_notes_env_vars">Jeden na riadok.\nFormát: názov=hodnota</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI voľby</string>
+  <string name="app_settings_label_js_filepath">Cesta k súboru JS</string>
+  <string name="app_settings_label_js_options">Súbor JS CLI voľby</string>
+  <string name="app_context_menuitem_label_edit_settings">Upraviť nastavenia</string>
+  <string name="app_context_menuitem_label_run">Spustiť</string>
+  <string name="app_context_menuitem_label_start">Spustiť</string>
+  <string name="app_context_menuitem_label_stop">Zastaviť</string>
+  <string name="app_context_menuitem_label_read_stdout">Čítanie stdout</string>
+  <string name="app_context_menuitem_label_delete">Vymazať</string>
+  <string name="label_button_browse">PREHLIADAŤ</string>
+  <string name="label_button_cancel">ZRUŠIŤ</string>
+  <string name="label_button_save">SAVE</string>
+  <string name="label_button_update">Aktualizácia</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Vybrať CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; aktuálny pracovný adresár aplikácie</string>
+  <string name="app_folderpicker_js_filepath_title">Vybrať súbor JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; hlavný vstupný bod aplikácie</string>
+  <string name="error_using_max_apps">Chyba: Nie je možné prekročiť maximálny počet &nodejs; Démoni</string>
+  <string name="error_missing_required_value">Chyba: Chýba vyžadovaná hodnota</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Zabiť exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Zabiť: %s</string>
+  <string name="app_exec_complete">Dokončené execČinnosť aplikácie: \"%s\"</string>
+  <string name="notification_process_busy">Nedá sa spustiť \"%s\" do execdokončí sa pre spustenie aplikácie: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Prepnúť vyhľadávaciu lištu</string>
+  <string name="label_button_search">SEARCH</string>
+  <string name="error_stdout_not_found">Chyba: Súbor obsahujúci stdout Nenájdený</string>
+  <string name="error_stdout_not_readable">Chyba: Súbor obsahujúci stdout Nečitateľné</string>
+  <string name="notification_no_search_results">Žiadne výsledky pre dotaz vyhľadávania</string>
+  <string name="notification_end_search_results">Koniec výsledkov.\n\nVyhľadávanie bude pokračovať od začiatku.</string>
+  <string name="notification_service_content_line1">&nodejs; démon:</string>
+  <string name="notification_service_content_line3">Kliknutím zastavte službu.</string>
+</resources>

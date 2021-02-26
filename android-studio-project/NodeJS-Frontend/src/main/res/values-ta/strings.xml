@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Frontend</string>
+  <string name="activity_main_menu_add">சேர் &nodejs; ஆப்ப</string>
+  <string name="activity_main_menu_export">ஏற்றுமதி தரவு</string>
+  <string name="activity_main_menu_import">தரவை இறக்கு</string>
+  <string name="activity_main_menu_delete">தகவலை நீக்கு</string>
+  <string name="activity_main_menu_exit">வெளியேறு</string>
+  <string name="app_folderpicker_json_export_filepath_description">கோப்பினை சேமிக்க அடைவை தேர்ந்தெடு</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">புதிய கோப்பு பெயரை தேர்ந்தெடு JSON தரவு</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">ஏற்றுமதி</string>
+  <string name="app_folderpicker_json_import_filepath_description">ஏற்றுமதி செய்யப்பட்ட கோப்பை தேர்ந்தெடு JSON தரவு</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec ஒரே செயற்பாடு</item>
+    <item>fork தனிப்பயன்</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">தவறான அனுமதிகளை அனுமதிக்கவும்</string>
+  <string name="warning_delete">அனைத்து பயன்பாட்டு அமைப்புகளையும் நீக்கு?</string>
+  <string name="app_settings_label_cwd_dirpath">பணிமேடை அடைவில் பாதை</string>
+  <string name="app_settings_label_title">தலைப்பு</string>
+  <string name="app_settings_label_env_vars">சூழல் மாறிகள்</string>
+  <string name="app_settings_notes_env_vars">ஒரு கோட்டுக்கு ஒன்று.\nவடிவம்: name=value</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI விருப்பங்கள்</string>
+  <string name="app_settings_label_js_filepath">JS கோப்புக்கு பாதை</string>
+  <string name="app_settings_label_js_options">JS கோப்பு CLI விருப்பங்கள்</string>
+  <string name="app_context_menuitem_label_edit_settings">அமைப்புகளை திருத்து</string>
+  <string name="app_context_menuitem_label_run">இயக்கு</string>
+  <string name="app_context_menuitem_label_start">ஆரம்பம்</string>
+  <string name="app_context_menuitem_label_stop">நிறுத்து</string>
+  <string name="app_context_menuitem_label_read_stdout">படிக்கவும் stdout</string>
+  <string name="app_context_menuitem_label_delete">நீக்கு</string>
+  <string name="label_button_browse">உலாவி</string>
+  <string name="label_button_cancel">ரத்து செய்</string>
+  <string name="label_button_save">சேமி</string>
+  <string name="label_button_update">புதுப்பி</string>
+  <string name="app_folderpicker_cwd_dirpath_title">தேர்ந்தெடு CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; பயன்பாடு தற்போதைய பணி அடைவு</string>
+  <string name="app_folderpicker_js_filepath_title">JS கோப்பினை தேர்வுசெய்</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; பயன்பாடு உள்ளீட்டு புள்ளி</string>
+  <string name="error_using_max_apps">பிழை: அதிகபட்ச எண்ணிக்கையை பெற முடியவில்லை &nodejs; டேமன்ஸ்</string>
+  <string name="error_missing_required_value">பிழை: தேவையான மதிப்பு</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Kill exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Kill: %s</string>
+  <string name="app_exec_complete">முடிந்தது execபயன்பாடு: \"%s\"</string>
+  <string name="notification_process_busy">துவக்க முடியவில்லை \"%s\" வரை execஇயங்கும் பயன்பாடுName: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">தேடு பட்டியை மாற்று</string>
+  <string name="label_button_search">தேடு</string>
+  <string name="error_stdout_not_found">பிழை: கோப்பு संबंधित stdout கண்டிப்பாக இல்லை</string>
+  <string name="error_stdout_not_readable">பிழை: கோப்பு संबंधित stdout மறுபடியும் இல்லை</string>
+  <string name="notification_no_search_results">தேடல் கேள்விக்கு முடிவுகள் இல்லை</string>
+  <string name="notification_end_search_results">முடிவுகளின் முடிவு.\n\nதேடல் தொடக்கத்திலிருந்து தொடரும்.</string>
+  <string name="notification_service_content_line1">&nodejs; டேமன்:</string>
+  <string name="notification_service_content_line3">சேவை நிறுத்த க்ளிக் செய்யவும்.</string>
+</resources>

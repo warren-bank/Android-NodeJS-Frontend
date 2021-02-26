@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; FronName</string>
+  <string name="activity_main_menu_add">එක් කරන්න &nodejs; ප් රවාහ</string>
+  <string name="activity_main_menu_export">දත්ත නිර්ණය කරන්න</string>
+  <string name="activity_main_menu_import">දත්ත ආයාත කරන්න</string>
+  <string name="activity_main_menu_delete">දත්ත මකන්න</string>
+  <string name="activity_main_menu_exit">Exit</string>
+  <string name="app_folderpicker_json_export_filepath_description">ගොනුව සුරැකීමට ඩිරෙක්ටරිය තෝරන්න</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">සඳහා නව ගොනු නාමය තෝරන්න JSON දත්ත</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">निर्यात</string>
+  <string name="app_folderpicker_json_import_filepath_description">පෙර අපනයනය කළ ගොනුව තෝරන්න JSON දත්ත</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec එකම ක්රියාවලියක</item>
+    <item>fork වෙනත් ක්රියාවලියකට</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">කරුණාකර අනිවාර්ය අවසර ලබා දෙන්න</string>
+  <string name="warning_delete">සියලු ඇප් සැකසුම් මකන්න?</string>
+  <string name="app_settings_label_cwd_dirpath">වැඩකරන ඩිරෙක්ටරි වෙත මාර්ගය</string>
+  <string name="app_settings_label_title">මාතෘකාව</string>
+  <string name="app_settings_label_env_vars">පාරිසරික විචල්ය</string>
+  <string name="app_settings_notes_env_vars">එක පේලියක.\nढाँचा: name=value</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI විකල්ප</string>
+  <string name="app_settings_label_js_filepath">Vectors-action</string>
+  <string name="app_settings_label_js_options">JS ගොනුව CLI විකල්ප</string>
+  <string name="app_context_menuitem_label_edit_settings">සැකසුම් සකසන්න</string>
+  <string name="app_context_menuitem_label_run">දුවන්න</string>
+  <string name="app_context_menuitem_label_start">ආරම්භ කරන්න</string>
+  <string name="app_context_menuitem_label_stop">නවත්වන්න</string>
+  <string name="app_context_menuitem_label_read_stdout">කියවන්න stdout</string>
+  <string name="app_context_menuitem_label_delete">මකන්න</string>
+  <string name="label_button_browse">ගවේශනය</string>
+  <string name="label_button_cancel">අවලංගු කරන්න</string>
+  <string name="label_button_save">සුරකින්න</string>
+  <string name="label_button_update">යාවත්කාලීන කිරීම</string>
+  <string name="app_folderpicker_cwd_dirpath_title">තෝරන්න CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; යෙදුම වර්තමාන වැඩ ඩිරෙක්ටරිය</string>
+  <string name="app_folderpicker_js_filepath_title">JS ගොනුව තෝරන්න</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; ප් රධාන ප්රධාන පිවිසුමක්</string>
+  <string name="error_using_max_apps">දෝෂය: උපරිම ගණන වැඩි කළ නොහැක &nodejs; Daemons</string>
+  <string name="error_missing_required_value">දෝෂය: නැතිවූ ඉල්ලුම් අගය</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Kill exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Kill: %s</string>
+  <string name="app_exec_complete">අවසන් කරන්න execයෙදුම: \"%s\"</string>
+  <string name="notification_process_busy">ආරම්භ කල නොහැක \"%s\" වෙනකන් execක්රියාත්මක වන ප් රවේශන සඳහා: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">සෙවුම් තීරුව</string>
+  <string name="label_button_search">සොයන්න</string>
+  <string name="error_stdout_not_found">දෝෂය: ගොනු Containing stdout फेला परेन</string>
+  <string name="error_stdout_not_readable">දෝෂය: ගොනු Containing stdout Readable</string>
+  <string name="notification_no_search_results">සෙවුම් විමසුම් සඳහා ප්රථිඵල නැත</string>
+  <string name="notification_end_search_results">ප්රතිඵල අවසන් කරන්න.\n\nසොයන්න මුල සිට දිගින් දිගටම.</string>
+  <string name="notification_service_content_line1">&nodejs; ඩීමනය:</string>
+  <string name="notification_service_content_line3">සේවාව නවත්වන්න ක්ලික් කරන්න.</string>
+</resources>

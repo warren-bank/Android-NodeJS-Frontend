@@ -38,7 +38,7 @@
   <string name="app_settings_label_cwd_dirpath">Path to Working Directory</string>
   <string name="app_settings_label_title">Title</string>
   <string name="app_settings_label_env_vars">Environment Variables</string>
-  <string name="app_settings_notes_env_vars">  One per line.\n  Format: name=value</string>
+  <string name="app_settings_notes_env_vars">One per line.\nFormat: name=value</string>
   <string name="app_settings_label_node_options">&nodejs; CLI options</string>
   <string name="app_settings_label_js_filepath">Path to JS File</string>
   <string name="app_settings_label_js_options">JS File CLI options</string>
@@ -85,7 +85,7 @@
 
   <string name="label_button_search">SEARCH</string>
 
-  <string name="color_search_results">#FF5733</string>
+  <string translatable="false" name="color_search_results">#FF5733</string>
 
   <string name="error_stdout_not_found">Error: File Containing stdout Not Found</string>
   <string name="error_stdout_not_readable">Error: File Containing stdout Not Readable</string>

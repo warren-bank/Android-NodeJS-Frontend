@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Frontend</string>
+  <string name="activity_main_menu_add">Adicionar &nodejs; App</string>
+  <string name="activity_main_menu_export">Exportar Dados</string>
+  <string name="activity_main_menu_import">Importar Dados</string>
+  <string name="activity_main_menu_delete">Excluir Dados</string>
+  <string name="activity_main_menu_exit">Saída</string>
+  <string name="app_folderpicker_json_export_filepath_description">Selecionar diretório para salvar arquivo</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Selecione novo nome de arquivo para JSON dados</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">exportação</string>
+  <string name="app_folderpicker_json_import_filepath_description">Selecionar arquivo contendo exportado anteriormente JSON dados</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec no mesmo processo</item>
+    <item>fork para separar processo</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Por favor, permita permissões obrigatórias</string>
+  <string name="warning_delete">Excluir todas as configurações do app?</string>
+  <string name="app_settings_label_cwd_dirpath">Caminho para o Diretório de Trabalho</string>
+  <string name="app_settings_label_title">Título</string>
+  <string name="app_settings_label_env_vars">Variáveis De Ambiente</string>
+  <string name="app_settings_notes_env_vars">Um por linha.\nFormato: nome=valor</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI opções</string>
+  <string name="app_settings_label_js_filepath">Caminho para Arquivo JS</string>
+  <string name="app_settings_label_js_options">Arquivo JS CLI opções</string>
+  <string name="app_context_menuitem_label_edit_settings">Editar Configurações</string>
+  <string name="app_context_menuitem_label_run">Executar</string>
+  <string name="app_context_menuitem_label_start">Início</string>
+  <string name="app_context_menuitem_label_stop">Parar</string>
+  <string name="app_context_menuitem_label_read_stdout">Leia stdout</string>
+  <string name="app_context_menuitem_label_delete">Excluir</string>
+  <string name="label_button_browse">BROWSE</string>
+  <string name="label_button_cancel">CANCELAR</string>
+  <string name="label_button_save">SAVE</string>
+  <string name="label_button_update">ATUALIZAÇÃO</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Selecionar CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; diretório de trabalho atual do app</string>
+  <string name="app_folderpicker_js_filepath_title">Selecionar Arquivo JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; ponto de entrada principal do app</string>
+  <string name="error_using_max_apps">Erro: Não pode Exceder o Número Máximo de &nodejs; Daemons</string>
+  <string name="error_missing_required_value">Erro: Faltar Valor Necessário</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Matar exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Matar: %s</string>
+  <string name="app_exec_complete">Concluído execution de app: \"%s\"</string>
+  <string name="notification_process_busy">Não pode iniciar \"%s\" até que execution acabamentos para executar app: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Barra de Pesquisa de Alternância</string>
+  <string name="label_button_search">PESQUISA</string>
+  <string name="error_stdout_not_found">Erro: Contenção de Arquivo stdout Não Encontrado</string>
+  <string name="error_stdout_not_readable">Erro: Contenção de Arquivo stdout Não Legível</string>
+  <string name="notification_no_search_results">Nenhum resultado para consulta de pesquisa</string>
+  <string name="notification_end_search_results">Fim dos resultados.\n\nA pesquisa continuará desde o início.</string>
+  <string name="notification_service_content_line1">&nodejs; daemon:</string>
+  <string name="notification_service_content_line3">Clique para parar o serviço.</string>
+</resources>

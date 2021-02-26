@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Határ</string>
+  <string name="activity_main_menu_add">Hozzáadás &nodejs; Alkalmazás</string>
+  <string name="activity_main_menu_export">Adatok exportálása</string>
+  <string name="activity_main_menu_import">Adatok importálása</string>
+  <string name="activity_main_menu_delete">Adatok törlése</string>
+  <string name="activity_main_menu_exit">Kilép</string>
+  <string name="app_folderpicker_json_export_filepath_description">Könyvtár kiválasztása a fájl mentéséhez</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Új fájl nevének kiválasztása JSON Adatok</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">Export</string>
+  <string name="app_folderpicker_json_import_filepath_description">Korábban exportált fájl kiválasztása JSON Adatok</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec Ugyanabban a folyamatban</item>
+    <item>fork Különálló folyamat</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Engedélyezze a kötelező engedélyeket</string>
+  <string name="warning_delete">Összes alkalmazásbeállítás törlése?</string>
+  <string name="app_settings_label_cwd_dirpath">A munkacsoport elérési útja</string>
+  <string name="app_settings_label_title">Cím</string>
+  <string name="app_settings_label_env_vars">Környezeti változók</string>
+  <string name="app_settings_notes_env_vars">Soronként egy.\nFormátum: név=érték</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI Beállítások</string>
+  <string name="app_settings_label_js_filepath">JS fájl elérési útja</string>
+  <string name="app_settings_label_js_options">JS fájl CLI Beállítások</string>
+  <string name="app_context_menuitem_label_edit_settings">Beállítások szerkesztése</string>
+  <string name="app_context_menuitem_label_run">Futtatás</string>
+  <string name="app_context_menuitem_label_start">Indítás</string>
+  <string name="app_context_menuitem_label_stop">Állj</string>
+  <string name="app_context_menuitem_label_read_stdout">Olvasás stdout</string>
+  <string name="app_context_menuitem_label_delete">Törlés</string>
+  <string name="label_button_browse">TALLÓZÁS</string>
+  <string name="label_button_cancel">MÉGSE</string>
+  <string name="label_button_save">MENTÉS</string>
+  <string name="label_button_update">FRISSÍTÉS</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Kiválasztás CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; Alkalmazás aktuális munkakönyvtár</string>
+  <string name="app_folderpicker_js_filepath_title">JS fájl kiválasztása</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; App fő belépési pontja</string>
+  <string name="error_using_max_apps">Hiba: Nem lehet túllépni a maximális számot &nodejs; Daemonok</string>
+  <string name="error_missing_required_value">Hiba: Hiányzó kötelező érték</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Ölj exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Ölj: %s</string>
+  <string name="app_exec_complete">Végzett execAlkalmazás fejlődése: \"%s\"</string>
+  <string name="notification_process_busy">Nem indítható \"%s\" Amíg execUtion befejezi az alkalmazás futtatását: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Keresési sáv átkapcsolása</string>
+  <string name="label_button_search">KERESÉS</string>
+  <string name="error_stdout_not_found">Hiba: Fájl tartalma stdout Nem található</string>
+  <string name="error_stdout_not_readable">Hiba: Fájl tartalma stdout Nem olvasható</string>
+  <string name="notification_no_search_results">Nincs találat a keresési lekérdezéshez</string>
+  <string name="notification_end_search_results">Az eredmények vége.\n\nA keresés az elejétől folytatódik.</string>
+  <string name="notification_service_content_line1">&nodejs; Démon:</string>
+  <string name="notification_service_content_line3">Kattintson ide a szolgáltatás leállításához.</string>
+</resources>

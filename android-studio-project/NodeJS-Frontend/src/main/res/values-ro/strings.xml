@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Frontind</string>
+  <string name="activity_main_menu_add">Adăugare &nodejs; Aplicaţie</string>
+  <string name="activity_main_menu_export">Export date</string>
+  <string name="activity_main_menu_import">Import date</string>
+  <string name="activity_main_menu_delete">Ştergere date</string>
+  <string name="activity_main_menu_exit">Ieşire</string>
+  <string name="app_folderpicker_json_export_filepath_description">Selectare director pentru salvare fişier</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Selectare nume fişier nou pentru JSON date</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">export</string>
+  <string name="app_folderpicker_json_import_filepath_description">Selectare fişier care conţine exportată anterior JSON date</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec în acelaşi proces</item>
+    <item>fork pentru a separa procesul</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Vă rugăm permiteţi permisiuni obligatorii</string>
+  <string name="warning_delete">Ştergere toate setările aplicaţiei?</string>
+  <string name="app_settings_label_cwd_dirpath">Calea către directorul de lucru</string>
+  <string name="app_settings_label_title">Titlu</string>
+  <string name="app_settings_label_env_vars">Variabile de mediu</string>
+  <string name="app_settings_notes_env_vars">Unu pe linie.\nFormat: nume=valoare</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI opţiuni</string>
+  <string name="app_settings_label_js_filepath">Cale la fişier JS</string>
+  <string name="app_settings_label_js_options">Fişier JS CLI opţiuni</string>
+  <string name="app_context_menuitem_label_edit_settings">Editare setări</string>
+  <string name="app_context_menuitem_label_run">Rulare</string>
+  <string name="app_context_menuitem_label_start">Pornire</string>
+  <string name="app_context_menuitem_label_stop">Oprire</string>
+  <string name="app_context_menuitem_label_read_stdout">Citire stdout</string>
+  <string name="app_context_menuitem_label_delete">Ştergere</string>
+  <string name="label_button_browse">RĂSFOIRE</string>
+  <string name="label_button_cancel">ANULARE</string>
+  <string name="label_button_save">SAVE</string>
+  <string name="label_button_update">UPDATE</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Selectare CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; directorul de lucru curent al aplicaţiei</string>
+  <string name="app_folderpicker_js_filepath_title">Selectare fişier JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; punctul principal de intrare al aplicaţiei</string>
+  <string name="error_using_max_apps">Eroare: Nu se poate depăşi numărul maxim de &nodejs; Demoni</string>
+  <string name="error_missing_required_value">Eroare: Lipsă valoare necesară</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Kill exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Kill: %s</string>
+  <string name="app_exec_complete">Terminat execUtilizarea aplicaţiei: \"%s\"</string>
+  <string name="notification_process_busy">Nu poate porni \"%s\" până execFinalizarea instalării pentru aplicaţia care rulează: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Comutare bară de căutare</string>
+  <string name="label_button_search">CĂUTARE</string>
+  <string name="error_stdout_not_found">Eroare: Conţinerea de fişier stdout Negăsit</string>
+  <string name="error_stdout_not_readable">Eroare: Conţinerea de fişier stdout Nu se poate citi</string>
+  <string name="notification_no_search_results">Niciun rezultat pentru interogarea de căutare</string>
+  <string name="notification_end_search_results">Sfârşitul rezultatelor.\n\nCăutarea va continua de la început.</string>
+  <string name="notification_service_content_line1">&nodejs; demon:</string>
+  <string name="notification_service_content_line3">Faceţi clic pentru a opri serviciul.</string>
+</resources>

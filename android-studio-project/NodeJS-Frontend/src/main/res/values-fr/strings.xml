@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Frontend</string>
+  <string name="activity_main_menu_add">Ajouter &nodejs; App</string>
+  <string name="activity_main_menu_export">Exporter les données</string>
+  <string name="activity_main_menu_import">Importer des données</string>
+  <string name="activity_main_menu_delete">Supprimer les données</string>
+  <string name="activity_main_menu_exit">Quitter</string>
+  <string name="app_folderpicker_json_export_filepath_description">Sélectionner le répertoire dans le fichier sauvegarde</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Sélectionner un nouveau nom de fichier pour JSON Données</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">Exportation</string>
+  <string name="app_folderpicker_json_import_filepath_description">Sélectionner un fichier contenant des données précédemment exportées JSON Données</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec Dans le même processus</item>
+    <item>fork à un processus distinct</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Veuillez autoriser les droits d\'accès obligatoires</string>
+  <string name="warning_delete">Supprimer tous les paramètres de l\'application?</string>
+  <string name="app_settings_label_cwd_dirpath">Chemin d\'accès au répertoire de travail</string>
+  <string name="app_settings_label_title">Titre</string>
+  <string name="app_settings_label_env_vars">Variables d\'environnement</string>
+  <string name="app_settings_notes_env_vars">Un par ligne.\nFormat: nom=valeur</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI Options</string>
+  <string name="app_settings_label_js_filepath">Chemin d\'accès au fichier JS</string>
+  <string name="app_settings_label_js_options">Fichier JS CLI Options</string>
+  <string name="app_context_menuitem_label_edit_settings">Modifier les paramètres</string>
+  <string name="app_context_menuitem_label_run">Exécuter</string>
+  <string name="app_context_menuitem_label_start">Démarrer</string>
+  <string name="app_context_menuitem_label_stop">Arrêter</string>
+  <string name="app_context_menuitem_label_read_stdout">Lire stdout</string>
+  <string name="app_context_menuitem_label_delete">Supprimer</string>
+  <string name="label_button_browse">PARCOURIR</string>
+  <string name="label_button_cancel">ANNULER</string>
+  <string name="label_button_save">SAUVEGARDER</string>
+  <string name="label_button_update">MISE À JOUR</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Sélectionner CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; Répertoire de travail en cours de l\'application</string>
+  <string name="app_folderpicker_js_filepath_title">Sélectionner un fichier JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; Point d\'entrée principal de l\'application</string>
+  <string name="error_using_max_apps">Erreur: Impossible d\'étendre le nombre maximal de &nodejs; Démons</string>
+  <string name="error_missing_required_value">Erreur: Valeur requise manquante</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Kill exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Kill: %s</string>
+  <string name="app_exec_complete">Terminé execUtion de l\'application: \"%s\"</string>
+  <string name="notification_process_busy">Impossible de démarrer \"%s\" Jusqu\'à execDes finitions d\'une application en cours d\'exécution: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Basculement de la barre de recherche</string>
+  <string name="label_button_search">RECHERCHER</string>
+  <string name="error_stdout_not_found">Erreur: Fichier contenant stdout Non trouvé</string>
+  <string name="error_stdout_not_readable">Erreur: Fichier contenant stdout Non lisible</string>
+  <string name="notification_no_search_results">Aucun résultat pour la requête de recherche</string>
+  <string name="notification_end_search_results">Fin des résultats.\n\nLa recherche se poursuit depuis le début.</string>
+  <string name="notification_service_content_line1">&nodejs; Démon:</string>
+  <string name="notification_service_content_line3">Cliquez pour arrêter le service.</string>
+</resources>

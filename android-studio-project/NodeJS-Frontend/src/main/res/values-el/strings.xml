@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Σύνορα:</string>
+  <string name="activity_main_menu_add">Προσθήκη &nodejs; Εφαρμογή:</string>
+  <string name="activity_main_menu_export">Εξαγωγή δεδομένων</string>
+  <string name="activity_main_menu_import">Εισαγωγή δεδομένων:</string>
+  <string name="activity_main_menu_delete">Διαγραφή δεδομένων:</string>
+  <string name="activity_main_menu_exit">Έξοδος:</string>
+  <string name="app_folderpicker_json_export_filepath_description">Επιλογή καταλόγου για αποθήκευση αρχείου</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Επιλογή νέου ονόματος αρχείου για JSON στοιχεια</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">-εξαγωγή</string>
+  <string name="app_folderpicker_json_import_filepath_description">Επιλογή αρχείου που περιέχει προηγουμένως εξαχθεί JSON στοιχεια</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec Στην ίδια διαδικασία.</item>
+    <item>fork σε χωριστή διαδικασία:</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Επιτρέπεται η χρήση υποχρεωτικών δικαιωμάτων.</string>
+  <string name="warning_delete">Διαγραφή όλων των ρυθμίσεων εφαρμογής?</string>
+  <string name="app_settings_label_cwd_dirpath">Διαδρομή του καταλόγου εργασίας</string>
+  <string name="app_settings_label_title">\' Τίτλος</string>
+  <string name="app_settings_label_env_vars">Παραλλαγές περιβάλλοντος:</string>
+  <string name="app_settings_notes_env_vars">1 ανά γραμμή.\nΜορφή: name=τιμή</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI : επιλογές</string>
+  <string name="app_settings_label_js_filepath">Διαδρομή αρχείου JS</string>
+  <string name="app_settings_label_js_options">Αρχείο JS CLI : επιλογές</string>
+  <string name="app_context_menuitem_label_edit_settings">Τροποποίηση ρυθμίσεων</string>
+  <string name="app_context_menuitem_label_run">Τρέξτε!</string>
+  <string name="app_context_menuitem_label_start">\' ρχισε</string>
+  <string name="app_context_menuitem_label_stop">-Σταμάτα.</string>
+  <string name="app_context_menuitem_label_read_stdout">Διαβάστε: stdout</string>
+  <string name="app_context_menuitem_label_delete">Διαγραφή:</string>
+  <string name="label_button_browse">ΑΝΑΖΉΤΗΣΗ.</string>
+  <string name="label_button_cancel">ΑΚΎΡΩΣΗ.</string>
+  <string name="label_button_save">ΑΠΟΘΉΚΕΥΣΗ:</string>
+  <string name="label_button_update">ΕΝΗΜΈΡΩΣΗ:</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Επιλογή: CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; τον τρέχοντα κατάλογο εργασίας της εφαρμογής</string>
+  <string name="app_folderpicker_js_filepath_title">Επιλογή αρχείου JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; κεντρικό σημείο εισόδου της εφαρμογής</string>
+  <string name="error_using_max_apps">Σφάλμα: Δεν είναι δυνατή η υπέρβαση του μέγιστου αριθμού &nodejs; Δαίμονες:</string>
+  <string name="error_missing_required_value">Σφάλμα: Λείπει η απαιτούμενη τιμή</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Σκοτώστε! exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Σκοτώστε!: %s</string>
+  <string name="app_exec_complete">Ολοκληρώθηκε. execUtion of app: \"%s\"</string>
+  <string name="notification_process_busy">Δεν είναι δυνατή \"%s\" έως: execτερματισμός για την εκτέλεση της εφαρμογής: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Εναλλαγή γραμμής αναζήτησης</string>
+  <string name="label_button_search">ΑΝΑΖΉΤΗΣΗ.</string>
+  <string name="error_stdout_not_found">Σφάλμα: Αρχείο που περιέχει stdout Δεν βρέθηκε.</string>
+  <string name="error_stdout_not_readable">Σφάλμα: Αρχείο που περιέχει stdout Δεν είναι δυνατή.</string>
+  <string name="notification_no_search_results">Δεν υπάρχουν αποτελέσματα αναζήτησης.</string>
+  <string name="notification_end_search_results">Τέλος αποτελεσμάτων..\n\nΗ αναζήτηση θα συνεχιστεί από την αρχή..</string>
+  <string name="notification_service_content_line1">&nodejs; δαίμονα.:</string>
+  <string name="notification_service_content_line3">Πατήστε για τερματισμό της υπηρεσίας..</string>
+</resources>

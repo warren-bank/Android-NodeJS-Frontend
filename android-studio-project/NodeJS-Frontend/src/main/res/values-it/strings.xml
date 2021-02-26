@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Frontend</string>
+  <string name="activity_main_menu_add">Aggiungi &nodejs; App</string>
+  <string name="activity_main_menu_export">Dati di esportazione</string>
+  <string name="activity_main_menu_import">Importa dati</string>
+  <string name="activity_main_menu_delete">Elimina dati</string>
+  <string name="activity_main_menu_exit">Uscita</string>
+  <string name="app_folderpicker_json_export_filepath_description">Selezionare la directory per salvare il file</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Seleziona nuovo nome file per JSON dati</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">export</string>
+  <string name="app_folderpicker_json_import_filepath_description">Seleziona file contenente precedentemente esportato JSON dati</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec nello stesso processo</item>
+    <item>fork a processo separato</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Si prega di consentire autorizzazioni obbligatorie</string>
+  <string name="warning_delete">Elimina tutte le impostazioni delle app?</string>
+  <string name="app_settings_label_cwd_dirpath">Percorso per Working Directory</string>
+  <string name="app_settings_label_title">Titolo</string>
+  <string name="app_settings_label_env_vars">Variabili Ambiente</string>
+  <string name="app_settings_notes_env_vars">Uno per riga.\nFormato: nome=valore</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI opzioni</string>
+  <string name="app_settings_label_js_filepath">Percorso su file JS</string>
+  <string name="app_settings_label_js_options">File JS CLI opzioni</string>
+  <string name="app_context_menuitem_label_edit_settings">Modifica impostazioni</string>
+  <string name="app_context_menuitem_label_run">Esecuzione</string>
+  <string name="app_context_menuitem_label_start">Inizio</string>
+  <string name="app_context_menuitem_label_stop">Stop</string>
+  <string name="app_context_menuitem_label_read_stdout">Leggi stdout</string>
+  <string name="app_context_menuitem_label_delete">Elimina</string>
+  <string name="label_button_browse">BROWSE</string>
+  <string name="label_button_cancel">ANNULLO</string>
+  <string name="label_button_save">SAVE</string>
+  <string name="label_button_update">UPDATE</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Seleziona CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; directory di lavoro corrente dell\'app</string>
+  <string name="app_folderpicker_js_filepath_title">Seleziona file JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; punto di ingresso principale dell\'app</string>
+  <string name="error_using_max_apps">Errore: Impossibile supera il numero massimo di &nodejs; Daemons</string>
+  <string name="error_missing_required_value">Errore: Valore obbligatorio mancante</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Uccidi exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Uccidi: %s</string>
+  <string name="app_exec_complete">Finito execrealizzazione di app: \"%s\"</string>
+  <string name="notification_process_busy">Impossibile avviare \"%s\" fino a execfiniture di esecuzione per l\'app in esecuzione: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Barra di ricerca Toggle</string>
+  <string name="label_button_search">RICERCA</string>
+  <string name="error_stdout_not_found">Errore: Contrattenimento file stdout Non trovato</string>
+  <string name="error_stdout_not_readable">Errore: Contrattenimento file stdout Non Readable</string>
+  <string name="notification_no_search_results">Nessun risultato per la query di ricerca</string>
+  <string name="notification_end_search_results">Fine dei risultati.\n\nLa ricerca continuerà dall\'inizio.</string>
+  <string name="notification_service_content_line1">&nodejs; daemon:</string>
+  <string name="notification_service_content_line3">Fare clic per arrestare il servizio.</string>
+</resources>

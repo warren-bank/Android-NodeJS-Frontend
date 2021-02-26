@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Plātnītes</string>
+  <string name="activity_main_menu_add">Pievienot &nodejs; Lietotne</string>
+  <string name="activity_main_menu_export">Eksporta dati</string>
+  <string name="activity_main_menu_import">Importa dati</string>
+  <string name="activity_main_menu_delete">Dzēst datus</string>
+  <string name="activity_main_menu_exit">Iziešana</string>
+  <string name="app_folderpicker_json_export_filepath_description">Izvēlieties mapi, lai saglabātu failu</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Izvēlieties jaunu faila nosaukumu JSON datu</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">Eksporta</string>
+  <string name="app_folderpicker_json_import_filepath_description">Izvēlieties iepriekš eksportēto failu JSON datu</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec tajā pašā procesā</item>
+    <item>fork attiecībā uz atsevišķu procesu</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Lūdzu, pieļaujiet obligātās atļaujas</string>
+  <string name="warning_delete">Dzēst visus lietotnes iestatījumus?</string>
+  <string name="app_settings_label_cwd_dirpath">Ceļš uz darba mapi</string>
+  <string name="app_settings_label_title">Nosaukums</string>
+  <string name="app_settings_label_env_vars">Vides mainīgie lielumi</string>
+  <string name="app_settings_notes_env_vars">Viena rinda.\nFormāts: name=vērtība</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI izvēles iespējas</string>
+  <string name="app_settings_label_js_filepath">Ceļš uz JS failu</string>
+  <string name="app_settings_label_js_options">JS fails CLI izvēles iespējas</string>
+  <string name="app_context_menuitem_label_edit_settings">Rediģēt iestatījumus</string>
+  <string name="app_context_menuitem_label_run">Palaist</string>
+  <string name="app_context_menuitem_label_start">Sākt</string>
+  <string name="app_context_menuitem_label_stop">Apstāties</string>
+  <string name="app_context_menuitem_label_read_stdout">Lasi stdout</string>
+  <string name="app_context_menuitem_label_delete">Dzēst</string>
+  <string name="label_button_browse">PĀRLŪKOT</string>
+  <string name="label_button_cancel">ATCELT</string>
+  <string name="label_button_save">SAVE</string>
+  <string name="label_button_update">UPDATE</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Izvēlēties CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; lietotnes pašreizējā darba direktorija</string>
+  <string name="app_folderpicker_js_filepath_title">Izvēlieties JS failu</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; lietotnes galvenais ieejas punkts</string>
+  <string name="error_using_max_apps">Kļūda: nevar pārsniegt maksimālo &nodejs; Dēmoni</string>
+  <string name="error_missing_required_value">Kļūda: Trūkstošās Vajadzīgās Vērtības</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Nogalināt exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Nogalināt: %s</string>
+  <string name="app_exec_complete">Pabeigts execLietotnes: \"%s\"</string>
+  <string name="notification_process_busy">Nevar sākt \"%s\" , līdz execLietotnes pārklāšana: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Pārslēgt meklēšanas joslu</string>
+  <string name="label_button_search">MEKLĒŠANA</string>
+  <string name="error_stdout_not_found">Kļūda: fails, kurā ir stdout Nav atrasts</string>
+  <string name="error_stdout_not_readable">Kļūda: fails, kurā ir stdout Nav lasāms</string>
+  <string name="notification_no_search_results">Nav rezultātu meklēšanas vaicājumam</string>
+  <string name="notification_end_search_results">Rezultātu beigas.\n\nMeklēšana turpināsies no sākuma.</string>
+  <string name="notification_service_content_line1">&nodejs; daemon:</string>
+  <string name="notification_service_content_line3">Klikšķināt, lai apturētu pakalpojumu.</string>
+</resources>

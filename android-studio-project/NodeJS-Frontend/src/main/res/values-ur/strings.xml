@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Frontھيں</string>
+  <string name="activity_main_menu_add">شامل ہیں &nodejs; ایپ</string>
+  <string name="activity_main_menu_export">ایکسپورٹ ڈیٹا</string>
+  <string name="activity_main_menu_import">ایمپورٹ ڈیٹا</string>
+  <string name="activity_main_menu_delete">حذف شدہ ڈیٹا</string>
+  <string name="activity_main_menu_exit">باہر نکلیں</string>
+  <string name="app_folderpicker_json_export_filepath_description">فائل بچانے کے لیے ڈائریکٹری منتخب کریں</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">نئے فائل کا نام منتخب کریں JSON ڈیٹا</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">برآمد</string>
+  <string name="app_folderpicker_json_import_filepath_description">پہلے سے برآمد شدہ فائل منتخب کریں JSON ڈیٹا</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec اسی عمل میں</item>
+    <item>fork الگ الگ عمل کرنا</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">لازمی اجازتیں اجازت دیں</string>
+  <string name="warning_delete">تمام ایپ ترتیبات کو حذف?</string>
+  <string name="app_settings_label_cwd_dirpath">ورکنگ ڈائرکٹری کا راستہ</string>
+  <string name="app_settings_label_title">شیرشک</string>
+  <string name="app_settings_label_env_vars">ماحولیات کے مختلف النوع</string>
+  <string name="app_settings_notes_env_vars">ایک فی لائن.\nفارمیٹ: name=ویلیو</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI اختیارات</string>
+  <string name="app_settings_label_js_filepath">جے ایس ایس فائل کا راستہ</string>
+  <string name="app_settings_label_js_options">جے ایس فائل CLI اختیارات</string>
+  <string name="app_context_menuitem_label_edit_settings">تصیح</string>
+  <string name="app_context_menuitem_label_run">رن</string>
+  <string name="app_context_menuitem_label_start">آغاز</string>
+  <string name="app_context_menuitem_label_stop">بند کرو</string>
+  <string name="app_context_menuitem_label_read_stdout">پڑھیے stdout</string>
+  <string name="app_context_menuitem_label_delete">حذف</string>
+  <string name="label_button_browse">براز</string>
+  <string name="label_button_cancel">منسوخ</string>
+  <string name="label_button_save">بچائیں</string>
+  <string name="label_button_update">اپ ڈیٹ</string>
+  <string name="app_folderpicker_cwd_dirpath_title">منتخب کريں CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; ایپ کی موجودہ ورکنگ ڈائریکٹری</string>
+  <string name="app_folderpicker_js_filepath_title">منتخب جے ایس فائل</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; ایپ کا مرکزی انٹری پوائنٹ</string>
+  <string name="error_using_max_apps">غلطی: زیادہ سے زیادہ تعداد میں زیادہ سے زیادہ تعداد میں نہیں. &nodejs; Daemons</string>
+  <string name="error_missing_required_value">غلطي: مصاحي دوبارہ دریافت</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">مار ڈالو exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">مار ڈالو: %s</string>
+  <string name="app_exec_complete">ختم کر دیا execایپ کا قیام: \"%s\"</string>
+  <string name="notification_process_busy">کننہ شروع \"%s\" جب تک execایپ چلانے کے لیے امداد ختم: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">ٹوگل سرچ بار</string>
+  <string name="label_button_search">تلاش</string>
+  <string name="error_stdout_not_found">خرابی: فائل کونج stdout نہیں ملا</string>
+  <string name="error_stdout_not_readable">خرابی: فائل کونج stdout قابل اصلاح نہیں</string>
+  <string name="notification_no_search_results">سرچ استفسار کے کوئی نتائج نہیں</string>
+  <string name="notification_end_search_results">نتائج کا اختتام.\n\nتلاش شروع سے ہی جاری رہے گی.</string>
+  <string name="notification_service_content_line1">&nodejs; دمون:</string>
+  <string name="notification_service_content_line3">سٹاپ سروس پر کلک کریں.</string>
+</resources>

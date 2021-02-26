@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Фронтове</string>
+  <string name="activity_main_menu_add">Додај &nodejs; Апликација</string>
+  <string name="activity_main_menu_export">Извези податке</string>
+  <string name="activity_main_menu_import">Увези податке</string>
+  <string name="activity_main_menu_delete">Избриши податке</string>
+  <string name="activity_main_menu_exit">Изађи</string>
+  <string name="app_folderpicker_json_export_filepath_description">Изаберите директоријум за чување датотеке</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Изаберите ново име датотеке JSON подаци</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">извоз</string>
+  <string name="app_folderpicker_json_import_filepath_description">Изаберите датотеку која је претходно извезена JSON подаци</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec у истом процесу</item>
+    <item>fork за посебан процес</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Дозволите обавезне дозволе</string>
+  <string name="warning_delete">Избриши све поставке апликације?</string>
+  <string name="app_settings_label_cwd_dirpath">Путања до радног директоријума</string>
+  <string name="app_settings_label_title">Наслов</string>
+  <string name="app_settings_label_env_vars">Променљиве окружења</string>
+  <string name="app_settings_notes_env_vars">Један по реду.\nФормат: name=вредност</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI опције</string>
+  <string name="app_settings_label_js_filepath">Путања до JS датотеке</string>
+  <string name="app_settings_label_js_options">JS датотека CLI опције</string>
+  <string name="app_context_menuitem_label_edit_settings">Уреди поставке</string>
+  <string name="app_context_menuitem_label_run">Покрените</string>
+  <string name="app_context_menuitem_label_start">Почетак</string>
+  <string name="app_context_menuitem_label_stop">Заустави</string>
+  <string name="app_context_menuitem_label_read_stdout">Прочитајте stdout</string>
+  <string name="app_context_menuitem_label_delete">Избриши</string>
+  <string name="label_button_browse">ПРЕГЛЕДАЊЕ</string>
+  <string name="label_button_cancel">ОТКАЖИ</string>
+  <string name="label_button_save">САВЕ</string>
+  <string name="label_button_update">АЖУРИРАЊЕ</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Изабери CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; тренутни радни директоријум апликације</string>
+  <string name="app_folderpicker_js_filepath_title">Изаберите JS датотеку</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; Главна ставка за унос апликације</string>
+  <string name="error_using_max_apps">Грешка: не може прекорачити максимални број &nodejs; Даемонс</string>
+  <string name="error_missing_required_value">Грешка: Недостаје захтевана вредност</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Убиј exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Убиј: %s</string>
+  <string name="app_exec_complete">Завршено execКреирање апликације: \"%s\"</string>
+  <string name="notification_process_busy">Није могуће покренути \"%s\" док execНеција завршава за апликацију: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Укључи/искључи траку претраге</string>
+  <string name="label_button_search">ПРЕТРАГА</string>
+  <string name="error_stdout_not_found">Грешка: Добављања датотека stdout Није пронађено</string>
+  <string name="error_stdout_not_readable">Грешка: Добављања датотека stdout Није читљив</string>
+  <string name="notification_no_search_results">Нема резултата претраге упита</string>
+  <string name="notification_end_search_results">Крај резултата.\n\nПретрага ће се наставити од почетка.</string>
+  <string name="notification_service_content_line1">&nodejs; демон:</string>
+  <string name="notification_service_content_line3">Кликните да бисте зауставили услугу.</string>
+</resources>

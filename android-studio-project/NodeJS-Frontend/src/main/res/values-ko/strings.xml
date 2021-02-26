@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; 프론트엔드</string>
+  <string name="activity_main_menu_add">추가 &nodejs; 애플리케이션</string>
+  <string name="activity_main_menu_export">데이터 내보내기</string>
+  <string name="activity_main_menu_import">데이터 가져오기</string>
+  <string name="activity_main_menu_delete">데이터 삭제</string>
+  <string name="activity_main_menu_exit">종료</string>
+  <string name="app_folderpicker_json_export_filepath_description">파일을 저장할 디렉토리 선택</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">새 파일 이름 선택 JSON 자료</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">내보내기</string>
+  <string name="app_folderpicker_json_import_filepath_description">이전에 내보낸 파일을 선택하십시오. JSON 자료</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec 같은 방법으로</item>
+    <item>fork 프로세스를 분리하다</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">필수 권한을 허용하십시오.</string>
+  <string name="warning_delete">모든 앱 설정 삭제하기?</string>
+  <string name="app_settings_label_cwd_dirpath">작업 디렉토리에 대한 경로</string>
+  <string name="app_settings_label_title">제목</string>
+  <string name="app_settings_label_env_vars">환경 변수</string>
+  <string name="app_settings_notes_env_vars">라인당 하나.\n형식: 이름 = 값</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI 옵션</string>
+  <string name="app_settings_label_js_filepath">JS 파일에 대한 경로</string>
+  <string name="app_settings_label_js_options">JS 파일 CLI 옵션</string>
+  <string name="app_context_menuitem_label_edit_settings">설정 편집</string>
+  <string name="app_context_menuitem_label_run">실행</string>
+  <string name="app_context_menuitem_label_start">시작</string>
+  <string name="app_context_menuitem_label_stop">중지</string>
+  <string name="app_context_menuitem_label_read_stdout">읽기 stdout</string>
+  <string name="app_context_menuitem_label_delete">삭제</string>
+  <string name="label_button_browse">찾아보기</string>
+  <string name="label_button_cancel">취소</string>
+  <string name="label_button_save">저장</string>
+  <string name="label_button_update">업데이트</string>
+  <string name="app_folderpicker_cwd_dirpath_title">선택 CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; 앱의 현재 작업 디렉토리</string>
+  <string name="app_folderpicker_js_filepath_title">JS File 선택</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; 앱의 기본 진입점</string>
+  <string name="error_using_max_apps">오류: 최대 개수를 초과할 수 없음 &nodejs; Daemons</string>
+  <string name="error_missing_required_value">오류: 필수 값이 누락되었습니다.</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">죽여 exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">죽여: %s</string>
+  <string name="app_exec_complete">완료됨 exec앱의 실행: \"%s\"</string>
+  <string name="notification_process_busy">시작 불가 \"%s\" 까지 exec애플리케이션 실행을 위한 기능 완료가 완료되었습니다.: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">검색 표시줄 토글</string>
+  <string name="label_button_search">검색</string>
+  <string name="error_stdout_not_found">오류: 파일을 포함하는 파일 stdout 찾지 못함</string>
+  <string name="error_stdout_not_readable">오류: 파일을 포함하는 파일 stdout 읽을 수 없음</string>
+  <string name="notification_no_search_results">검색 쿼리에 대한 결과 없음</string>
+  <string name="notification_end_search_results">결과의 끝.\n\n검색은 처음부터 계속됩니다..</string>
+  <string name="notification_service_content_line1">&nodejs; 디먼:</string>
+  <string name="notification_service_content_line3">서비스를 중지하려면 누르십시오..</string>
+</resources>

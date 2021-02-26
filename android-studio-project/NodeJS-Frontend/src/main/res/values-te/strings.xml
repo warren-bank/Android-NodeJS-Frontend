@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; ఫ్రాన్స్తో</string>
+  <string name="activity_main_menu_add">జోడించు &nodejs; అనువర్తనం</string>
+  <string name="activity_main_menu_export">డాటా ఎగుమతిచేయి</string>
+  <string name="activity_main_menu_import">డాటా దిగుమతిచేయి</string>
+  <string name="activity_main_menu_delete">దత్తాంశమును తొలగించు</string>
+  <string name="activity_main_menu_exit">ఎక్విట్</string>
+  <string name="app_folderpicker_json_export_filepath_description">ఫైలు రక్షించుటకు డైరెక్టరీ యెంపికచేయుము</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">కొత్త ఫైల్ పేరు యెంపికచేయుము JSON సమాచారం</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">ఎగుమతి</string>
+  <string name="app_folderpicker_json_import_filepath_description">ముందుగా ఎగుమతి చేయబడిన ఫైలు యెంపికచేయుము JSON సమాచారం</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec అదే ప్రక్రియలో</item>
+    <item>fork వేర్వేరు ప్రక్రియకు</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">అనుమతించబడిన అనుమతులను దయచేసి</string>
+  <string name="warning_delete">అన్ని యాప్ అమరికలను తొలగించుము?</string>
+  <string name="app_settings_label_cwd_dirpath">వర్గింగ్ డైరెక్టరీకు దారి</string>
+  <string name="app_settings_label_title">శీర్షిక</string>
+  <string name="app_settings_label_env_vars">పర్యావరణ వేరియబుల్</string>
+  <string name="app_settings_notes_env_vars">ఒకటి వరుసగా.\nఫార్మాట్: name=value</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI ఐచ్ఛికములు</string>
+  <string name="app_settings_label_js_filepath">JS ఫైల్ కు దారి</string>
+  <string name="app_settings_label_js_options">JS దస్త్రం CLI ఐచ్ఛికములు</string>
+  <string name="app_context_menuitem_label_edit_settings">అమర్పులను సరికూర్చు</string>
+  <string name="app_context_menuitem_label_run">నడుము</string>
+  <string name="app_context_menuitem_label_start">ప్రారంభం</string>
+  <string name="app_context_menuitem_label_stop">ఆపు</string>
+  <string name="app_context_menuitem_label_read_stdout">చదవండి stdout</string>
+  <string name="app_context_menuitem_label_delete">తొలగించు</string>
+  <string name="label_button_browse">బ్రౌజ్</string>
+  <string name="label_button_cancel">రద్దు</string>
+  <string name="label_button_save">సేవ్ చేయండి</string>
+  <string name="label_button_update">నవీకరణ</string>
+  <string name="app_folderpicker_cwd_dirpath_title">ఎంచుకోండి CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; ఆప్స్ యొక్క ప్రస్తుత పని డైరెక్టరీ</string>
+  <string name="app_folderpicker_js_filepath_title">JS ఫైలును యెంపికచేయుము</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; ఆప్స్ యొక్క ముఖ్య ప్రవేశం</string>
+  <string name="error_using_max_apps">దోషము: అత్యధిక సంఖ్యను ఎక్సెడ్ చేయలేము &nodejs; డెమోన్స్Name</string>
+  <string name="error_missing_required_value">దోషము: మినహాయించబడిన విలుణము</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">కిల్ exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">కిల్: %s</string>
+  <string name="app_exec_complete">ముగిసిపోయింది execఅప్షన్ అప్షన్: \"%s\"</string>
+  <string name="notification_process_busy">ప్రారంభించలేకపొయాను \"%s\" వరకు execపరుగున అప్షన్ కోసం దిగుమతిస్తుంది.: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">శోధన పట్టీని టోగుల్ చేయండి</string>
+  <string name="label_button_search">వెతకండి</string>
+  <string name="error_stdout_not_found">దోషము: ఫైలు సంభందిత stdout కనుగొనలేదు</string>
+  <string name="error_stdout_not_readable">లోపం: stdout ఉన్న ఫైల్ చదవలేనిది</string>
+  <string name="notification_no_search_results">శోధన क्वेరుకు ఫలితాలు లేవు</string>
+  <string name="notification_end_search_results">ఫలితాల ముగింపు.\n\nశోధన మొదటి నుండి కొనసాగుతుంది.</string>
+  <string name="notification_service_content_line1">&nodejs; డెమోన్:</string>
+  <string name="notification_service_content_line3">సేవను ఆపడానికి క్లిక్ చేయుము.</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Bahagian hadapan</string>
+  <string name="activity_main_menu_add">Tambah &nodejs; Aplikasi</string>
+  <string name="activity_main_menu_export">Eksport Data</string>
+  <string name="activity_main_menu_import">Import Data</string>
+  <string name="activity_main_menu_delete">Padam Data</string>
+  <string name="activity_main_menu_exit">Keluar</string>
+  <string name="app_folderpicker_json_export_filepath_description">Pilih direktori untuk menyimpan fail</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Pilih nama fail baru untuk JSON data</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">eksport</string>
+  <string name="app_folderpicker_json_import_filepath_description">Pilih fail yang mengandungi dieksport sebelum ini JSON data</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec dalam proses yang sama</item>
+    <item>fork untuk memisahkan proses</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Sila benarkan keizinan mandatori</string>
+  <string name="warning_delete">Padam semua tetapan aplikasi?</string>
+  <string name="app_settings_label_cwd_dirpath">Laluan ke Direktori Bekerja</string>
+  <string name="app_settings_label_title">Tajuk:</string>
+  <string name="app_settings_label_env_vars">Pembolehubah Persekitaran</string>
+  <string name="app_settings_notes_env_vars">Satu per baris.\nFormat: name=value</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI pilihan</string>
+  <string name="app_settings_label_js_filepath">Laluan ke Fail JS</string>
+  <string name="app_settings_label_js_options">Fail JS CLI pilihan</string>
+  <string name="app_context_menuitem_label_edit_settings">Edit Tetapan</string>
+  <string name="app_context_menuitem_label_run">&amp; Lari</string>
+  <string name="app_context_menuitem_label_start">Mula</string>
+  <string name="app_context_menuitem_label_stop">Berhenti!</string>
+  <string name="app_context_menuitem_label_read_stdout">Baca stdout</string>
+  <string name="app_context_menuitem_label_delete">&amp; Hapuskan</string>
+  <string name="label_button_browse">LUNGSUR</string>
+  <string name="label_button_cancel">BATAL</string>
+  <string name="label_button_save">SIMPAN</string>
+  <string name="label_button_update">KEMASKINI</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Pilih CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; Direktori kerja semasa aplikasi</string>
+  <string name="app_folderpicker_js_filepath_title">Pilih Fail JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; titik masukan utama aplikasi</string>
+  <string name="error_using_max_apps">Ralat: Tidak Dapat Mempunyai Nombor Maksimum &nodejs; Daemons</string>
+  <string name="error_missing_required_value">Ralat: Nilai Yang Hilang Hilang</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Membunuh exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Membunuh: %s</string>
+  <string name="app_exec_complete">Selesai execusyen aplikasi: \"%s\"</string>
+  <string name="notification_process_busy">Tidak dapat mula \"%s\" hingga execusyen selesai untuk menjalankan aplikasi: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Togol Bar Gelintar</string>
+  <string name="label_button_search">GELINTAR</string>
+  <string name="error_stdout_not_found">Ralat: Mengkekalkan Fail stdout Tidak Ditemui</string>
+  <string name="error_stdout_not_readable">Ralat: Mengkekalkan Fail stdout Tidak Boleh Dibaca</string>
+  <string name="notification_no_search_results">Tiada keputusan untuk pertanyaan gelintar</string>
+  <string name="notification_end_search_results">Penghujung keputusan.\n\nGelintar akan diteruskan dari awal.</string>
+  <string name="notification_service_content_line1">&nodejs; daemon:</string>
+  <string name="notification_service_content_line3">Klik untuk henti perkhidmatan.</string>
+</resources>

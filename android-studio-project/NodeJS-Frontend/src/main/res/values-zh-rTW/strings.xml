@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; 弗龍多</string>
+  <string name="activity_main_menu_add">新增 &nodejs; 應用程式</string>
+  <string name="activity_main_menu_export">匯出資料</string>
+  <string name="activity_main_menu_import">匯入資料</string>
+  <string name="activity_main_menu_delete">刪除資料</string>
+  <string name="activity_main_menu_exit">出口</string>
+  <string name="app_folderpicker_json_export_filepath_description">選取要儲存檔案的目錄</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">選取的新檔案名稱 JSON 資料</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">出口</string>
+  <string name="app_folderpicker_json_import_filepath_description">選取先前匯出的檔案 JSON 資料</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec 在相同程序中</item>
+    <item>fork 以分開處理程序</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">請容許必要的許可權</string>
+  <string name="warning_delete">刪除所有應用程式設定?</string>
+  <string name="app_settings_label_cwd_dirpath">工作目錄路徑</string>
+  <string name="app_settings_label_title">Title</string>
+  <string name="app_settings_label_env_vars">環境變數</string>
+  <string name="app_settings_notes_env_vars">每行一個.\n格式：name=value</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI options</string>
+  <string name="app_settings_label_js_filepath">JS 檔案的路徑</string>
+  <string name="app_settings_label_js_options">JS 檔案 CLI options</string>
+  <string name="app_context_menuitem_label_edit_settings">編輯設定</string>
+  <string name="app_context_menuitem_label_run">快跑</string>
+  <string name="app_context_menuitem_label_start">開始</string>
+  <string name="app_context_menuitem_label_stop">停</string>
+  <string name="app_context_menuitem_label_read_stdout">讀 stdout</string>
+  <string name="app_context_menuitem_label_delete">刪除</string>
+  <string name="label_button_browse">瀏覽</string>
+  <string name="label_button_cancel">取消</string>
+  <string name="label_button_save">儲存</string>
+  <string name="label_button_update">更新</string>
+  <string name="app_folderpicker_cwd_dirpath_title">選擇 CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; 應用程式的現行工作目錄</string>
+  <string name="app_folderpicker_js_filepath_title">選取 JS 檔案</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; 應用程式的主要進入點</string>
+  <string name="error_using_max_apps">錯誤：無法超出的數目上限 &nodejs; 達蒙斯</string>
+  <string name="error_missing_required_value">錯誤：遺漏必要值</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">殺 exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">殺: %s</string>
+  <string name="app_exec_complete">已完成 execution of app: \"%s\"</string>
+  <string name="notification_process_busy">無法啟動 \"%s\" 直到 exec執行應用程式的 ution 完成: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">切換搜尋列</string>
+  <string name="label_button_search">搜尋</string>
+  <string name="error_stdout_not_found">錯誤：包含的檔案 stdout 找不到</string>
+  <string name="error_stdout_not_readable">錯誤：包含的檔案 stdout 無法讀取</string>
+  <string name="notification_no_search_results">搜尋查詢沒有結果</string>
+  <string name="notification_end_search_results">結果結束.\n\n搜尋將從開頭繼續.</string>
+  <string name="notification_service_content_line1">&nodejs; daemon:</string>
+  <string name="notification_service_content_line3">按一下以停止服務.</string>
+</resources>

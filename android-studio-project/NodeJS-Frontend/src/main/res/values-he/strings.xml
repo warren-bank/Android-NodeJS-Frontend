@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; פרונטו</string>
+  <string name="activity_main_menu_add">הוספה &nodejs; אפליקציה</string>
+  <string name="activity_main_menu_export">יצוא נתונים</string>
+  <string name="activity_main_menu_import">נתוני יבוא</string>
+  <string name="activity_main_menu_delete">מחיקת נתונים</string>
+  <string name="activity_main_menu_exit">יציאה</string>
+  <string name="app_folderpicker_json_export_filepath_description">בחירת מדריך לשמירה על הקובץ</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">בחירת שם קובץ חדש עבור JSON נתונים</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">ייצוא</string>
+  <string name="app_folderpicker_json_import_filepath_description">בחירת קובץ המכיל קודם לכן JSON נתונים</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec באותו תהליך</item>
+    <item>fork כדי להפריד תהליך</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">יש לאפשר הרשאות חובה</string>
+  <string name="warning_delete">מחיקת כל הגדרות היישומון?</string>
+  <string name="app_settings_label_cwd_dirpath">נתיב למדריך עבודה</string>
+  <string name="app_settings_label_title">כותרת</string>
+  <string name="app_settings_label_env_vars">משתנים סביבה</string>
+  <string name="app_settings_notes_env_vars">שורה אחת לכל שורה.\nעיצוב: name=value</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI אפשרויות</string>
+  <string name="app_settings_label_js_filepath">נתיב אל קובץ JS</string>
+  <string name="app_settings_label_js_options">קובץ JS CLI אפשרויות</string>
+  <string name="app_context_menuitem_label_edit_settings">עריכת הגדרות</string>
+  <string name="app_context_menuitem_label_run">הרצה</string>
+  <string name="app_context_menuitem_label_start">התחלה</string>
+  <string name="app_context_menuitem_label_stop">עצירה</string>
+  <string name="app_context_menuitem_label_read_stdout">קריאה stdout</string>
+  <string name="app_context_menuitem_label_delete">מחיקה</string>
+  <string name="label_button_browse">עיון</string>
+  <string name="label_button_cancel">ביטול</string>
+  <string name="label_button_save">שמירה</string>
+  <string name="label_button_update">עדכון</string>
+  <string name="app_folderpicker_cwd_dirpath_title">בחירה CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; מדריך העבודה הנוכחי של היישום</string>
+  <string name="app_folderpicker_js_filepath_title">בחירת קובץ JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; נקודת הכניסה הראשית של האפליקציה</string>
+  <string name="error_using_max_apps">שגיאה: לא ניתן להרחיב את המספר המרבי של &nodejs; דרשות</string>
+  <string name="error_missing_required_value">שגיאה: ערך דרוש חסר</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">הרוג exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">הרוג: %s</string>
+  <string name="app_exec_complete">הסתיים execהאבולוציה של האפליקציה: \"%s\"</string>
+  <string name="notification_process_busy">לא ניתן להתחיל \"%s\" עד execסיום תהליך עבור יישום הפעלה: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">מיתוג סרגל חיפוש</string>
+  <string name="label_button_search">חיפוש</string>
+  <string name="error_stdout_not_found">שגיאה: קובץ מכיל stdout לא נמצא</string>
+  <string name="error_stdout_not_readable">שגיאה: קובץ מכיל stdout לא ניתן לקריאה</string>
+  <string name="notification_no_search_results">אין תוצאות עבור שאילתת החיפוש</string>
+  <string name="notification_end_search_results">סוף התוצאות.\n\nהחיפוש ימשיך מההתחלה.</string>
+  <string name="notification_service_content_line1">&nodejs; Daemon:</string>
+  <string name="notification_service_content_line3">לחצו כדי להפסיק את השירות.</string>
+</resources>

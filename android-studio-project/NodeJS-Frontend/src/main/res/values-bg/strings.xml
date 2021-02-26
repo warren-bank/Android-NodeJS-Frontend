@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Обвивка:</string>
+  <string name="activity_main_menu_add">Добави: &nodejs; Приложение:</string>
+  <string name="activity_main_menu_export">Износ на данни</string>
+  <string name="activity_main_menu_import">Внасяне на данни</string>
+  <string name="activity_main_menu_delete">Изтриване на данни</string>
+  <string name="activity_main_menu_exit">Изход:</string>
+  <string name="app_folderpicker_json_export_filepath_description">Избор на директория за запазване на файл</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Изберете ново име на файл за JSON Данни:</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">износ.</string>
+  <string name="app_folderpicker_json_import_filepath_description">Изберете файл, съдържащ предварително експортиран файл JSON Данни:</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec в същия процес.</item>
+    <item>fork на отделен процес.</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Позволяване на задължителни разрешения</string>
+  <string name="warning_delete">Изтриване на всички настройки на приложението?</string>
+  <string name="app_settings_label_cwd_dirpath">Път до работната директория</string>
+  <string name="app_settings_label_title">Име:</string>
+  <string name="app_settings_label_env_vars">Променливи на обкръжение</string>
+  <string name="app_settings_notes_env_vars">Един на ред..\nФормат: име=стойност</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI опции:</string>
+  <string name="app_settings_label_js_filepath">Път към JS файл</string>
+  <string name="app_settings_label_js_options">JS файл CLI опции:</string>
+  <string name="app_context_menuitem_label_edit_settings">Настройки за редактиране</string>
+  <string name="app_context_menuitem_label_run">Бягай!</string>
+  <string name="app_context_menuitem_label_start">Старт!</string>
+  <string name="app_context_menuitem_label_stop">Спри!</string>
+  <string name="app_context_menuitem_label_read_stdout">Чете: stdout</string>
+  <string name="app_context_menuitem_label_delete">Изтриване.</string>
+  <string name="label_button_browse">Броуз.</string>
+  <string name="label_button_cancel">ОТМЯНА</string>
+  <string name="label_button_save">SAVE</string>
+  <string name="label_button_update">UPDATE</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Избор: CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; текуща работна директория на приложението</string>
+  <string name="app_folderpicker_js_filepath_title">Избор на JS файл</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; Главна входна точка на приложението</string>
+  <string name="error_using_max_apps">Грешка: Не може да се изпълни максималният брой на &nodejs; \"daemons\"</string>
+  <string name="error_missing_required_value">Грешка: Липсва липсващата стойност</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Убий! exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Убий!: %s</string>
+  <string name="app_exec_complete">Край! execПриложение:: \"%s\"</string>
+  <string name="notification_process_busy">Не може. \"%s\" До: execЗавърши приложението за стартиране на приложението: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Лента за търсене</string>
+  <string name="label_button_search">ТЪРСЕНЕ</string>
+  <string name="error_stdout_not_found">Грешка: Съдържание, съдържащо stdout Не е намерен</string>
+  <string name="error_stdout_not_readable">Грешка: Съдържание, съдържащо stdout Не се чете:</string>
+  <string name="notification_no_search_results">Няма резултати за запитване за търсене</string>
+  <string name="notification_end_search_results">Край на резултатите:.\n\nТърсенето ще продължи от началото..</string>
+  <string name="notification_service_content_line1">&nodejs; -Деймън:</string>
+  <string name="notification_service_content_line3">Щракнете, за да спрете услугата.</string>
+</resources>

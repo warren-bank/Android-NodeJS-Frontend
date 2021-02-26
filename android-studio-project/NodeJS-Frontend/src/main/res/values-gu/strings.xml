@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; ચોકઠાંઓ</string>
+  <string name="activity_main_menu_add">ઉમેરો &nodejs; એપ</string>
+  <string name="activity_main_menu_export">માહિતી નિકાસ કરો</string>
+  <string name="activity_main_menu_import">માહિતી આયાત કરો</string>
+  <string name="activity_main_menu_delete">માહિતી કાઢી નાંખો</string>
+  <string name="activity_main_menu_exit">બહાર નીકળવો</string>
+  <string name="app_folderpicker_json_export_filepath_description">ફાઇલ સંગ્રહ કરવા માટે ડિરેક્ટરી પસંદ કરો</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">નવી ફાઇલ નામ માટે પસંદ કરો JSON માહિતી</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">નિકાસ</string>
+  <string name="app_folderpicker_json_import_filepath_description">પહેલાં નિકાસ થયેલ ફાઇલને પસંદ કરો JSON માહિતી</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec એક જ પ્રક્રિયામાં</item>
+    <item>fork અલગ પ્રક્રિયા માટે</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">મહેરબાની કરીને જરૂરી પરવાનગીઓ આપો</string>
+  <string name="warning_delete">બધા કાર્યક્રમ સુયોજનો કાઢી નાંખો?</string>
+  <string name="app_settings_label_cwd_dirpath">કામ કરવાની ડિરેક્ટરીનો પાથ</string>
+  <string name="app_settings_label_title">શીર્ષક</string>
+  <string name="app_settings_label_env_vars">પર્યાવરણ ચલ</string>
+  <string name="app_settings_notes_env_vars">એક પ્રતિ લીટી.\nબંધારણ: name=value</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI વિકલ્પો</string>
+  <string name="app_settings_label_js_filepath">JS ફાઈલમાં પાથ</string>
+  <string name="app_settings_label_js_options">JS ફાઇલ CLI વિકલ્પો</string>
+  <string name="app_context_menuitem_label_edit_settings">સુયોજનોમાં ફેરફાર કરો</string>
+  <string name="app_context_menuitem_label_run">ચલાવો</string>
+  <string name="app_context_menuitem_label_start">શરૂઆત</string>
+  <string name="app_context_menuitem_label_stop">બંધ કરો</string>
+  <string name="app_context_menuitem_label_read_stdout">વાંચો stdout</string>
+  <string name="app_context_menuitem_label_delete">કાઢી નાંખો</string>
+  <string name="label_button_browse">બ્રાઉઝ</string>
+  <string name="label_button_cancel">રદ કરો</string>
+  <string name="label_button_save">સંગ્રહ કરો</string>
+  <string name="label_button_update">સુધારો</string>
+  <string name="app_folderpicker_cwd_dirpath_title">પસંદ કરો CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; કાર્યક્રમની વર્તમાન કામ ડિરેક્ટરી</string>
+  <string name="app_folderpicker_js_filepath_title">JS ફાઈલ પસંદ કરો</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; કાર્યક્રમની મુખ્ય પ્રવેશ બિંદુ</string>
+  <string name="error_using_max_apps">ક્ષતિ: મહત્તમ સંખ્યા ની મહત્તમ સંખ્યાને દૂર કરી શકાતી નથી &nodejs; ડેમોન્સ</string>
+  <string name="error_missing_required_value">ભૂલ: ગુમ થયેલ જરૂરી કિંમત</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Kill exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Kill: %s</string>
+  <string name="app_exec_complete">સમાપ્ત થયેલ છે execએપ ની શરૂઆત: \"%s\"</string>
+  <string name="notification_process_busy">શરૂ કરી શકાતુ નથી \"%s\" જ્યાં સુધી execચાલતા કાર્યક્રમ માટે અંતિમ સંતુલન: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">શોધ પટ્ટી ચાલુ કરો</string>
+  <string name="label_button_search">શોધો</string>
+  <string name="error_stdout_not_found">ક્ષતિ: ફાઈલ સંબંધિત stdout મળ્યુ નથી</string>
+  <string name="error_stdout_not_readable">ક્ષતિ: ફાઈલ સંબંધિત stdout વાંચી શકાય તેવુ નથી</string>
+  <string name="notification_no_search_results">શોધ પ્રશ્ર્ન માટે પરિણામો નથી</string>
+  <string name="notification_end_search_results">પરિણામોનો અંત.\n\nશોધ શરૂઆતથી ચાલુ રાખશે.</string>
+  <string name="notification_service_content_line1">&nodejs; ડિમન:</string>
+  <string name="notification_service_content_line3">સેવા બંધ કરવા માટે ક્લિક કરો.</string>
+</resources>

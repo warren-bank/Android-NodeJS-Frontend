@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Ön yüz</string>
+  <string name="activity_main_menu_add">Ekle &nodejs; Uygulama</string>
+  <string name="activity_main_menu_export">Verileri Dışa Aktar</string>
+  <string name="activity_main_menu_import">Verileri İçe Aktar</string>
+  <string name="activity_main_menu_delete">Verileri Sil</string>
+  <string name="activity_main_menu_exit">Çıkış</string>
+  <string name="app_folderpicker_json_export_filepath_description">Dosyayı kaydetmek için dizin seçin</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Yeni dosya adını seçin: JSON veri</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">dışa aktarma</string>
+  <string name="app_folderpicker_json_import_filepath_description">Önceden dışa aktarılan dosyayı seç JSON veri</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec aynı süreçte</item>
+    <item>fork ayrı sürece</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Lütfen zorunlu izinlere izin ver</string>
+  <string name="warning_delete">Tüm uygulama ayarlarını sil?</string>
+  <string name="app_settings_label_cwd_dirpath">Çalışma Dizini Yolu</string>
+  <string name="app_settings_label_title">Unvan</string>
+  <string name="app_settings_label_env_vars">Ortam Değişkenleri</string>
+  <string name="app_settings_notes_env_vars">Her satıra bir tane.\nBiçim: ad=değer</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI seçenekler</string>
+  <string name="app_settings_label_js_filepath">JS Dosyasının Yolu</string>
+  <string name="app_settings_label_js_options">JS Dosyası CLI seçenekler</string>
+  <string name="app_context_menuitem_label_edit_settings">Ayarları Düzenle</string>
+  <string name="app_context_menuitem_label_run">Çalıştır</string>
+  <string name="app_context_menuitem_label_start">Başlat</string>
+  <string name="app_context_menuitem_label_stop">Durdur</string>
+  <string name="app_context_menuitem_label_read_stdout">Oku stdout</string>
+  <string name="app_context_menuitem_label_delete">Sil</string>
+  <string name="label_button_browse">GöZ</string>
+  <string name="label_button_cancel">CANCEL</string>
+  <string name="label_button_save">SAKLA</string>
+  <string name="label_button_update">GÜNCELLE</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Seç CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; uygulamanın yürürlükteki çalışma dizini</string>
+  <string name="app_folderpicker_js_filepath_title">JS Dosyası Seçin</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; uygulamanın ana giriş noktası</string>
+  <string name="error_using_max_apps">Hata: Üst Sınır Sayısı üst Sınırı Aşıldı &nodejs; Yardımcı bilgiler</string>
+  <string name="error_missing_required_value">Hata: Gerekli Değer Eksik</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Öldür exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Öldür: %s</string>
+  <string name="app_exec_complete">Bitti execuygulama işi: \"%s\"</string>
+  <string name="notification_process_busy">Başlatılamıyor \"%s\" şu tarihe kadar execçalıştırma uygulaması için ution sona erdir: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Arama Çubuğu Aç/Kapa</string>
+  <string name="label_button_search">ARA</string>
+  <string name="error_stdout_not_found">Hata: Dosya İçeren Dosya stdout Bulunamadı</string>
+  <string name="error_stdout_not_readable">Hata: Dosya İçeren Dosya stdout Okunamaz</string>
+  <string name="notification_no_search_results">Arama sorgusu için sonuç yok</string>
+  <string name="notification_end_search_results">Sonuç sonu.\n\nArama baştan itibaren devam edecek.</string>
+  <string name="notification_service_content_line1">&nodejs; yardımcı program:</string>
+  <string name="notification_service_content_line3">Hizmeti durdurmak için tıklatın.</string>
+</resources>

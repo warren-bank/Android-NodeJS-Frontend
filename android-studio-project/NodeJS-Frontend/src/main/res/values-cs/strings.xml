@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Frontend</string>
+  <string name="activity_main_menu_add">Přidat &nodejs; Aplikace</string>
+  <string name="activity_main_menu_export">Exportovat data</string>
+  <string name="activity_main_menu_import">Importovat data</string>
+  <string name="activity_main_menu_delete">Odstranit data</string>
+  <string name="activity_main_menu_exit">Ukončit</string>
+  <string name="app_folderpicker_json_export_filepath_description">Vyberte adresář pro uložení souboru</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Vyberte nový název souboru pro JSON data</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">exportování</string>
+  <string name="app_folderpicker_json_import_filepath_description">Vyberte soubor obsahující dříve exportovaný JSON data</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec ve stejném procesu</item>
+    <item>fork oddělený proces</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Povolte povinná oprávnění</string>
+  <string name="warning_delete">Odstranit všechna nastavení aplikace?</string>
+  <string name="app_settings_label_cwd_dirpath">Cesta k pracovním adresáři</string>
+  <string name="app_settings_label_title">Název</string>
+  <string name="app_settings_label_env_vars">Proměnná prostředí</string>
+  <string name="app_settings_notes_env_vars">Jeden na řádek.\nFormát: název=hodnota</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI volby</string>
+  <string name="app_settings_label_js_filepath">Cesta k souboru JS</string>
+  <string name="app_settings_label_js_options">Soubor JS CLI volby</string>
+  <string name="app_context_menuitem_label_edit_settings">Upravit nastavení</string>
+  <string name="app_context_menuitem_label_run">Spustit</string>
+  <string name="app_context_menuitem_label_start">Začátek</string>
+  <string name="app_context_menuitem_label_stop">Zastavit</string>
+  <string name="app_context_menuitem_label_read_stdout">Číst stdout</string>
+  <string name="app_context_menuitem_label_delete">Odstranit</string>
+  <string name="label_button_browse">PROCHÁZET</string>
+  <string name="label_button_cancel">STORNO</string>
+  <string name="label_button_save">ULOŽIT</string>
+  <string name="label_button_update">AKTUALIZOVAT</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Vyberte CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; aktuální pracovní adresář aplikace</string>
+  <string name="app_folderpicker_js_filepath_title">Vyberte soubor JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; hlavní vstupní bod aplikace</string>
+  <string name="error_using_max_apps">Chyba: Nelze překročit maximální počet &nodejs; Démoni</string>
+  <string name="error_missing_required_value">Chyba: Chybí požadovaná hodnota</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Ukončit exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Ukončit: %s</string>
+  <string name="app_exec_complete">Dokončeno execetion of app: \"%s\"</string>
+  <string name="notification_process_busy">Nelze spustit \"%s\" do execProvedení povrchové úpravy pro spuštěnou aplikaci: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Přepnout panel hledání</string>
+  <string name="label_button_search">PROHLEDAT</string>
+  <string name="error_stdout_not_found">Chyba: Soubor obsahuje stdout Nebyl nalezen</string>
+  <string name="error_stdout_not_readable">Chyba: Soubor obsahuje stdout Nečitelné</string>
+  <string name="notification_no_search_results">Žádné výsledky pro dotaz hledání</string>
+  <string name="notification_end_search_results">Konec výsledků.\n\nHledání bude pokračovat od začátku.</string>
+  <string name="notification_service_content_line1">&nodejs; Démon:</string>
+  <string name="notification_service_content_line3">Klepnutím zastavíte službu.</string>
+</resources>

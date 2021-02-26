@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; ฟรอนตาร์</string>
+  <string name="activity_main_menu_add">เพิ่ม &nodejs; แอ็พ</string>
+  <string name="activity_main_menu_export">เอ็กซ์พอร์ตข้อมูล</string>
+  <string name="activity_main_menu_import">อิมพอร์ตข้อมูล</string>
+  <string name="activity_main_menu_delete">ลบข้อมูล</string>
+  <string name="activity_main_menu_exit">ออก</string>
+  <string name="app_folderpicker_json_export_filepath_description">เลือกไดเร็กทอรีเพื่อบันทึกไฟล์</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">เลือกชื่อไฟล์ใหม่สำหรับ JSON ข้อมูล</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">การเอ็กซ์พอร์ต</string>
+  <string name="app_folderpicker_json_import_filepath_description">เลือกไฟล์ที่มีการเอ็กซ์พอร์ตก่อนหน้านี้ JSON ข้อมูล</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec ในกระบวนการเดียวกัน</item>
+    <item>fork เพื่อแยกโปรเซส</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">โปรดอนุญาตสิทธิ์ที่จำเป็น</string>
+  <string name="warning_delete">ลบค่าติดตั้งแอ็พทั้งหมด?</string>
+  <string name="app_settings_label_cwd_dirpath">พาธไปยังไดเร็กทอรีการทำงาน</string>
+  <string name="app_settings_label_title">ชื่อเรื่อง</string>
+  <string name="app_settings_label_env_vars">ตัวแปรสภาวะแวดล้อม</string>
+  <string name="app_settings_notes_env_vars">หนึ่งรายการต่อบรรทัด.\nรูปแบบ: name = value</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI อ็อพชัน</string>
+  <string name="app_settings_label_js_filepath">พาธไปยังไฟล์ JS</string>
+  <string name="app_settings_label_js_options">ไฟล์ JS CLI อ็อพชัน</string>
+  <string name="app_context_menuitem_label_edit_settings">แก้ไขค่าติดตั้ง</string>
+  <string name="app_context_menuitem_label_run">เรียกใช้</string>
+  <string name="app_context_menuitem_label_start">เริ่มต้น</string>
+  <string name="app_context_menuitem_label_stop">หยุด</string>
+  <string name="app_context_menuitem_label_read_stdout">อ่าน stdout</string>
+  <string name="app_context_menuitem_label_delete">ลบ</string>
+  <string name="label_button_browse">เรียกดู</string>
+  <string name="label_button_cancel">ยกเลิก</string>
+  <string name="label_button_save">บันทึก</string>
+  <string name="label_button_update">อัพเดต</string>
+  <string name="app_folderpicker_cwd_dirpath_title">เลือก CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; ไดเร็กทอรีการทำงานปัจจุบันของแอ็พ</string>
+  <string name="app_folderpicker_js_filepath_title">เลือกไฟล์ JS</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; Entry point หลักของแอ็พ</string>
+  <string name="error_using_max_apps">ข้อผิดพลาด: ไม่สามารถเกินจำนวนสูงสุดของ &nodejs; Daemons</string>
+  <string name="error_missing_required_value">ข้อผิดพลาด: ค่าที่จำเป็นหายไป</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">ฆ่า exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">ฆ่า: %s</string>
+  <string name="app_exec_complete">เสร็จสิ้นแล้ว execUtion ของแอ็พ: \"%s\"</string>
+  <string name="notification_process_busy">ไม่สามารถเริ่มต้น \"%s\" จนกระทั่ง execการ ution เสร็จสิ้นสำหรับการรันแอ็พ: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">สลับแถบการค้นหา</string>
+  <string name="label_button_search">การค้นหา</string>
+  <string name="error_stdout_not_found">ข้อผิดพลาด: File Containing stdout ไม่พบ</string>
+  <string name="error_stdout_not_readable">ข้อผิดพลาด: File Containing stdout ไม่สามารถอ่านได้</string>
+  <string name="notification_no_search_results">ไม่มีผลลัพธ์สำหรับเคียวรีการค้นหา</string>
+  <string name="notification_end_search_results">สิ้นสุดผลลัพธ์.\n\nการค้นหาจะดำเนินการต่อจากจุดเริ่มต้น.</string>
+  <string name="notification_service_content_line1">&nodejs; Daemon:</string>
+  <string name="notification_service_content_line3">คลิกเพื่อหยุดบริการ.</string>
+</resources>

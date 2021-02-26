@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; Gränssnitt</string>
+  <string name="activity_main_menu_add">Lägg till &nodejs; Appen</string>
+  <string name="activity_main_menu_export">Exportera data</string>
+  <string name="activity_main_menu_import">Importera data</string>
+  <string name="activity_main_menu_delete">Ta bort data</string>
+  <string name="activity_main_menu_exit">Avsluta</string>
+  <string name="app_folderpicker_json_export_filepath_description">Välj katalog att spara fil</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">Välj det nya filnamnet för JSON data</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">exportera</string>
+  <string name="app_folderpicker_json_import_filepath_description">Välj fil som innehåller tidigare exporterat JSON data</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec i samma process</item>
+    <item>fork för att separera</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">Tillåt obligatoriska behörigheter</string>
+  <string name="warning_delete">Ta bort alla appinställningar?</string>
+  <string name="app_settings_label_cwd_dirpath">Sökväg till arbetskatalog</string>
+  <string name="app_settings_label_title">Rubrik</string>
+  <string name="app_settings_label_env_vars">Miljövariabler</string>
+  <string name="app_settings_notes_env_vars">En per rad.\nFormat: name=värde</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI alternativ</string>
+  <string name="app_settings_label_js_filepath">Sökväg till JS-fil</string>
+  <string name="app_settings_label_js_options">JS-fil CLI alternativ</string>
+  <string name="app_context_menuitem_label_edit_settings">Redigera inställningar</string>
+  <string name="app_context_menuitem_label_run">Kör</string>
+  <string name="app_context_menuitem_label_start">Start</string>
+  <string name="app_context_menuitem_label_stop">Stanna!</string>
+  <string name="app_context_menuitem_label_read_stdout">Läs stdout</string>
+  <string name="app_context_menuitem_label_delete">Radera</string>
+  <string name="label_button_browse">BLÄDDRA</string>
+  <string name="label_button_cancel">AVBRYT</string>
+  <string name="label_button_save">SPARA</string>
+  <string name="label_button_update">UPPDATERA</string>
+  <string name="app_folderpicker_cwd_dirpath_title">Välj CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; App s nuvarande arbetskatalog</string>
+  <string name="app_folderpicker_js_filepath_title">Välj JS-fil</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; Appens huvudstartpunkt</string>
+  <string name="error_using_max_apps">Fel: Det gick inte att överskriden maximalt antal &nodejs; Demoner</string>
+  <string name="error_missing_required_value">Fel: Obligatoriskt värde saknas</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Döda exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Döda: %s</string>
+  <string name="app_exec_complete">Avslutad execFörening av app: \"%s\"</string>
+  <string name="notification_process_busy">Kan inte starta \"%s\" till execution avslutas för körning av app: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">Växla sökrad</string>
+  <string name="label_button_search">SÖK</string>
+  <string name="error_stdout_not_found">Fel: Arkivera stdout Ej hittad</string>
+  <string name="error_stdout_not_readable">Fel: Arkivera stdout Inte läsbar</string>
+  <string name="notification_no_search_results">Inga resultat för sökfrågan</string>
+  <string name="notification_end_search_results">Slutet av resultaten.\n\nSökningen kommer att fortsätta från början.</string>
+  <string name="notification_service_content_line1">&nodejs; daemon:</string>
+  <string name="notification_service_content_line3">Klicka för att stoppa tjänsten.</string>
+</resources>

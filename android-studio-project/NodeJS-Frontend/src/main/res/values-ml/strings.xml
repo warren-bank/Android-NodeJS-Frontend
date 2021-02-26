@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+  <!ENTITY nodejs "Node.js">
+]>
+<resources>
+  <string name="app_name">&nodejs; ഫ്രണ്ടെന്റ്Name</string>
+  <string name="activity_main_menu_add">ചേര്ക്കുക &nodejs; അപ്പ്Name</string>
+  <string name="activity_main_menu_export">ഡേറ്റാ പുറത്തുവയ്ക്കുക</string>
+  <string name="activity_main_menu_import">ഡാറ്റ എടുക്കുക</string>
+  <string name="activity_main_menu_delete">ഡേറ്റാ നീക്കം ചെയ്യുക</string>
+  <string name="activity_main_menu_exit">പ്രദര്ശിപ്പിക്കുക</string>
+  <string name="app_folderpicker_json_export_filepath_description">ഫയല് സൂക്ഷിക്കുവാനുള്ള തട്ട് തെരഞ്ഞെടുക്കുക</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_prompt">പുതിയ ഫയലിന്റെ പേരു് തെരഞ്ഞെടുക്കുക JSON ഡേറ്റാ</string>
+  <string name="app_folderpicker_json_export_filepath_newfile_name">കയറ്റുമതി</string>
+  <string name="app_folderpicker_json_import_filepath_description">മുമ്പ് കയറ്റുമതി ചെയ്യുന്ന ഫയല് തെരഞ്ഞെടുക്കുക JSON ഡേറ്റാ</string>
+  <string-array name="activity_main_tab_titles">
+    <item>exec അതേ പ്രക്രിയയിൽ</item>
+    <item>fork വ്യത്യസ്ത പ്രക്രിയക്ക്</item>
+  </string-array>
+  <string name="warning_runtime_permissions_denied">ദയവായി നിര്ബന്ധമായ അനുവാദങ്ങള് അനുവദിക്കുക</string>
+  <string name="warning_delete">എല്ലാ ആപ്പ് സജ്ജീകരണങ്ങള് നീക്കം ചെയ്യുക?</string>
+  <string name="app_settings_label_cwd_dirpath">ജോലിക്കുള്ള ഡയറക്ടറിയുടെ പാഥ്</string>
+  <string name="app_settings_label_title">തലക്കെട്ടു്</string>
+  <string name="app_settings_label_env_vars">പരിസ്ഥിതി ചരിവുകള്</string>
+  <string name="app_settings_notes_env_vars">ഒരു വരി.\nഫോര്മാറ്റ്: name=value</string>
+  <string name="app_settings_label_node_options">&nodejs; CLI ഐച്ഛികങ്ങള്</string>
+  <string name="app_settings_label_js_filepath">JS ഫയലിലേത് പാഥ്</string>
+  <string name="app_settings_label_js_options">JS ഫയല് CLI ഐച്ഛികങ്ങള്</string>
+  <string name="app_context_menuitem_label_edit_settings">സജ്ജീകരണങ്ങള് മാറ്റുക</string>
+  <string name="app_context_menuitem_label_run">പ്രവര്ത്തിപ്പിക്കുക</string>
+  <string name="app_context_menuitem_label_start">തുടങ്ങുക</string>
+  <string name="app_context_menuitem_label_stop">നിര്ത്തുക</string>
+  <string name="app_context_menuitem_label_read_stdout">വായിയ്ക്കുക stdout</string>
+  <string name="app_context_menuitem_label_delete">നീക്കം ചെയ്യുക</string>
+  <string name="label_button_browse">ബ്രൌസ് ചെയ്യുക</string>
+  <string name="label_button_cancel">റദ്ദാക്കുക</string>
+  <string name="label_button_save">സൂക്ഷിക്കുക</string>
+  <string name="label_button_update">പുതുക്കുക</string>
+  <string name="app_folderpicker_cwd_dirpath_title">തെരഞ്ഞെടുക്കുക CWD</string>
+  <string name="app_folderpicker_cwd_dirpath_description">&nodejs; ആപ്പിന്റെ ഇപ്പോഴത്തെ പ്രവർത്തന ഡയറക്ടറി</string>
+  <string name="app_folderpicker_js_filepath_title">JS ഫയല് തെരഞ്ഞെടുക്കുക</string>
+  <string name="app_folderpicker_js_filepath_description">&nodejs; ആപ്പിളിന്റെ പ്രധാന എന്ട്രി പോയിന്റ്</string>
+  <string name="error_using_max_apps">പിശകു്: ഏറ്റവും കൂടിയ എണ്ണം എക്സൈഡ് ചെയ്യുവാന് സാധ്യമല്ല &nodejs; ഡയമണ്സ്</string>
+  <string name="error_missing_required_value">പിശക്: ലഭ്യമായ ആവശ്യമായ മൂല്ല്യം</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app">Kill exec</string>
+  <string name="activity_main_tabs_fragment_exec_menu_kill_app_title">Kill: %s</string>
+  <string name="app_exec_complete">പൂര്ത്തിയായി execആപ്പിളിന്റെ ദൂരം: \"%s\"</string>
+  <string name="notification_process_busy">തുടങ്ങുവാന് സാധ്യമല്ല \"%s\" വരെ execപ്രവര്ത്തനരഹിതമായ ആപ്പ് പ്രവര്ത്തനരഹിതമാക്കുന്നു.: \"%s\"</string>
+  <string name="activity_read_output_menu_toggle_search">തെരച്ചില് പട്ട ടോഗിള് ചെയ്യുക</string>
+  <string name="label_button_search">തെരയുക</string>
+  <string name="error_stdout_not_found">പിശകു്: ഫയല് കണക്ഷന് stdout കണ്ടില്ല</string>
+  <string name="error_stdout_not_readable">പിശകു്: ഫയല് കണക്ഷന് stdout റീഡ് ചെയ്യുവാന് സാധിച്ചില്ല</string>
+  <string name="notification_no_search_results">തെരച്ചില് ചോദ്യത്തിനുള്ള ഫലങ്ങള് ലഭ്യമല്ല</string>
+  <string name="notification_end_search_results">ഫലങ്ങളുടെ അവസാനം.\n\nതെരച്ചില് ആരംഭത്തില് നിന്നും തുടരും.</string>
+  <string name="notification_service_content_line1">&nodejs; ഡീമണ്:</string>
+  <string name="notification_service_content_line3">സേവനം നിര്ത്താന് ഞൊട്ടുക.</string>
+</resources>
