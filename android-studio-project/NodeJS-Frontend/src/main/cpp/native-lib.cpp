@@ -52,7 +52,7 @@ Java_com_github_warren_1bank_nodejs_1frontend_helpers_NodeJsAppRunner_saveStanda
         jstring jFilepath) {
 
     const char* filepath = env->GetStringUTFChars(jFilepath, 0);
-    int fd = open(filepath, O_CREAT|O_WRONLY|O_TRUNC);
+    int fd = open(filepath, O_CREAT|O_WRONLY|O_TRUNC, S_IRUSR|S_IWUSR);
     dup2(fd, 1); // stdout
     dup2(fd, 2); // stderr
     close(fd);
