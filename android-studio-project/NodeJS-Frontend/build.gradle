@@ -4,6 +4,7 @@ apply plugin: 'com.android.application'
 android {
   compileSdkVersion project.ext.compileSdkVersion
   buildToolsVersion project.ext.buildToolsVersion
+  ndkVersion        project.ext.ndkVersion
 
   compileOptions {
     sourceCompatibility project.ext.javaVersion
@@ -52,13 +53,8 @@ android {
 
   externalNativeBuild {
     cmake {
+      version project.ext.cmakeVersion
       path "CMakeLists.txt"
-    }
-  }
-
-  sourceSets {
-    main {
-      jniLibs.srcDirs 'libnode/bin/'
     }
   }
 
