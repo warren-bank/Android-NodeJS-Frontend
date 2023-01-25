@@ -2,10 +2,15 @@ package com.github.warren_bank.nodejs_frontend.helpers;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PermissionInfo;
+import android.net.Uri;
 import android.os.Build;
+import android.os.Environment;
+import android.provider.Settings;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
@@ -34,19 +39,28 @@ public class RuntimePermissionsMgr {
   }
 
   public static boolean isEnabled(Activity activity) {
+    boolean result = true;
+
     if (Build.VERSION.SDK_INT < 23)
-      return true;
+      return result;
 
     final String[] dangerousPermissions = getAllDangerousRequestedPermissions(activity);
+    if ((dangerousPermissions != null) && (dangerousPermissions.length > 0)) {
+      result = false;
+      activity.requestPermissions(dangerousPermissions, REQUEST_CODE_PERMISSIONS);
+    }
 
-    if ((dangerousPermissions == null) || (dangerousPermissions.length <= 0))
-      return true;
+    if ((Build.VERSION.SDK_INT >= 30) && !Environment.isExternalStorageManager()) {
+      result = false;
+      Uri uri = Uri.parse("package:" + activity.getPackageName());
+      Intent intent = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION, uri);
+      activity.startActivityForResult(intent, REQUEST_CODE_PERMISSIONS);
+    }
 
-    activity.requestPermissions(dangerousPermissions, REQUEST_CODE_PERMISSIONS);
-    return false;
+    return result;
   }
 
-  public static void onRequestPermissionsResult (Activity activity, OnRuntimePermissionsListener listener, int requestCode, String[] permissions, int[] grantResults) {
+  public static void onRequestPermissionsResult(OnRuntimePermissionsListener listener, int requestCode, String[] permissions, int[] grantResults) {
     if (requestCode != REQUEST_CODE_PERMISSIONS)
       return;
 
@@ -94,6 +108,18 @@ public class RuntimePermissionsMgr {
           );
         }
       }
+    }
+  }
+
+  public static void onActivityResult(OnRuntimePermissionsListener listener, int requestCode, int resultCode, Intent data) {
+    if (requestCode != REQUEST_CODE_PERMISSIONS)
+      return;
+
+    if (resultCode == Activity.RESULT_OK) {
+      listener.onPermissionsGranted();
+    }
+    else {
+      listener.onPermissionsDenied(/* permissions= */ null);
     }
   }
 

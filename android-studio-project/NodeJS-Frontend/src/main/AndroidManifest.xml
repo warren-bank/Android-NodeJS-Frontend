@@ -7,9 +7,15 @@
 
   <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
   <uses-permission android:name="android.permission.INTERNET"/>
-  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
   <uses-permission android:name="android.permission.WAKE_LOCK" />
-  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+  <!-- file access permissions: Android 1 to 10 -->
+  <uses-permission android:maxSdkVersion="29" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:maxSdkVersion="29" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+  <!-- file access permissions: Android 11+ -->
+  <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
 
   <application
     android:theme="@style/AppTheme"
@@ -25,7 +31,8 @@
       android:theme="@style/AppTheme"
       android:label="@string/app_name"
       android:configChanges="colorMode|density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
-      android:launchMode="standard">
+      android:launchMode="standard"
+      android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
@@ -37,13 +44,15 @@
       android:theme="@style/AppTheme"
       android:label="@string/app_name"
       android:configChanges="colorMode|density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
-      android:launchMode="standard">
+      android:launchMode="standard"
+      android:exported="false">
     </activity>
 
     <!-- one distinct-process service is used to execute non-daemon apps -->
 
     <service
       android:name=".services.exec.RemoteService"
+      android:foregroundServiceType="dataSync"
       android:process=":exec_process"
       android:enabled="true"
       android:exported="false" />
@@ -52,101 +61,121 @@
 
     <service
       android:name=".services.fork.NodeService_01"
+      android:foregroundServiceType="dataSync"
       android:process=":process_01"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_02"
+      android:foregroundServiceType="dataSync"
       android:process=":process_02"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_03"
+      android:foregroundServiceType="dataSync"
       android:process=":process_03"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_04"
+      android:foregroundServiceType="dataSync"
       android:process=":process_04"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_05"
+      android:foregroundServiceType="dataSync"
       android:process=":process_05"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_06"
+      android:foregroundServiceType="dataSync"
       android:process=":process_06"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_07"
+      android:foregroundServiceType="dataSync"
       android:process=":process_07"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_08"
+      android:foregroundServiceType="dataSync"
       android:process=":process_08"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_09"
+      android:foregroundServiceType="dataSync"
       android:process=":process_09"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_10"
+      android:foregroundServiceType="dataSync"
       android:process=":process_10"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_11"
+      android:foregroundServiceType="dataSync"
       android:process=":process_11"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_12"
+      android:foregroundServiceType="dataSync"
       android:process=":process_12"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_13"
+      android:foregroundServiceType="dataSync"
       android:process=":process_13"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_14"
+      android:foregroundServiceType="dataSync"
       android:process=":process_14"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_15"
+      android:foregroundServiceType="dataSync"
       android:process=":process_15"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_16"
+      android:foregroundServiceType="dataSync"
       android:process=":process_16"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_17"
+      android:foregroundServiceType="dataSync"
       android:process=":process_17"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_18"
+      android:foregroundServiceType="dataSync"
       android:process=":process_18"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_19"
+      android:foregroundServiceType="dataSync"
       android:process=":process_19"
       android:enabled="true"
       android:exported="true" />
     <service
       android:name=".services.fork.NodeService_20"
+      android:foregroundServiceType="dataSync"
       android:process=":process_20"
       android:enabled="true"
       android:exported="true" />

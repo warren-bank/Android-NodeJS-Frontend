@@ -6,6 +6,7 @@ import com.github.warren_bank.nodejs_frontend.helpers.UI;
 import com.github.warren_bank.nodejs_frontend.ui.activity_main.tabs.AbstractTabFragment;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Process;
 import android.text.TextUtils;
@@ -78,6 +79,8 @@ public class MainActivity extends AppCompatActivity implements RuntimePermission
   @Override
   public void onActivityResult(int requestCode, int resultCode, Intent data) {
     super.onActivityResult(requestCode, resultCode, data);
+
+    RuntimePermissionsMgr.onActivityResult(/* listener= */ MainActivity.this, requestCode, resultCode, data);
 
     BackupRestoreMgr.onActivityResult(/* activity= */ MainActivity.this, requestCode, resultCode, data);
 
@@ -247,6 +250,8 @@ public class MainActivity extends AppCompatActivity implements RuntimePermission
   }
 
   private void showPermissionsDeniedNotification(String[] permissions) {
+    if (permissions == null) return;
+
     String divider = "\n• ";
 
     String message;
@@ -258,6 +263,6 @@ public class MainActivity extends AppCompatActivity implements RuntimePermission
 
   @Override
   public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-    RuntimePermissionsMgr.onRequestPermissionsResult(/* activity= */ MainActivity.this, /* listener= */ MainActivity.this, requestCode, permissions, grantResults);
+    RuntimePermissionsMgr.onRequestPermissionsResult(/* listener= */ MainActivity.this, requestCode, permissions, grantResults);
   }
 }
