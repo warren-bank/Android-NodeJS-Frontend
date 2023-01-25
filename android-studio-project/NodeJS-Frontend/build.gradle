@@ -19,6 +19,8 @@ android {
     versionName project.ext.releaseVersion
     versionCode project.ext.releaseVersionCode
 
+    archivesBaseName += "-$versionName"
+
     externalNativeBuild {
       cmake {
         cppFlags ""
