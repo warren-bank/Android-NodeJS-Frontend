@@ -3,9 +3,10 @@
   "private": true,
   "license": "GPL-2.0",
   "devDependencies": {
-    "@warren-bank/translate-android-strings": "^1.6.0"
+    "@warren-bank/translate-android-strings": "^1.9.2"
   },
   "scripts": {
-    "translate": "node_modules/.bin/translate-android-strings -i \"en\" -f \"android-studio-project/NodeJS-Frontend/src/main/res/values/strings.xml\" -d \"android-studio-project/NodeJS-Frontend/src/main/res\" -m -b \"Node\\.js\" -b \"exec\" -b \"fork\" -b \"stdout\" -b \"JSON\" -b \"CLI\" -b \"CWD\" --nc --nw"
+    "translate":       "translate-android-strings -i \"en\" -f \"android-studio-project/NodeJS-Frontend/src/main/res/values/strings.xml\" -d \"android-studio-project/NodeJS-Frontend/src/withAllLanguageTranslations/res\" -m --nc --nw -b \"(?:Node\\.js|exec|fork|stdout|JSON|CLI|CWD)\"",
+    "translate:debug": "npm run translate -- -o \"en\" --debug"
   }
 }
