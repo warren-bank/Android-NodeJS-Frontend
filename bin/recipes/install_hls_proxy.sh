@@ -3,9 +3,13 @@
 # ------------------------------------------------------------------------------
 # configure package details:
 # ------------------------------------------------------------------------------
+# https://github.com/warren-bank/HLS-Proxy#major-versions
+#   v3 (and higher) requires Node.js v16.0.0+ which cannot run in Node.js v12.19.0
+# ------------------------------------------------------------------------------
 
 npm_package_scope='@warren-bank'
 npm_package_name='hls-proxy'
+npm_package_version='>=2.0.0 <3.0.0'
 
 # ------------------------------------------------------------------------------
 # test preconditions:
@@ -13,14 +17,15 @@ npm_package_name='hls-proxy'
 
 local_dirpath="$1"
 remote_dirpath="$2"
+use_adb_push="$3"
 
 if [ -z "$npm_package_name" ]; then
   echo 'error: package name is not configured'
   exit
 fi
 
-if [ ! $# -eq 2 ]; then
-  echo 'usage: '$(basename "${BASH_SOURCE[0]}")' <local_temp_dirpath> <remote_install_dirpath>'
+if [ ! $# -eq 3 ]; then
+  echo 'usage: '$(basename "${BASH_SOURCE[0]}")' <local_temp_dirpath> <remote_install_dirpath> <use_adb_push>'
   exit
 fi
 
@@ -30,7 +35,11 @@ fi
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-source "${DIR}/../lib/install_node_module.sh" "$npm_package_scope" "$npm_package_name" "$local_dirpath" "$remote_dirpath"
+run_npm_scripts='0'
+
+source "${DIR}/../lib/install_node_module.sh" "$npm_package_scope" "$npm_package_name" "$npm_package_version" "$local_dirpath" "$remote_dirpath" "$run_npm_scripts" "$use_adb_push"
+
+cd "$local_dirpath"
 
 # ------------------------------------------------------------------------------
 # construct JSON import data for Node.js Frontend:
@@ -48,8 +57,13 @@ export_json="${export_json}]"
 # copy JSON to device:
 # ------------------------------------------------------------------------------
 
-export_local="${local_dirpath}/${NODE_PACKAGE_DIRNAME}.json"
+export_local="./${NODE_PACKAGE_DIRNAME}.json"
 export_remote="${remote_dirpath}/${NODE_PACKAGE_DIRNAME}.json"
 
 echo "$export_json" >"$export_local"
-adb push "$export_local" "$export_remote"
+
+if [ "$use_adb_push" == "1" ]; then
+  adb push "$export_local" "$export_remote"
+else
+  echo adb push "'${export_local}'" "'${export_remote}'" >>"$use_adb_push"
+fi
