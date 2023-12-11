@@ -3,10 +3,12 @@
 # ------------------------------------------------------------------------------
 # configure package details:
 # ------------------------------------------------------------------------------
+# https://semver.npmjs.com/
+# ------------------------------------------------------------------------------
 # https://github.com/npm/cli/tree/v8.19.1#requirements
 # https://github.com/npm/cli/tree/v9.0.0#requirements
-#   v8 (and higher) requires Node.js v12.13.0+
-#   v9 (and higher) requires Node.js v14.17.0+ which cannot run in Node.js v12.19.0
+#   v8.x.x requires Node.js v12.13.0+
+#   v9.x.x requires Node.js v14.17.0+ which cannot run in Node.js v12.19.0
 # ------------------------------------------------------------------------------
 
 npm_package_scope=''

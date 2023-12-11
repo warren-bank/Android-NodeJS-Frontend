@@ -3,13 +3,18 @@
 # ------------------------------------------------------------------------------
 # configure package details:
 # ------------------------------------------------------------------------------
+# https://semver.npmjs.com/
+# ------------------------------------------------------------------------------
 # https://github.com/warren-bank/HLS-Proxy#major-versions
-#   v3 (and higher) requires Node.js v16.0.0+ which cannot run in Node.js v12.19.0
+#   v1.x.x requires Node.js v8.6.0+
+#   v2.x.x requires Node.js v8.6.0+
+#   v3.0.0 to v3.4.8 requires Node.js v16.0.0+ which cannot run in Node.js v12.19.0
+#   v3.5.0 (and higher) requires Node.js v12.0.0+
 # ------------------------------------------------------------------------------
 
 npm_package_scope='@warren-bank'
 npm_package_name='hls-proxy'
-npm_package_version='>=2.0.0 <3.0.0'
+npm_package_version='<3.0.0 || >=3.5.0'
 
 # ------------------------------------------------------------------------------
 # test preconditions:
