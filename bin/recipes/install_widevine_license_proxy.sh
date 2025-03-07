@@ -5,16 +5,10 @@
 # ------------------------------------------------------------------------------
 # https://semver.npmjs.com/
 # ------------------------------------------------------------------------------
-# https://github.com/warren-bank/HLS-Proxy#major-versions
-#   v1.x.x requires Node.js v8.6.0+
-#   v2.x.x requires Node.js v8.6.0+
-#   v3.0.0 to v3.4.8 requires Node.js v16.0.0+ which cannot run in Node.js v12.19.0
-#   v3.5.0 (and higher) requires Node.js v12.0.0+
-# ------------------------------------------------------------------------------
 
 npm_package_scope='@warren-bank'
-npm_package_name='hls-proxy'
-npm_package_version='<3.0.0 || >=3.5.0'
+npm_package_name='widevine-license-proxy'
+npm_package_version='latest'
 
 # ------------------------------------------------------------------------------
 # test preconditions:
@@ -47,15 +41,33 @@ source "${DIR}/../lib/install_node_module.sh" "$npm_package_scope" "$npm_package
 cd "$local_dirpath"
 
 # ------------------------------------------------------------------------------
+# download plugins:
+# ------------------------------------------------------------------------------
+
+PLUGINS_DIRNAME="${NODE_PACKAGE_DIRNAME}/plugins"
+
+mkdir "$PLUGINS_DIRNAME"
+cd "$PLUGINS_DIRNAME"
+
+# install common libraries
+wget --no-check-certificate -q -O 'package.json' 'https://github.com/warren-bank/node-widevine-license-proxy/raw/master/.recipes/package.json'
+npm install --omit=dev --omit=optional --omit=peer --no-bin-links --no-audit --no-fund 1>/dev/null
+
+PLUGIN_FILENAME_CHANNEL4='channel4.js'
+wget --no-check-certificate -q -O "$PLUGIN_FILENAME_CHANNEL4" 'https://github.com/warren-bank/node-widevine-license-proxy/raw/master/.recipes/02.%20channel4/server-config.js'
+
+cd "$local_dirpath"
+
+# ------------------------------------------------------------------------------
 # construct JSON import data for Node.js Frontend:
 # ------------------------------------------------------------------------------
 
-hlsd_js="${remote_dirpath}/${NODE_PACKAGE_DIRNAME}/${NODE_PACKAGE_REL_HOME}/"$(node -e "const bin=${NODE_PACKAGE_JSON_BIN}; console.log(bin.hlsd)")
+wvlpd_js="${remote_dirpath}/${NODE_PACKAGE_DIRNAME}/${NODE_PACKAGE_REL_HOME}/"$(node -e "const bin=${NODE_PACKAGE_JSON_BIN}; console.log(bin.wvlpd)")
+plugin_channel4_js="${remote_dirpath}/${PLUGINS_DIRNAME}/${PLUGIN_FILENAME_CHANNEL4}"
 
 export_json=
 export_json="${export_json}["
-export_json="${export_json}{\"id\":\"0\",\"isActive\":true,\"js_filepath\":\"${hlsd_js}\",\"js_options\":[\"--port\",\"8080\",\"--useragent\",\"Chrome/134.0.0\",\"--req-insecure\",\"-v\",\"0\"],\"title\":\"HLS proxy (port 8080)\"},"
-export_json="${export_json}{\"id\":\"0\",\"isActive\":true,\"js_filepath\":\"${hlsd_js}\",\"js_options\":[\"--port\",\"8080\",\"--useragent\",\"Chrome/134.0.0\",\"--req-insecure\",\"-v\",\"0\",\"--prefetch\",\"--max-segments\",\"20\"],\"title\":\"HLS proxy (port 8080, prefetch)\"}"
+export_json="${export_json}{\"id\":\"0\",\"isActive\":true,\"js_filepath\":\"${wvlpd_js}\",\"js_options\":[\"--port\",\"8081\",\"--useragent\",\"Chrome/134.0.0\",\"--req-insecure\",\"--use\",\"${plugin_channel4_js}\"],\"title\":\"Widevine license proxy (port 8081, channel4)\"}"
 export_json="${export_json}]"
 
 # ------------------------------------------------------------------------------

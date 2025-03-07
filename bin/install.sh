@@ -18,6 +18,7 @@ if [ ! "$use_adb_push" == "1" ]; then
   chmod +x "$use_adb_push"
 fi
 
-"${DIR}/recipes/install_npm.sh"       "$local_temp_dir" "$remote_dir" "$use_adb_push"
-"${DIR}/recipes/install_serve.sh"     "$local_temp_dir" "$remote_dir" "$use_adb_push"
-"${DIR}/recipes/install_hls_proxy.sh" "$local_temp_dir" "$remote_dir" "$use_adb_push"
+"${DIR}/recipes/install_npm.sh"                    "$local_temp_dir" "$remote_dir" "$use_adb_push"
+"${DIR}/recipes/install_serve.sh"                  "$local_temp_dir" "$remote_dir" "$use_adb_push"
+"${DIR}/recipes/install_hls_proxy.sh"              "$local_temp_dir" "$remote_dir" "$use_adb_push"
+"${DIR}/recipes/install_widevine_license_proxy.sh" "$local_temp_dir" "$remote_dir" "$use_adb_push"

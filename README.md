@@ -76,6 +76,7 @@ This branch contains bash scripts to run on a (local) computer to install Node.j
   - on tab: `fork to separate process`
     * import: `/storage/emulated/0/Node.js/hls-proxy_v3.5.0.json`
     * import: `/storage/emulated/0/Node.js/serve_v130002.18.5.json`
+    * import: `/storage/emulated/0/Node.js/widevine-license-proxy_v2.0.2.json`
 
 - - - -
 
