@@ -1,4 +1,4 @@
-### [Node.js Frontend - recipes](https://github.com/warren-bank/Android-NodeJS-Frontend/tree/recipes)
+### [Node.js Frontend - recipes](https://github.com/warren-bank/Android-NodeJS-Frontend/tree/node-v12.19.0/recipes)
 
 This branch contains bash scripts to run on a (local) computer to install Node.js applications from `npm` on a (remote) Android device
 
@@ -61,7 +61,7 @@ This branch contains bash scripts to run on a (local) computer to install Node.j
 
 #### Usage:
 
-* download .zip bundle: [NodeJS-Frontend-recipes.zip](https://github.com/warren-bank/Android-NodeJS-Frontend/releases/download/recipes_zip_bundle/NodeJS-Frontend-recipes.zip)
+* download .zip bundle: [NodeJS-Frontend-recipes.zip](https://github.com/warren-bank/Android-NodeJS-Frontend/releases/download/node-v12.19.0/recipes_zip_bundle/NodeJS-Frontend-recipes.zip)
 * unzip on phone in directory path: `/storage/emulated/0/Node.js`
 
 - - - -
