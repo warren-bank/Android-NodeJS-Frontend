@@ -1,4 +1,4 @@
-### [Node.js Frontend](https://github.com/warren-bank/Android-NodeJS-Frontend/tree/node-v16.17.1/app)
+### [Node.js Frontend](https://github.com/warren-bank/Android-NodeJS-Frontend/tree/node-v18.20.4/app)
 
 Android app to run Javascript files from the filesystem in Node.js
 
@@ -15,12 +15,12 @@ Android app to run Javascript files from the filesystem in Node.js
 #### Technical Details:
 
 * _Node.js for Mobile Apps_
-  * version: [16.17.0](https://github.com/nodejs-mobile/nodejs-mobile/releases/tag/nodejs-mobile-v16.17.0)
-  * binaries: [nodejs-mobile-v16.17.0-android.zip](https://github.com/nodejs-mobile/nodejs-mobile/releases/download/nodejs-mobile-v16.17.0/nodejs-mobile-v16.17.0-android.zip)
-  * minSDK: [23](https://github.com/nodejs-mobile/nodejs-mobile/blob/nodejs-mobile-v16.17.0/android-configure#L21)
+  * version: [18.20.4](https://github.com/nodejs-mobile/nodejs-mobile/releases/tag/v18.20.4)
+  * binaries: [nodejs-mobile-v18.20.4-android.zip](https://github.com/nodejs-mobile/nodejs-mobile/releases/download/v18.20.4/nodejs-mobile-v18.20.4-android.zip)
+  * minSDK: [24](https://github.com/nodejs-mobile/nodejs-mobile/blob/v18.20.4/.github/workflows/build-mobile.yml#L12)
   * versions:
-    * Node.js = 16.17.1
-    * OpenSSL = 1.1.1q+quic
+    * Node.js = 18.20.4
+    * OpenSSL = 3.0.13+quic
 * no root
 
 #### List of Permissions:
@@ -39,7 +39,7 @@ Android app to run Javascript files from the filesystem in Node.js
 
 #### Recipes:
 
-* the [recipes branch](https://github.com/warren-bank/Android-NodeJS-Frontend/tree/node-v16.17.1/recipes) contains a set of bash scripts that can be used to easily install and configure a curated selection of Node.js applications
+* the [recipes branch](https://github.com/warren-bank/Android-NodeJS-Frontend/tree/node-v18.20.4/recipes) contains a set of bash scripts that can be used to easily install and configure a curated selection of Node.js applications
   * the apps illustrated in the [screenshots animation](#screenshots) are included
 
 #### Legal:
