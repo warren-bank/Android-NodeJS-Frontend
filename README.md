@@ -1,4 +1,4 @@
-### [Node.js Frontend](https://github.com/warren-bank/Android-NodeJS-Frontend)
+### [Node.js Frontend](https://github.com/warren-bank/Android-NodeJS-Frontend/tree/node-v12.19.0/app)
 
 Android app to run Javascript files from the filesystem in Node.js
 
@@ -40,7 +40,7 @@ Android app to run Javascript files from the filesystem in Node.js
 
 #### Recipes:
 
-* the [recipes branch](https://github.com/warren-bank/Android-NodeJS-Frontend/tree/recipes) contains a set of bash scripts that can be used to easily install and configure a curated selection of Node.js applications
+* the [recipes branch](https://github.com/warren-bank/Android-NodeJS-Frontend/tree/node-v12.19.0/recipes) contains a set of bash scripts that can be used to easily install and configure a curated selection of Node.js applications
   * the apps illustrated in the [screenshots animation](#screenshots) are included
 
 #### Legal:
