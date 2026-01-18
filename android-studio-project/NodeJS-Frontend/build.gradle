@@ -2,6 +2,8 @@ apply from: '../constants.gradle'
 apply plugin: 'com.android.application'
 
 android {
+  namespace project.ext.applicationId
+
   compileSdkVersion project.ext.compileSdkVersion
   buildToolsVersion project.ext.buildToolsVersion
   ndkVersion        project.ext.ndkVersion
@@ -12,12 +14,12 @@ android {
   }
 
   defaultConfig {
-    minSdkVersion project.ext.minSdkVersion
+    minSdkVersion    project.ext.minSdkVersion
     targetSdkVersion project.ext.targetSdkVersion
 
-    applicationId "com.github.warren_bank.nodejs_frontend"
-    versionName project.ext.releaseVersion
-    versionCode project.ext.releaseVersionCode
+    applicationId project.ext.applicationId
+    versionName   project.ext.releaseVersion
+    versionCode   project.ext.releaseVersionCode
 
     archivesBaseName += "-$versionName"
 
@@ -29,8 +31,10 @@ android {
     }
 
     ndk {
-      abiFilters "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
       abiFilters.clear()
+
+      //note: only include the following when NOT using: android.splits.abi.include
+      //abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
     }
   }
 
@@ -64,6 +68,11 @@ android {
     }
   }
 
+  buildFeatures {
+    aidl        true
+    buildConfig false
+  }
+
   externalNativeBuild {
     cmake {
       version project.ext.cmakeVersion
@@ -75,9 +84,14 @@ android {
     abi {
       enable true
       reset()
-      include "arm64-v8a", "armeabi-v7a", "x86", "x86_64"
+      include "armeabi-v7a", "arm64-v8a", "x86_64"  //, "x86" (missing from nodejs-mobile release v16.17.0)
       universalApk false
     }
+  }
+
+  dependenciesInfo {
+    includeInApk    = false  // Disables dependency metadata when building APKs.
+    includeInBundle = false  // Disables dependency metadata when building Android App Bundles.
   }
 
   lintOptions {

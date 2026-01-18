@@ -2,6 +2,8 @@ apply from: '../../constants.gradle'
 apply plugin: 'com.android.library'
 
 android {
+  namespace 'lib.folderpicker.support'
+
   compileSdkVersion project.ext.compileSdkVersion
   buildToolsVersion project.ext.buildToolsVersion
 

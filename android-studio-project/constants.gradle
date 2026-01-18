@@ -1,13 +1,14 @@
 project.ext {
-  releaseVersionCode = Integer.parseInt("001000219", 10)  //Integer.MAX_VALUE == 2147483647
-  releaseVersion     = '001.00.02-19API'
+  applicationId      = 'com.github.warren_bank.nodejs_frontend'
+  releaseVersionCode = Integer.parseInt("002000023", 10)  //Integer.MAX_VALUE == 2147483647
+  releaseVersion     = '002.00.00-23API'
   javaVersion        = JavaVersion.VERSION_1_8
-  minSdkVersion      = 19
-  targetSdkVersion   = 33
-  compileSdkVersion  = 33
-  buildToolsVersion  = '33.0.1'
-  ndkVersion         = '21.3.6528147'
-  cmakeVersion       = '3.10.2.4988404'
+  minSdkVersion      = 23
+  targetSdkVersion   = 35
+  compileSdkVersion  = 35
+  buildToolsVersion  = '35.0.0'
+  ndkVersion         = '29.0.14206865'  // https://dl.google.com/android/repository/android-ndk-r29-windows.zip
+  cmakeVersion       = '4.1.2'          // https://dl.google.com/android/repository/cmake-4.1.2-windows.zip
 
   libSupportAnnotation        = '1.1.0'
   libSupportAppCompat         = '1.2.0'
