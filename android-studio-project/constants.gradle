@@ -1,7 +1,7 @@
 project.ext {
   applicationId      = 'com.github.warren_bank.nodejs_frontend'
-  releaseVersionCode = Integer.parseInt("003000024", 10)  //Integer.MAX_VALUE == 2147483647
-  releaseVersion     = '003.00.00-24API'
+  releaseVersionCode = Integer.parseInt("003000124", 10)  //Integer.MAX_VALUE == 2147483647
+  releaseVersion     = '003.00.01-24API'
   javaVersion        = JavaVersion.VERSION_1_8
   minSdkVersion      = 24
   targetSdkVersion   = 35
