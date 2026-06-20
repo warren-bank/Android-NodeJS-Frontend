@@ -101,7 +101,7 @@ serve_js="${remote_dirpath}/${NODE_PACKAGE_DIRNAME}/${NODE_PACKAGE_REL_HOME}/"$(
 
 export_json=
 export_json="${export_json}["
-export_json="${export_json}{\"id\":\"0\",\"isActive\":true,\"cwd_dirpath\":\"${remote_dirpath}\",\"js_filepath\":\"${serve_js}\",\"js_options\":[\"--listen\",\"tcp://0.0.0.0:8000\",\"--cors\",\"--no-compression\",\"--no-clipboard\"],\"title\":\"Serve httpd (port 8000)\"}"
+export_json="${export_json}{\"id\":\"0\",\"isActive\":true,\"cwd_dirpath\":\"${remote_dirpath}\",\"js_filepath\":\"${serve_js}\",\"js_options\":[\"--listen\",\"tcp://0.0.0.0:8000\",\"--cors\",\"--symlinks\",\"--no-compression\",\"--no-clipboard\"],\"title\":\"Serve httpd (port 8000)\"}"
 export_json="${export_json}]"
 
 # ------------------------------------------------------------------------------
@@ -117,4 +117,22 @@ if [ "$use_adb_push" == "1" ]; then
   adb push "$export_local" "$export_remote"
 else
   echo adb push "'${export_local}'" "'${export_remote}'" >>"$use_adb_push"
+fi
+
+# ------------------------------------------------------------------------------
+# construct symlinks (demonstrative and useful):
+# ------------------------------------------------------------------------------
+
+export_local='./serve_symlinks'
+
+[ -d "$export_local" ] && rm -rf "$export_local"
+mkdir "$export_local"
+
+echo -n '/storage/emulated/0' >"${export_local}/internal_storage.symlink"
+echo -n '/mnt/media_rw'       >"${export_local}/external_storage.symlink"
+
+if [ "$use_adb_push" == "1" ]; then
+  adb push "${export_local}/" "${remote_dirpath}/"
+else
+  echo adb push "'${export_local}/'" "'${remote_dirpath}/'" >>"$use_adb_push"
 fi
